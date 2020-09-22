@@ -12,11 +12,18 @@ German, French, Spanish, Italian, Russian, Chinese, and Hebrew. Here's an exampl
 word1; word2; 10     # comment
 ```
 
-In this example, {{word1}} and {{word2}} are two similar words that can easily be confused. The order of these words doesn't matter to LT, but we recommend sorting them alphabetically. {{10}} is a factor that determines how much the word used in the text is preferred. If you use {{1}} here, the other word will be suggested as a correction even when it's only a little bit more probable than the word from the text. In many cases, this would lead to false alarms. To avoid those, use a larger factor, often something from {{10}} to {{10000000}}. To decide what's a good compromise between finding many errors and not creating too many false alarms, use {{ConfusionRuleEvaluator.java}}:
+In this example, `word1` and `word2` are two similar words that can easily be confused. The
+order of these words doesn't matter to LT, but we recommend sorting them alphabetically.
+`10` is a factor that determines how much the word used in the text is preferred. If
+you use `1` here, the other word will be suggested as a correction even when it's only
+a little bit more probable than the word from the text. In many cases, this would lead
+to false alarms. To avoid those, use a larger factor, often something from `10` to
+`10000000`. To decide what's a good compromise between finding many errors and not
+creating too many false alarms, use `ConfusionRuleEvaluator.java`:
 
 ### Finding a factor
 
-Run {{ConfusionRuleEvaluator.java}} from your IDE. It will print the options you need to provide: the token pair, the language code, the ngram directory, and an evaluation file with example sentences that contain the words in their correct context. It will show output like this:
+Run `ConfusionRuleEvaluator.java` from your IDE. It will print the options you need to provide: the token pair, the language code, the ngram directory, and an evaluation file with example sentences that contain the words in their correct context. It will show output like this:
 
 ```
 Factor:   10 - 5 false positives, 11 false negatives

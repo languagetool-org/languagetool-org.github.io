@@ -1,4 +1,8 @@
-This software supports LanguageTool one way or the other. Please note that most of this software is not supported by the LanguageTool team and some of the software might be unmaintained.
+# Software That Supports LanguageTool as an Add-On
+
+This software supports LanguageTool one way or the other. Please note that most of
+this software is not supported by the LanguageTool team and some of the software
+might be unmaintained.
 
 * [linter-languagetool](https://atom.io/packages/linter-languagetool) for Atom ([source](https://github.com/wysiib/linter-languagetool))
 * [LanguageTool for Android](https://play.google.com/store/apps/details?id=org.softcatala.corrector) ([source](https://github.com/Softcatala/LanguageToolAndroidService))
