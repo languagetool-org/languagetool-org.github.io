@@ -7,7 +7,6 @@ This software supports LanguageTool one way or the other. Please note that most 
 * [LanguageTool Eclipse Plugin](https://github.com/auguster/languagetool-eclipse-plugin)
 * [LanguageTool for Emacs](https://github.com/mhayashi1120/Emacs-langtool)
 * [LanguageTool for FidusWriter](https://github.com/fiduswriter/fiduswriter-languagetool)
-* [LanguageTool in FontoXML Content Quality App](https://fontoxml.com/apps/content-quality/) (an extension of the FontoXML Editor)
 * [LanguageTool for Firefox](https://addons.mozilla.org/firefox/addon/languagetool/)
 * [LanguageTool for Google Docs](https://chrome.google.com/webstore/detail/languagetool/kjcoklfhicmkbfifghaecedbohbmofkm)
 * [Grazie - Plugin for IntelliJ](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
