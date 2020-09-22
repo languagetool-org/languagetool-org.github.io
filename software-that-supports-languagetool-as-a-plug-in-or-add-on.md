@@ -10,7 +10,8 @@ This software supports LanguageTool one way or the other. Please note that most 
 * [LanguageTool for Firefox](https://addons.mozilla.org/firefox/addon/languagetool/)
 * [LanguageTool for Google Docs](https://chrome.google.com/webstore/detail/languagetool/kjcoklfhicmkbfifghaecedbohbmofkm)
 * [Grazie - Plugin for IntelliJ](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
-* [LanguageTool for LibreOffice and OpenOffice](https://www.languagetool.org/) ([source](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
+* [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
+* [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
 * [LanguageTool for LyX](http://wiki.lyx.org/Tools/LyX-GrammarChecker)
 * [LanguageTool for MS Word](https://languagetoolplus.com/#add-on), part of the LanguageTool Premium version
 * [LanguageTool for MS Word (Windows)](https://github.com/jaumeortola/languagetool-msword10-addin#english), old version
