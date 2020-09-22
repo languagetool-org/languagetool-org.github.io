@@ -62,44 +62,7 @@ program does not allow configuration of the call to the LanguageTool server, and
 the user wants to enable or disable some checks. However, if the program does
 disable or enable any rules, then the configuration set by the user will be silently ignored.
 
-## Using SSL
+## Using SSL/TLS
 
-Starting with version 2.0, LanguageTool offers an embedded HTTPS server. It works
-just like the HTTP server described above, but it only supports `https`.
-**For most production settings, you might prefer to use the HTTP server of 
-LanguageTool and run it behind a Apache or nginx reverse proxy with SSL support.**
-The embedded HTTPS server can be started like this:
-
-    java -jar languagetool-server.jar --config server.properties
-
-`server.properties` is a Java properties file like this:
-
-    # Path to Java key store:
-    keystore = keystore.jks
-    # Password for the Java key store:
-    password = my-password
-    # Maximum text length. Optional - longer texts will not be checked:
-    maxTextLength = 50000
-
-To run the server you need your own SSL certificate, just like when you protect your webserver using SSL. Assuming you have the required files in PEM/X.509 format, which look like this (the key file):
-
-    -----BEGIN RSA PRIVATE KEY-----
-    (lots of random characters here)
-    -----END RSA PRIVATE KEY-----
-
-...and this (the certificate - there may be more than one):
-
-    -----BEGIN CERTIFICATE-----
-    (lots of random characters here)
-    -----END CERTIFICATE-----
-
-You can convert this format to the Java keystore format which LanguageTool needs
-with openssl and with the keytool command that comes with Java:
-
-    cat key server.crt ca.crt >server.pem
-    openssl pkcs12 -export -out server.p12 -in server.pem
-    keytool -importkeystore -srckeystore server.p12
-        -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype jks
-
-Note that the key has a password and the keystore has one - currently LanguageTool 
-requires both passwords to be the same.
+We recommend using the HTTP server of LanguageTool and run it behind an Apache or
+nginx reverse proxy with SSL/TLS support.
