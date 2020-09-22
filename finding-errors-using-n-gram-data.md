@@ -1,3 +1,5 @@
+# Finding errors using n-gram data
+
 LanguageTool can make use of large n-gram data sets to detect errors with words that
 are often confused, like *their* and *there*. The n-gram data set is huge and thus
 not part of the LT download. To make use of it, you have two choices:

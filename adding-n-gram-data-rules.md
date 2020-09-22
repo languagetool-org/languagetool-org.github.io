@@ -1,3 +1,5 @@
+# Adding ngram Data Rules
+
 This page describes how rule developers can make use of the n-gram data to detect errors.
 As an introduction and for set-up, please see [[[Finding errors using n-gram data]]] first.
 
