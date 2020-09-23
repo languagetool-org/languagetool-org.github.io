@@ -23,15 +23,15 @@
 * [Using unification](/using-unification)
 * [Using chunks](/using-chunks)
 * [Usage of false friends rule](/usage-of-false-friends-rule)
-* [Error Collections](/error-Collections)
+* [Error Collections](/error-collections)
 
 ### General Development
 
-* Release Roadmap
-* Tasks for Language Maintainers
-* Tips for new committers
-* Translating messages - i18n
-* Spell check
+* [Release Roadmap](/roadmap)
+* [Tasks for Language Maintainers](/tasks-for-language-maintainers)
+* [Tips for new committers](/tips-for-new-committers)
+* [Translating messages - i18n](/translating-messages)
+* [Spell check](/hunspell-support)
 
 ### Java Software Development
 
