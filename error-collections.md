@@ -5,5 +5,5 @@
 * [German incorrect words](/collections/german-incorrect-words)
 * [German correct words](/collections/german-correct-words)
 * Also see:
- * <https://en.wikipedia.org/wiki/Wikipedia>  :Lists_of_common_misspellings/Grammar_and_Misc
- * <https://de.wikipedia.org/wiki/Benutzer>  :Asthma/ablage/Schlechter_Stil
+  * <https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/Grammar_and_Misc>
+  * <https://de.wikipedia.org/wiki/Benutzer:Asthma/ablage/Schlechter_Stil>

@@ -35,12 +35,12 @@
 
 ### Java Software Development
 
-* Code Style
-* Maven tips
-* Developing a disambiguator
-* Developing a tagger dictionary
-* Customizing sentence segmentation in SRX rules
-* Adding a new language
+* [Code Style](/code-style)
+* [Maven tips](/maven-tips)
+* [Developing a disambiguator](/developing-a-disambiguator)
+* [Developing a tagger dictionary](/developing-a-tagger-dictionary)
+* [Customizing sentence segmentation in SRX rules](/customizing-sentence-segmentation-in-srx-rules)
+* [Adding a new language](/adding-a-new-language)
 
 ### Internal
 
