@@ -119,13 +119,13 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * link the release on the server:
   * `cd /home/languagetool/repo/public/download/`
   * `rm LanguageTool-stable.oxt && ln -s LanguageTool-**4.X**.oxt LanguageTool-stable.oxt && rm LanguageTool-stable.zip && ln -s LanguageTool-**4.X**.zip LanguageTool-stable.zip`
-*  update roadmap at <http://languagetool.wikidot.com/roadmap>  
+*  update [roadmap](/roadmap)  
 * enter the next feature freeze date in your personal calendar so you don't forget it
 * Javadoc
   * `git checkout v**x.y**`
   * run `mvn javadoc:aggregate`, then upload `target/site/apidocs/` to server at `/home/languagetool/repo/public/development/api` - note: this requires a local `mvn install -DskipTests`
   * `git checkout master`
-* set new version number in <http://wiki.languagetool.org/java-api>  
+* set new version number in [Java API](/java-api)  
 * set new version in languagetool.update.xml (this is linked in resources/description.xml and allows updating LT from within the LO/OO extension manager)
   * install the old version of LT in LibreOffice and see if the automatic update from extension manager works
 
@@ -133,8 +133,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 * <http://forum.languagetool.org> - include checksums (Unix command: `sha256sum <file>`).
 * LanguageTool Announcement list at <https://ui.newsletter2go.com>  
-  * mention some addon from <http://wiki.languagetool.org/software-that-supports-languagetool-as-a-plug-in-or-add-on>   in a "did you know" section
-* Social networks via [Zoho Social](https://www.zoho.eu/social/login.html#home) (twitter, Facebook) - with a screenshot of some newly detected English errors
+* Social networks via [Zoho Social](https://www.zoho.eu/social/login.html#home) (twitter, Facebook)
 * <http://extensions.services.openoffice.org/project/languagetool>  
 * <https://extensions.libreoffice.org/extensions/languagetool>   via <https://extensions.libreoffice.org/admin>   (Note: set the "State" to "final release")
 * optional: the personal Xing account of the maintainer who makes the release
@@ -158,6 +157,5 @@ script does this automatically every day.
 
 Not really related to a release, but should be done once in a while and the release is a good opportunity:
 
-* Download Wiki backup at <http://wiki.languagetool.org/admin:manage> under "Security"
 * Download forum backup at <http://forum.languagetool.org/admin/backups>  
 * Send the spell checker words we collected from users to the maintainers of the spell dictionaries

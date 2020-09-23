@@ -9,7 +9,6 @@
 
 ## Using LanguageTool as a Developer
 
-* [Development Overview](/development-overview)
 * [Public HTTP Proofreading API](/public-http-api)
 * [Embedded HTTP server](/http-server)
 * [LanguageTool as a Java-based spell checker](/java-spell-checker)
@@ -19,6 +18,7 @@
 
 ### Rule Development
 
+* [Development Overview](/development-overview)
 * [Tips and tricks for rule development](/tips-and-tricks)
 * [How to avoid mistakes when writing rules](/how-to-avoid-mistakes-when-writing-rules)
 * [Developing robust rules](/developing-robust-rules)
@@ -46,5 +46,5 @@
 
 ### Internal
 
-* [How to add a new committer](/how-to-add-a-new-committer)
 * [How to make a LanguageTool release](/how-to-make-a-languagetool-release), including actions for feature freeze
+* [How to add a new committer](/how-to-add-a-new-committer)
