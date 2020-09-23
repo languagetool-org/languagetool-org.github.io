@@ -1,6 +1,6 @@
 # Error Collection
 
-* [English Error Collection](/collections/english-error-collection.)
+* [English Error Collection](/collections/english-error-collection)
 * [German Error Collection](/collections/german-error-collection)
 * [German incorrect words](/collections/german-incorrect-words)
 * [German correct words](/collections/german-correct-words)
