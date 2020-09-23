@@ -1,4 +1,4 @@
-## Introducing unification
+# Unification
 
 Unification is used to find agreement between words. 
 
@@ -39,12 +39,9 @@ look at JUnit tests for some inspiration).
 To make it work, you need to first define the feature. You simply need 
 to give a name to it:
 
-
 ```xml
     <unification feature="case_sensitivity">
-    
     ...  
-    
     </unification>
 ```
 

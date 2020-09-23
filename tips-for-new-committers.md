@@ -6,8 +6,8 @@ Here are some tips for new committers:
   forum](https://forum.languagetool.org/t/how-to-use-this-forum-like-a-mailing-list/1067) 
   to stay up-to-date, or follow the [forum 
   feed](http://languagetool.discoursehosting.net/posts.rss).
-* In your very first commit, add [[[Developer's Certificate of 
-  Origin|this text]]] to the commit message
+* In your very first commit, add [this text](/developer-s-certificate-of-origin)
+  to the commit message.
 * Be aware that every change to the code and the rules that don't break 
   the unit tests will automatically go live on 
   [languagetool.org](https://languagetool.org) each day at roughly 23:30 
@@ -27,11 +27,11 @@ Here are some tips for new committers:
    will prevent the ugly merge commits you get when you just do `git 
    pull`.
  * If you have issues with git, ask for help on our forum. Never use 
-   git's `-`{{-force}} option.
- * For Java changes, consider the [[[code style |style guide]]].
+   git's `--force` option.
+ * For Java changes, consider the [style guide](/code-style).
  * Before committing, always run the JUnit tests (`mvn clean test` or 
    `testrules.sh xx` / `testrules.bat xx` if you've only modified the XML 
-   rules, with `xx` being the language code). See [[[Maven tips]]] for 
+   rules, with `xx` being the language code). See [Maven tips](/maven-tips) for 
    hints about how to speed this up.
  * Before you push your changes, you will want to check them. `gitk` 
    works fine for that.
@@ -41,9 +41,8 @@ Here are some tips for new committers:
 * If you write a new piece of Java code, add a JUnit test.
 * If you make non-trivial changes, document them in 
   `languagetool-standalone/CHANGES.md`.
-* User interface translations are done using 
-  <https://www.transifex.com/projects/p/languagetool/,>   so please don't 
-  modify the translated MessageBundle files directly in git.
+* User interface translations are done using [webtranslateit](/translating-messages),
+  so please don't modify the translated MessageBundle files directly in git.
 * If your commit only affects one language, start your commit message 
   with `[xx]`, where `xx` is the language code (like `en` for English)
 * Don't create branches - if you think you need one, discuss this on 
@@ -53,4 +52,4 @@ Here are some tips for new committers:
 * If your code involves a major change to some core functionality 
   (changing XML markup of the rules, adding a new feature, changing 
   important APIs), ask on the forum before you work on it.
-* Be aware of our [[[Roadmap]]] and the feature freezes.
+* Be aware of our [Roadmap](/roadmap) and the feature freezes.

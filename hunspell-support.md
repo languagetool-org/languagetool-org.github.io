@@ -168,12 +168,12 @@ will thus not have an occurrence count.
 
 ## Current limitations of MorfologikSpeller
 
-* It does not support compounding etc. - it requires a *finite* wordlist. Here's the draft for [[[Compounding support in MorfologikSpeller]]]
-* It doesn't support regex in replacement pairs (see [this issue](https://github.com/morfologik/morfologik-stemming/issues/38))
+* It does not support compounding etc. - it requires a *finite* wordlist.
+* It doesn't support regex in replacement pairs (see
+  [this issue](https://github.com/morfologik/morfologik-stemming/issues/38))
 
 There is a 
-[[[http://sourceforge.net/tracker/index.php?func=detail&aid=3529456&group_id=143754&atid=756397|script 
-to convert hunspell dictionaries to finite wordlists]]] but it is 
-painfully slow. Alternatively, one could convert hunspell dictionaries 
+[script to convert hunspell dictionaries to finite wordlists](http://sourceforge.net/tracker/index.php?func=detail&aid=3529456&group_id=143754&atid=756397)
+but it is painfully slow. Alternatively, one could convert hunspell dictionaries 
 to hfst format, but we cannot (at least now) convert them to our fsa 
 format.

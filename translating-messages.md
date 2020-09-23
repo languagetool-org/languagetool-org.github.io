@@ -30,4 +30,3 @@ code).
 ## community.languagetool.org
 
 [community.languagetool.org](http://community.languagetool.org) is still translated via Transifex.
-s

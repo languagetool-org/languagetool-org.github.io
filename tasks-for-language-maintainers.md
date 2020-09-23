@@ -1,7 +1,7 @@
 # Tasks for Language Maintainers
 
-LanguageTool supports [<http://languagetool.org/languages/>   more than 
-25 languages], but not all of them have active maintainers. If you want 
+LanguageTool supports [more than 25 languages](http://languagetool.org/languages/),
+but not all of them have active maintainers. If you want 
 LanguageTool to support your language well, consider becoming a 
 maintainer. You do *not* need to know a programming language, and you 
 do *not* need to be a linguist or grammar expert. A maintainer's tasks 
@@ -10,7 +10,7 @@ are:
 * Maintain the error detection rules: improve rules to create less 
   false alarms, write new rules to detect new types of errors. How rules 
   work is [documented 
-  here](http://wiki.languagetool.org/development-overview).
+  here](/development-overview).
 * Translate the LanguageTool user interface into your language. We make 
   a new release every three months, so translations should also be 
   updated every three months. As our user interface isn't very complex, 

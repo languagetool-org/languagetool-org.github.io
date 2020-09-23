@@ -46,5 +46,5 @@ Polish, it means the same as English "slovenliness" or "untidiness".
 ## Editing
 
 Please edit the file using xxe. There is a 
-[http://languagetool.cvs.sourceforge.net/viewvc/*checkout*/languagetool/JLanguageTool/src/rules/false-friends.css 
-css file] that makes your life easier.
+[css file](https://raw.githubusercontent.com/languagetool-org/languagetool/master/languagetool-core/src/main/resources/org/languagetool/rules/false-friends.css) 
+that makes your life easier.
