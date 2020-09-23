@@ -1,4 +1,4 @@
-# Error Collection
+# Error Collections
 
 * [English Error Collection](/collections/english-error-collection)
 * [German Error Collection](/collections/german-error-collection)

@@ -1,4 +1,4 @@
-## Translating LanguageTool
+# Translating LanguageTool
 
 You can translate the LanguageTool user interface [online at 
 webtranslateit.com](https://webtranslateit.com). The English strings 

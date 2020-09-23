@@ -1,6 +1,8 @@
+# Maven Tips
+
 LanguageTool uses Maven 3.x. Here you will find some tips for building LanguageTool with Maven.
 
-# The Basics
+## The Basics
 
 You can build everything with this command, called in the top-level 
 directory of where you checked out LanguageTool:
@@ -21,7 +23,7 @@ from the top-level directory. You *can* call it from most of the
 sub-directories, but then only that module will be built and other 
 parts might be outdated.
 
-# Performance
+## Performance
 
 Maven comes with some overhead. If it's too slow for you, these tips might help:
 
@@ -48,7 +50,7 @@ Maven comes with some overhead. If it's too slow for you, these tips might help:
 * Use `mvn -T 1C test` to run the tests with 1 thread per CPU core, or 
   `mvn -T 2` to use 2 threads.
 
-# Debugging
+## Debugging
 
 If something doesn't work, make sure you did `mvn clean` in the 
 top-level directory of LT. This way remainders of old Maven runs will 

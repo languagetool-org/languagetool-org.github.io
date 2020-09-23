@@ -7,7 +7,7 @@
 * [Software that supports LanguageTool as a Plug-in or Add-on](/software-that-supports-languagetool-as-a-plug-in-or-add-on)
 * [Finding errors using n-gram data](/finding-errors-using-n-gram-data)
 
-## Developer Documentation
+## Using LanguageTool as a Developer
 
 * [Development Overview](/development-overview)
 * [Public HTTP Proofreading API](/public-http-api)
@@ -15,9 +15,11 @@
 * [LanguageTool as a Java-based spell checker](/java-spell-checker)
 * [Embedding LanguageTool in Java applications](/java-api)
 
+## Working on LanguageTool as a Developer
+
 ### Rule Development
 
-* [Tips and tricks for rule development](/tips-and-tricks-for-rule-development)
+* [Tips and tricks for rule development](/tips-and-tricks)
 * [How to avoid mistakes when writing rules](/how-to-avoid-mistakes-when-writing-rules)
 * [Developing robust rules](/developing-robust-rules)
 * [Using unification](/using-unification)
@@ -37,12 +39,12 @@
 
 * [Code Style](/code-style)
 * [Maven tips](/maven-tips)
-* [Developing a disambiguator](/developing-a-disambiguator)
-* [Developing a tagger dictionary](/developing-a-tagger-dictionary)
+* [Developing a Disambiguator](/developing-a-disambiguator)
+* [Developing a Tagger Dictionary](/developing-a-tagger-dictionary)
 * [Customizing sentence segmentation in SRX rules](/customizing-sentence-segmentation-in-srx-rules)
 * [Adding a new language](/adding-a-new-language)
 
 ### Internal
 
-* How to add a new committer
-* How to make a LanguageTool release, including actions for feature freeze
+* [How to add a new committer](/how-to-add-a-new-committer)
+* [How to make a LanguageTool release](/how-to-make-a-languagetool-release), including actions for feature freeze
