@@ -12,6 +12,7 @@ Siehe auch:
 * http://de.wikipedia.org/wiki/Wikipedia:Helferlein/Rechtschreibprüfung/Wortliste
 * http://www.uni-due.de/~gph120/PSPad/AutoCorr.txt
 
+```
 100-stel
 10jährig
 12jährig
@@ -3451,9 +3452,10 @@ anspühlt
 Insignie
 Schilddüse
 Schilddüsen
-
+```
 ------
 
+```
 Gebrauchtspuren
 Geburtstagseier
 Abschussarbeit
@@ -3461,3 +3463,4 @@ Qualitätsstandrad
 Standrad
 Fliegenpils
 Alumini
+```
