@@ -118,7 +118,7 @@ and re-compile the code that uses the LanguageTool API to see if there are
 deprecation warnings. If there are warnings, the javadoc we provide usually
 has a suggestion which method to use instead of the deprecated one.
 
-# Using a remote LanguageTool server
+## Using a remote LanguageTool server
 
 If you prefer to use a [LanguageTool server](/http-server) to
 running LanguageTool in-process, use `org.languagetool.remote.RemoteLanguageTool`

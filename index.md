@@ -1,6 +1,4 @@
-## test
-
-*** **this is work in progress** ***
+## LanguageTool
 
 ## User documentation
 
