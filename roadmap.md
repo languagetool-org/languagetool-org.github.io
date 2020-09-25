@@ -6,12 +6,13 @@ you're working on a major feature, please plan accordingly so the
 feature will be ready a few weeks before release, so that enough time 
 remains for testing.
 
-* 5.1 planned release: Friday, 2020-09-25 - feature freeze 2020-09-17
 * 5.2 planned release: Tuesday, 2020-12-29 - feature freeze 2020-12-21
 * 5.3 planned release: Monday, 2021-03-29 - feature freeze 2021-03-21
+* 5.4 planned release: Friday, 2021-06-25 - feature freeze 2021-06-18
 
 ## Archive
 
+* 5.1 release date: 2020-09-25
 * 5.0 release date: 2020-06-27
 * 4.9 release date: 2020-03-24 (stand-alone only)
 * 4.8 release date: 2019-12-27
