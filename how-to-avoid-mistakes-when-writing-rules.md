@@ -12,12 +12,9 @@ There are many ways you can make mistakes in grammar rules. In case of XML-forma
 ## Hasty generalization
 
 Hasty generalization creates false positives (or reduces precision) of 
-rules. It's advisable to look at community reports at [community 
-website](http://community.languagetool.org) and try to remove 
-over-general rules.
+rules. It's advisable to use the [rule editor](https://community.languagetool.org/ruleEditor/expert).
 
 ### How to fix:
-
 
 * Try adding exceptions.
 * If this doesn't help, you could add disambiguating rules (if the 
@@ -26,33 +23,26 @@ over-general rules.
 ## Bad suggestions
 
 Sometimes, instead of correct forms, suggestions contain only messages 
-that explain the kind of error. Note that OpenOffice.org will offer 
-these suggestions as replacement for the matched error in the document.
+that explain the kind of error.
 
 ### How to fix:
 
-* Offer only real suggestions in the `<suggestion/>` tag.
-* Add `correction` attribute to the `example` marked as 
-  `incorrect="yes"` to test whether the suggestion offered is correct 
-  during JUnit tests.
+* Offer only real suggestions in the `<suggestion>` tag.
+* Add `correction` attribute to the `example` to test whether the
+  suggestion offered is correct during JUnit tests.
 
 ## Errors in regular expressions
 
-
-One of the common problems is not using parentheses () to group 
+One of the common problems is not using parentheses `()` to group 
 disjunctive groups in case of regular expressions with spaces. For 
-example, "A" would match any POS tag in case it contains "A". But when 
+example, `A` would match any POS tag in case it contains `A`. But when 
 used in an exception, you want to exclude exactly A. This is a bad way:
-
 
     <exception postag_regexp="yes" postag="!A"/>
 
-
 The correct form:
 
-
     <exception postag="A"/>
-
 
 This way it would match the POS tag as a whole string – this is what 
 you actually want. Regular expressions have limited ways of expressing 
@@ -60,17 +50,12 @@ negation (via sets like this: `[^A]`) but using something inside an
 exception enables you to negate the POS tag. In normal tokens, you can 
 use `negate_pos="yes"` as a negation operator, like here:
 
-
     <token negate_pos="yes" postag="A"/>
-
 
 ### How to fix:
 
-
-* Test your regular expressions. There is a great plugin for Eclipse 
-  called 
-  [QuickREx](http://www.bastian-bergerhoff.com/eclipse/features/web/QuickREx/toc.html) 
-  and other similar tools.
+* Test your regular expressions, e.g. using <https://regex101.com/> and other
+  similar tools.
 * Look out for spaces!
 * Try to put into examples the forms matched by many different parts of 
   the regular expression so that they will be automatically tested.
@@ -78,8 +63,7 @@ use `negate_pos="yes"` as a negation operator, like here:
 ## Badly encoded exceptions
 
 Exceptions in the rules can remain untested if they are not accompanied 
-by `example` marked as `correct`. Otherwise, you don't really know if 
-the exception does work.
+by `example`. Otherwise, you don't really know if the exception does work.
 
 ### How to fix:
 

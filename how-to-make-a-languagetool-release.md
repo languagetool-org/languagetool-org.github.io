@@ -84,7 +84,9 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
     * adapt the pom.xml (set the new "orglanguagetool-xyz" as a repo and update the dependencies)
     * clean local m2 repo
     * run `mvn clean package`
-    * unzip the uberjar and replace language-module.properties in META-INF with the language-module.properties from languagetool-standalone (this is needed because with the original .properties file, all languages except one get lost)
+    * unzip the uberjar and replace `META-INF/org/langetool/language-module.properties` with the
+      `language-module.properties` from languagetool-standalone (this is needed because with the original
+       file, all languages except one get lost)
     * re-zip the directory and run the JAR, it should check a tiny English text fragment with all languages
   * if okay, click "Release" (requires a refresh) - note that once released, the artifacts cannot be deleted or modified! It may take a few hours before the artifacts actually become available.
 * set a tag in git: `git tag -a v**x.y** -m 'version **x.y**'`
@@ -95,11 +97,11 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * check out the new tag from git and run `mvn clean package`
 * copy the stand-alone LT to a path with a space and test some sentences
 * upload to the server:
-  * scp LanguageTool-**4.x**.zip LanguageTool-**4.x**.oxt LanguageTool/CHANGES.md LanguageTool/README.md languagetool@languagetool.org:repo/public/download/
+  * `scp LanguageTool-5.x.zip LanguageTool-5.x.oxt LanguageTool/CHANGES.md LanguageTool/README.md languagetool@languagetool.org:repo/public/download/`
 
 ## After the Release
 
-* `git checkout v**x.y**-release`
+* `git checkout vx.y-release`
 * Set the new version (x.y-SNAPSHOT) in these files:
   * JLanguageTool.VERSION in JLanguageTool.java
   * manifest.xml

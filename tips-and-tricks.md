@@ -2,14 +2,9 @@
 
 There are many simple but non-obvious ways how you can build 
 error-checking rules. Here are some tips. As a beginner, you should 
-first read <http://www.languagetool.org/development/.>  
-
+first read [the overview](/development-overview).  
 
 ## Misc
-
-### Stay updated on this LanguageTool Wiki
-
-Track changes with RSS by adding this to your RSS feeds: <http://languagetool.wikidot.com/feed/site-changes.xml>   
 
 ### Finding words in Context
 
@@ -24,14 +19,10 @@ words etc.
 Also consider using the [Corpus of Contemporary American English 
 (COCA)](http://corpus.byu.edu/coca/) to see the context of the words in 
 your rule. On the COCA website, set display to KWIC and then search for 
-a word. It will be displayed with its neighbour words like this:
-
-[[image coca.png]]
-
-Note that the COCA website will ask you to register after some queries.
+a word. It will be displayed with its neighbour words. Note that the COCA
+website will ask you to register after some queries.
 
 ## Ways to Use LanguageTool
-
 
 ### Tagging a corpus using LanguageTool
 
@@ -61,7 +52,7 @@ you must supply `-` as the filename.
 
 You can switch on automatic application of suggestions by using 
 `--apply` (or `-a` for short) on the command-line. Note: only the 
-first suggestion is implied, when the rule has more than one 
+first suggestion is applied if the rule has more than one 
 suggestion. Make sure that you only select the rules which are reliable 
 enough to allow automatic correction (use the switch `-e` to select the 
 rules you want to use, or `-d` to disable some of the rules). The 
@@ -74,7 +65,7 @@ multiple suggestions create an error that another rule could correct,
 you can simply run LT on the output from the previous check.
 
 The output from LanguageTool will be the corrected text (without any 
-other messages). You can still get verbose output on STDERR (by 
+other messages). You can still get verbose output on `STDERR` (by 
 specifying `-v`).
 
 This mode of operation can be used to clean a corpus before running 
@@ -91,7 +82,7 @@ If you want to get all the matches for a given file, just run
 
 
 You can pipe this to a file (add `> file` at the end of the line). To 
-get part-of-speech tags as assigned by LanguageTool, simply write:
+get part-of-speech tags as assigned by LanguageTool, use:
 
 
     java -jar languagetool-commandline.jar -l <language> -c <encoding> <file> >results.txt 2>tags.txt
@@ -100,7 +91,7 @@ get part-of-speech tags as assigned by LanguageTool, simply write:
 You will get two files: `results.txt` with rule matches (and you can 
 sort it using the stats.awk script mentioned below) and `tags.txt` that 
 will contain all tags. Note: some operating systems allow pointing both 
-std-err (2>) and std-in (>) to the same file.
+std-err (`2>`) and std-in (`>`) to the same file.
 
 
 ## Writing Error Detection Rules
@@ -126,7 +117,7 @@ something like the following to the top of the file after
 ```
 
 If your `grammar.xml` already has a `<!DOCTYPE rules [...]>` section, 
-just add `<!ENTITY UserRules SYSTEM "file:/*path/to/user-rules.xml">` 
+just add `<!ENTITY UserRules SYSTEM "file:/path/to/user-rules.xml">` 
 to it.
 
 You will also need to add this entity to the `<rules>...</rules>` part 
@@ -138,15 +129,15 @@ default="off">`):
 
 LanguageTool will then, additionally, use the rules from 
 `/path/to/user-rules.xml`. The URL doesn't have to point to a local 
-file, you can use `http:*` as well. Starting with LanguageTool 2.7 it's 
+file, you can use `http:` as well. It's also 
 possible to access password-protected rule files like this: 
-`<http://user:password@example.org/path/user-rules.xml>  `. Note that 
+`http://user:password@example.org/path/user-rules.xml`. Note that 
 this feature won't work if your instance of LanguageTool is running 
 with a Java security manager that forbids `Authenticator.setDefault()`.
 
 In the stand-alone GUI, to get details about an error, right-click on 
-an error and click 'More'. The message includes a link 'Rule details on 
-community.languagetool.org'. The link is not applicable to external 
+an error and click "More". The message includes a link "Rule details on 
+community.languagetool.org". The link is not applicable to external 
 rules. To remove the link from external rules, add `external="yes"` to 
 each category.
 
@@ -159,62 +150,6 @@ parameters)
 
 
     java -jar languagetool-commandline.jar -l <language> -c <encoding> <filename.txt> > <output_file.txt>
-
-
-However, in such a case it's even more convenient to have the rule 
-matches sorted by their hit frequency to see which ones should be 
-corrected first. There is a 
-[http://languagetool.cvs.sourceforge.net/viewvc/*checkout*/languagetool/JLanguageTool/src/dev/tools/stats.awk 
-simple AWK script] you can use:
-
-
-    gawk -f stats.awk <output_file.txt> > <sorted_file.txt>
-
-
-You will get sorted matches, like those:
-
-
-    Rule ID: HE_VERB_AGR[7], matches: 8
-    
-    Message: The proper name in singular (Government) must be used with a third-person verb: 'inventories'.
-    Suggestion: inventories
-    ...o the Federal Government inventory on and after July 1, 196...
-                                ^^^^^^^^^                         
-    
-    Message: The proper name in singular (Man) must be used with a third-person verb: 'hoaxes'.
-    Suggestion: hoaxes
-    ...ator of the Piltdown Man hoax of 1912, creating the co...
-                                ^^^^                         
-    
-    Message: The proper name in singular (Pope) must be used with a third-person verb: 'is'.
-    Suggestion: is
-    ...s Taggart and Betty Pope are from wealthy families. C...
-                                ^^^                         
-    
-    Message: The proper name in singular (Earth) must be used with a third-person verb: 'orbits'.
-    Suggestion: orbits
-    ...M in an elliptical Earth orbit with an apogee of 4600 m...
-                                ^^^^^                         
-    
-    Message: The proper name in singular (River) must be used with a third-person verb: 'sections'.
-    Suggestion: sections
-    ...t where the Cunene River section of the border with Namib...
-                                ^^^^^^^                         
-    
-    Message: The proper name in singular (Wright) must be used with a third-person verb: 'designs'.
-    Suggestion: designs
-    ... that Frank Lloyd Wright design the architectural models...
-                                ^^^^^^                         
-    
-    Message: The proper name in singular (Korea) must be used with a third-person verb: 'continues'.
-    Suggestion: continues
-    ...e. Japan and South Korea continue to dominate in the area ...
-                                ^^^^^^^^                         
-    
-    Message: The proper name in singular (Set) must be used with a third-person verb: 'fires'.
-    Suggestion: fires
-    ...iots in Los Angeles. Set fire to the camp, and kill th...
-
 
 
 ### Various forms of negation
@@ -272,13 +207,9 @@ a word. In LanguageTool, this is done implicitly in two ways:
 In other words, you cannot correctly remove a single word preceded by a 
 whitespace if you cannot specify a preceding or following token. This 
 happens only if the word to be deleted appears at the end of the 
-skipped block and at the end of the sentence at the same time. We 
-haven't found any evidence that a special feature for deleting the last 
-token in the sentence would be important yet (nobody complained) but if 
-you need the feature, it will be implemented.
+skipped block and at the end of the sentence at the same time.
 
 ### Testing if the word is preceded with a whitespace
-
 
 You can test whether a token is preceded with some whitespace 
 characters (spaces, new lines etc.):
@@ -289,7 +220,7 @@ characters (spaces, new lines etc.):
     <token spacebefore="no" regexp="yes">"|'</token>
 ```
 
-The above tokens match only "A", 'A' or "a' (but not " A ").
+The above tokens match only `"A"`, `'A'` or `"a'` (but not `" A "`).
 
 ### Changing the case of matched word
 
@@ -313,8 +244,8 @@ added as plain text. If you want to suppress the default behavior, you
 need to use the `match` element. If you're not just changing the case 
 but also changing the word, then you can use the following workaround: 
 make `match` point at any token (it doesn't matter as long it's in the 
-pattern) and use regular expression .* and replace it with the word you 
-want to actually use. And add case_conversion:
+pattern) and use regular expression `.*` and replace it with the word you 
+want to actually use. And add `case_conversion`:
 
 ```xml
     <pattern case_sensitive="yes">
@@ -330,7 +261,7 @@ want to actually use. And add case_conversion:
 LT automatically adjusts the case for tokens that are uppercase because 
 they were at the beginning of the sentence. But there are also cases 
 when you need a fairly complex process. For example, the incorrect 
-Breton expression --Da Brest--  should be changed to vBrest or Vrest. 
+Breton expression "Da Brest"  should be changed to "vBrest" or "Vrest". 
 You can do this using the following code:
 
 ```xml
@@ -393,7 +324,7 @@ Run tests on your grammar rules. There are three ways:
   `testrules.sh` (Linux/Unix)
 * Using maven (`mvn clean test`).
 
-For beginners, we recommend testrules.sh/bat method. It tests rules 
+For beginners, we recommend the testrules.sh/bat method. It tests rules 
 against examples and checks if they're valid XML. During development of 
 rules, you'll find how many times there are stupid mistakes you 
 wouldn't see without tests. If you want to run the tests only for your 
@@ -411,24 +342,24 @@ The above command runs only tests for Russian.
 If your suggestions are not explicit strings, but special codes or 
 synthesized words, it's recommended to test them. The easiest way is to 
 use the *correction* attribute of the **incorrect** example (in correct 
-examples, correction is silently ignored as it makes no sense in it).
+examples, correction makes no sense).
 
 For example:
 
 ```xml
-    <example correction="back and forth" type="incorrect">How to move <marker>back and fourth</marker> from linux to xmb?</example>
+ <example correction="back and forth" type="incorrect">How to move <marker>back and fourth</marker> from linux to xmb?</example>
 ```
 
 If the rule doesn't supply "back and forth" as a suggestion for this 
 sentence, you will get an error during the standard rule test. Note: 
-you don't supply \1 or anything like that in the correction attribute: 
+you don't supply `\1` or anything like that in the correction attribute: 
 you supply the string that would be generated based on the suggestion 
 element you supplied in the rule.
 
-Multiple suggestions are joined with "|":
+Multiple suggestions are joined using `|`:
 
 ```xml
-    <example correction="back and forth|to and fro" type="incorrect">How to move <marker>back and fourth</marker>?</example>
+ <example correction="back and forth|to and fro" type="incorrect">How to move <marker>back and fourth</marker>?</example>
 ```
 
 ### Warn for misused word, except in correct context
@@ -436,7 +367,7 @@ Multiple suggestions are joined with "|":
 Some (correct) words sound alike, but have a very different meaning. 
 These are often confused. It is possible to warn for confusion at every 
 occurrence of such a word, but it is better to suppress the warning 
-when the 'context' suggests the word is used properly.
+when the context suggests the word is used properly.
 
 Here is an example in Dutch, showing the words 'aanvaart' (= collides 
 while sailing) and 'aanvaardt' (=accepts). Aanvaart is the most common 
@@ -456,8 +387,8 @@ like boot (=boat) and haven (=harbour) are in the sentence.
     	<message>Wanneer het botsing met boten is, is juist: <suggestion>aanvaardt</suggestion> of <suggestion>aanvaard</suggestion></message>
     	<short>aanvaardt? (ID2880)</short>
     	<example type="incorrect">Hij <marker>aanvaart</marker> de overeenkomst.</example>
-    	<example type="correct">Als hij de boot toch weer <marker>aanvaart</marker>, heeft hij schade.</example>
-    	<example type="correct">Als hij toch weer <marker>aanvaart</marker> tegen de boot, heeft hij schade.</example>
+    	<example>Als hij de boot toch weer <marker>aanvaart</marker>, heeft hij schade.</example>
+    	<example>Als hij toch weer <marker>aanvaart</marker> tegen de boot, heeft hij schade.</example>
     </rule>
 ```
 
@@ -468,9 +399,8 @@ Editor](http://www.xmlmind.com/xmleditor/) (xxe) in a WYSYWIM (what you
 see is what you mean) mode. The program is available in a free version 
 for many platforms (as it's developed in Java) though it's not open 
 source. It offers spell-checking and validation, and we have developed 
-[http://languagetool.cvs.sourceforge.net/viewvc/*checkout*/languagetool/JLanguageTool/src/rules/rules.css 
-special CSS files] to make editing files easier. Put these in the rules 
-directory.
+[special CSS files](https://raw.githubusercontent.com/languagetool-org/languagetool/master/languagetool-core/src/main/resources/org/languagetool/rules/rules.css)
+to make editing files easier. Put these in the rules directory.
 
 Simply open the file in xxe, and it should display in a form input 
 mode. It is recommended that you uncheck **Options** -> **Preferences** 
@@ -499,9 +429,9 @@ following:
 ```
 
 Why this works? The answer is simple, it first matches all tokens that 
-have a POS tag *postag1*, and then checks if it has any other tag other 
-than *postag1*, using the exception tag. The same method works for more 
-POS tags -- you can check if the token has only one of two POS tags 
+have a POS tag `postag1`, and then checks if it has any other tag other 
+than `postag1`, using the exception tag. The same method works for more 
+POS tags - you can check if the token has only one of two POS tags 
 (and not any other):
 
 
@@ -539,7 +469,7 @@ is to simply add words to
 `org/languagetool/resource/XX/added.txt` (`XX` being a language code). 
 Add words to that file in the form `fullform lemma pos_tag`, separated 
 by tabs, for example: `children child NNS` (note than tabs are not 
-displayed here in the Wiki). The words you've added will be recognized 
+displayed here). The words you've added will be recognized 
 by LanguageTool after a restart.
 
 #### Special POS tags
@@ -547,13 +477,13 @@ by LanguageTool after a restart.
 For all languages, there are special part-of-speech tags defined beside 
 the tag set for the language. These are:
 
-1. SENT_START that matches the sentence start
-2. SENT_END that matches the sentence end
-3. UNKNOWN that matches a token that has no part-of-speech token assigned by the tagger
+1. `SENT_START` that matches the sentence start
+2. `SENT_END` that matches the sentence end
+3. `UNKNOWN` that matches a token that has no part-of-speech token assigned by the tagger
 
 #### Suggesting the word with the same POS tag
 
-For some languages (those that have a *_synth.dict file in their 
+For some languages (those that have a `*_synth.dict` file in their 
 resources directory) it's possible to inflect the words being 
 suggested. However, a nice ability is to inflect the word just the way 
 the matched token is inflected. Here's how it's done:
@@ -561,29 +491,29 @@ the matched token is inflected. Here's how it's done:
 
 ```xml
     <pattern>
-    	<token>word</token>
+      <token>word</token>
     </pattern>
     <message>Here's another word: 
-    	<suggestion>
-    		<match no="1" postag="POS.*" postag_regexp="yes" >Wort</match>
-    	</suggestion>
+      <suggestion>
+        <match no="1" postag="POS.*" postag_regexp="yes" >Wort</match>
+      </suggestion>
     </message>
 ```
 
-Note the *postag* attribute - it allows to inflect Wort the same way 
+Note the `postag` attribute - it allows to inflect "Wort" the same way 
 "word" is inflected; without it, it's impossible to choose the right 
 inflection pattern for tokens with multiple readings. But even if there 
 is only one reading, the default logic "replace the word with saving 
 its grammatical form" works only when the *postag* is selected as above 
 (not necessarily as a regular expression, but it makes things easier). 
-Wort must be the lemma (the base form). Note that `POS.*` above is just 
+"Wort" must be the lemma (the base form). Note that `POS.*` above is just 
 a placeholder for a real POS tag.
 
 However, if the POS tag specified in the *postag* attribute does 
 **not** match the original POS tag, the same rule will generate all 
 forms that match just this `POS.*`, disregarding the original POS tag. 
 So the filtering action happens only when there is a match between the 
-*postag* attribute value and the POS tag of the word matched. 
+`postag` attribute value and the POS tag of the word matched. 
 
 Remember to test if the proposed corrections are what you meant by 
 using the *correction* attribute in the example marked as *incorrect*.
@@ -608,13 +538,13 @@ equal to "jj". There is an almost equivalent notation in LanguageTool:
 Note that you add negation, as exception already implies negation. This 
 way, you get a positive condition (double-negation elimination). 
 Another note: the POS tag is specified as a disjunction in the above 
-example. This is because any token with a POS tag "nn" would be matched 
+example. This is because any token with a POS tag `nn` would be matched 
 by the exception, so the end token of the pattern would never be found. 
 To make sure that the negated POS exception is actually working 
 properly you need to use the regular expression disjunction and 
 include:
 
-- the SENT_END POS tag (only if the last token may be the last one in the sentence)
+- the `SENT_END` POS tag (only if the last token may be the last one in the sentence)
 - the POS tag of the end token of the skipping pattern ("nn" in this example)
 - the POS tag you actually want to allow in the skipped sequence ("jj" in this example).
 
@@ -628,7 +558,7 @@ is equivalent to
     <token postag="jj" skip="-1"><exception negate_pos="yes" scope="next" postag="jj"/></token>
 ```
 
-The only missing operator is "*". You cannot have a token that is 
+The only missing operator is `*`. You cannot have a token that is 
 matched zero times. In such a case, you have to write two instances of 
 the rule: one without the asterisked token, and another with the 
-notation equivalent to the "+".
+notation equivalent to the `+`.
