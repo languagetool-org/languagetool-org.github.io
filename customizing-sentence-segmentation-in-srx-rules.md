@@ -20,15 +20,16 @@ use [Pangolin](https://github.com/davidmason/Pangolin), which is a
 web-based editor using the same code as Ratel.
 
 Please use Ratel to maintain the same file formatting for easy version 
-control. Basically, there are two kinds of rules: * specifying the 
-sentence break * disallowing the sentence break (specifying the 
-exceptions to breaking rules).
+control. Basically, there are two kinds of rules:
+
+* specifying the sentence break
+* disallowing the sentence break (specifying the exceptions to breaking rules).
 
 No-break rules should precede the break rules in the file. All rules 
-have to parts:
+have two parts:
 
 * before the break
-* and after the break
+* after the break
 
 Both parts have to be specified using regular expressions. The library 
 we're using, `segment`, uses standard Java regular expressions which 
