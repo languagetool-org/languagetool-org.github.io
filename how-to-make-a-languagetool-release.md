@@ -158,4 +158,3 @@ script does this automatically every day.
 Not really related to a release, but should be done once in a while and the release is a good opportunity:
 
 * Download forum backup at <http://forum.languagetool.org/admin/backups>  
-* Send the spell checker words we collected from users to the maintainers of the spell dictionaries

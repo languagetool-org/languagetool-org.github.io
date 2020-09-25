@@ -25,7 +25,7 @@ The rule-based disambiguator may be used to add additional markup and
 simplify error-matching rules. For example, you can conditionally mark 
 up some punctuation, or phrases. It's also useful to mark up tokens 
 that you would otherwise with lengthy regular-expression based 
-disjunctions (`word1|word2...|wordn`, if these disjunctions appear in 
+disjunctions (`word1|word2...|wordn`), if these disjunctions appear in 
 multiple rules. This will be more efficient in terms of processing 
 speed and will make the rules a bit more understandable for a human 
 being.
@@ -76,14 +76,14 @@ where:
     }
 ```
 
-* in src/main/resources:
+* in `src/main/resources`:
 
 * Create file `org/languagetool/resource/xx/disambiguation.xml`
 * Populate it
  
 ## XML syntax 
 
-Rule based XML disambiguator uses a syntax very similar to [XML rules](http://wiki.languagetool.org/development-overview#toc4). For example:
+Rule based XML disambiguator uses a syntax very similar to [XML rules](/development-overview). For example:
 
 ```xml
     <rule name="determiner + verb/NN -> NN" id="DT_VB_NN">
@@ -184,7 +184,7 @@ filtering:
 
 It is exactly equivalent to the first example. Note that you cannot 
 specify a lemma this way, so you need the full syntax for this. Note 
-that if "his" is not tagged as "PRP$", this action is not executed. In 
+that if "his" is not tagged as `PRP$`, this action is not executed. In 
 other words, this action of the disambiguator presupposes that the new 
 tag matches POS tags already found in the given token. To add new 
 interpretations or replace ones, you need to use actions `add` or 
@@ -195,7 +195,7 @@ need to remove by using a special regular-expression with [negative
 lookahead](http://www.regular-expressions.info/lookaround.html), which 
 is a trick that enables negation in regular expression syntax. For 
 example, this rule will remove all interpretations that are equivalent 
-to PRP$ from the token "his":
+to `PRP$` from the token "his":
 
 
 ```xml
@@ -255,7 +255,7 @@ This would be equivalent to three rules (one for every token) like this:
 ## Using unification
 
 Before using unification, you need to define features and equivalences 
-of features, as described in [[[Using unification]]]. In the 
+of features, as described in [Using unification](/using-unification). In the 
 disambiguator file, you add the same unification block as in the rules 
 file (the syntax is the same). Then, in the rule, you can leave only 
 unified tokens, that is tokens that share the same features. For 
@@ -278,10 +278,10 @@ example, take a simple agreement rule from the Polish disambiguator:
 ```
 
 It uses unification on three features (defined earlier in the file): 
-`number`, `gender`, and `case`. Note that I am using a [[[Tips and 
-tricks#toc5|uniqueness trick ]]] to make sure that only words that are 
-marked only as adjectives or substantives are unified (otherwise the 
-rule is too greedy).
+`number`, `gender`, and `case`. Note that I am using a [Tips and 
+tricks](/tips-and-tricks#usage-of-part-of-speech-tags)
+to make sure that only words that are  marked only as adjectives or
+substantives are unified (otherwise the rule is too greedy).
 
 There are several important restrictions: You cannot use two unified 
 blocks in the disambiguator file; only one `unify` sequence per 
@@ -377,8 +377,8 @@ then *immunize* the tokens by using the action `immunize`:
 ```
 
 The above pattern will be immunized, but only for the word "Windows". 
-This way no XML rule will match it. Java rules can ignore immunization 
-- it's up to their authors to respect immunization.
+This way no XML rule will match it. Java rules can ignore immunization -
+it's up to their authors to respect immunization.
 
 ## Ignoring in spell-checking rules
 
@@ -448,7 +448,7 @@ doing?" should be left untouched, or unchanged by the disambiguation
 rule, contrary to the ambiguous sentence that will be processed. Using 
 `marker` element, we select the token that will be changed. The 
 attribute `inputform` specifies the input forms of the token, in a 
-word[lemma/POS] format. The `outputform` is of course what the 
+`word[lemma/POS]` format. The `outputform` is of course what the 
 disambiguation rule should produce.
 
 Note also that in verbose mode (`-v` on the commandline interface), LT 

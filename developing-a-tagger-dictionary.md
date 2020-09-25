@@ -4,7 +4,8 @@
 
 If you just want to add a few missing words and their part-of-speech 
 information to LanguageTool and don't care about the technical details, 
-please see "Adding words to the POS tagger" on [Tips and Tricks](/tips-and-tricks).
+please see "Adding words to the POS tagger" on
+[Tips and Tricks](/tips-and-tricks#adding-words-to-the-pos-tagger).
 
 ## Introduction
 
@@ -28,7 +29,7 @@ has enough time. However, we did test lexicon-based
 taggers/lemmatisers. For most languages, we use finite-state automata 
 encoding for them. This means that the plain text files are prepared 
 with a tool in the [morfologik-stemming 
-library](http://sourceforge.net/projects/morfologik/). The resulting 
+library](https://github.com/morfologik/morfologik-stemming). The resulting 
 binary files are then used at runtime from Java code by 
 morfologik-stemming library which is bundled with LanguageTool.
 
@@ -37,7 +38,6 @@ dictionary is about 190MB but as a binary file it gets squeezed into
 less than 3MB, plus the speed of the automaton tagger is really high.
 
 ## Exporting the data
-
 
 Run `DictionaryExporter` with the `*.dict` file as a parameter like this:
 
@@ -55,7 +55,7 @@ word, the base form, and its POS tag. It might look like this:
     boyarisms	boyarism	NNS
     boyars	boyar	NNS
 
-(for the meaning of the English tags, see [the documentation in our git 
+(For the meaning of the English tags, see [the documentation in our git 
 repository](https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt))
 
 ## Building the binary POS dictionary
@@ -65,7 +65,7 @@ Run `POSDictionaryBuilder` with two parameters:
 * A plain text dictionary with three tab-separated columns. Use the 
   same format that the `DictionaryExporter` writes: inflected form, base 
   form, POS tag. Note that the process needs an input file with UNIX line 
-  endings, so if your lexicon file comes from Windows, run dos2unix on it 
+  endings, so if your lexicon file comes from Windows, run `dos2unix` on it 
   before you proceed.
 * An `.info` file as described below.
 
