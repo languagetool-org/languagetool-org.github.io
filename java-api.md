@@ -2,8 +2,8 @@
 
 LanguageTool requires Java 8 or later.
 
-Get LanguageTool by downloading the *.zip package from the homepage or by adding a
-dependency like this to your [Maven](http://maven.apache.org/run-maven/) `pom.xml`:
+Get LanguageTool by adding a dependency like this to your
+[Maven](http://maven.apache.org/run-maven/) `pom.xml`:
 
 ```xml
     <dependency>
@@ -14,12 +14,12 @@ dependency like this to your [Maven](http://maven.apache.org/run-maven/) `pom.xm
 ```
 
 This will get the dependencies needed to check English. Use `language-de` as an
-artifactId for German etc. ([http://search.maven.org/#search|ga|1|languagetool show all artifacts]).
+`artifactId` for German etc. ([show all artifacts](http://search.maven.org/#search|ga|1|languagetool)).
 If you want to use all languages that LanguageTool supports, use `language-all`.
 
 If you don't use Maven (or a similar system), download the stand-alone ZIP instead.
 You will need the JAR files in the `libs` directory, the `org` directory, and the
-`META-INF` directory in your classpath. We strongly recommend using Maven or Gradle instead.
+`META-INF` directory in your classpath. We **strongly** recommend using Maven or Gradle instead.
 
 To use LanguageTool, you just need to create a `JLanguageTool` object and use
 that to check your text. Also see [the API documentation](http://languagetool.org/development/api/).
@@ -39,7 +39,7 @@ For example:
     }
 ```
 
-Use `activateLanguageModelRules()` to make use of [[[Finding errors using Big Data|word ngrams]]].
+Use `activateLanguageModelRules()` to make use of [Finding errors using Big Data](/finding-errors-using-n-gram-data).
 
 ## Checking Text with Markup
 
@@ -106,7 +106,7 @@ referenced in that file actually need to be in your classpath.
 Here's [an example project](https://github.com/pminos/languagetool-wrapper-demo-parent)
 that shows how to integrate LanguageTool in a Swing GUI.
 
-## Updating to new Releases
+## Updating to a new Release
 
 LanguageTool releases a new version every three months. While our API is generally
 quite stable, we sometimes make small changes that might affect your usage of the
@@ -123,7 +123,7 @@ has a suggestion which method to use instead of the deprecated one.
 If you prefer to use a [LanguageTool server](/http-server) to
 running LanguageTool in-process, use `org.languagetool.remote.RemoteLanguageTool`
 from the `languagetool-http-client` module. It takes care of sending the
-HTTP(S) request and parsing the XML result. For testing, feel free to
+HTTP(S) request and parsing the JSON result. For testing, feel free to
 use [our public HTTPS API server](/public-http-api). The advantage
 of using a remote server is lower CPU, memory, and disk usage for your
 local process, especially if you'd like to use

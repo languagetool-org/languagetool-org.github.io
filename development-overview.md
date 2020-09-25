@@ -35,7 +35,7 @@ how many rules LanguageTool already knows for your language):
 * LanguageTool will now check your text and suggest *bicycle* as a replacement
   for *foo bar*, because that's what the rule which we just added says.
 * Use our [online rule editor](http://community.languagetool.org/ruleEditor2/)
-  to write rules if you don't want to edit the XML directly
+  to write rules if you don't want to edit the XML directly.
 
 That's it! You have just added a new rule. Keep on reading to get a grasp on
 what the elements of a rule mean and how to build more complex rules or
@@ -56,12 +56,12 @@ How can you help?
 
 - Read this page (some features described here are quite advanced, so you won't need everything)
 - Start writing rules for the error you'd like LanguageTool to detect
-- See [our wiki](http://wiki.languagetool.org/) for more tips and tricks
+- See [our dev page](https://dev.languagetool.org/) for more tips and tricks
 - Post your rules to [the forum](https://forum.languagetool.org) or [open an issue](https://github.com/languagetool-org/languagetool/issues) so we can include them in LanguageTool
 - [Subscribe to our forum](https://forum.languagetool.org/t/how-to-use-this-forum-like-a-mailing-list/1067)
 
 If your language isn't supported yet, you can add it by following the
-[[[adding-a-new-language|documentation in our wiki]]].
+[documentation in our wiki](/adding-a-new-language).
 
 # Source code checkout
 
@@ -72,22 +72,20 @@ to use the latest development version, check out LanguageTool from
     git clone https://github.com/languagetool-org/languagetool.git
 
 Note that due to the embedded dictionaries our git repository is quite
-large (>300MB), so cloning might take some time. You can then build the
+large (>800MB), so cloning might take some time. You can then build the
 code with `mvn clean package` or just run the tests with `mvn clean test`.
 You need at least Java 8 for building LT. Maven's default memory settings
 are often too low, so you will probably need to set your environment
 variable `MAVEN_OPTS` to:
 
-    -Xmx1512m
+    -Xmx1550m
 
 After the build, the LibreOffice/OpenOffice extension can be found in
 `languagetool-office-extension/target` (named *.zip, rename it to *.oxt),
 the stand-alone version in `languagetool-standalone/target` (in a sub
-directory named e.g. `LanguageTool-5.0-SNAPSHOT/`, you cannot run
-the *.jar directly in the `target` directory).  See the
-[Usage page](http://languagetool.org/usage/) for information on how
-to use those files. See [[[maven-tips|Maven tips]]] for hints on
-how to build faster.
+directory named e.g. `LanguageTool-5.0-SNAPSHOT/` - you cannot run
+the *.jar directly in the `target` directory). See [Maven tips](/maven-tips)
+for hints on how to build faster.
 
 # Language checking process
 
@@ -97,7 +95,7 @@ This is what LanguageTool does when it analyzes a text for errors:
 2. Each sentence is split into words
 3. Each word is assigned its part-of-speech tag(s) (e.g. *cars* = plural
    noun, *talked* = simple past verb)
-4. The analyzed text is then matched against the built-in rules and
+4. The analyzed text is then matched against the built-in Java rules and
    against the rules loaded from the `grammar.xml` file
 
 The most important thing you need to keep in mind is that LanguageTool's
@@ -162,9 +160,7 @@ Here's an example of a complete rule that marks *bed English*, *bat attitude* et
           <token regexp="yes">English|attitude</token>
         </pattern>
         <message>Did you mean <suggestion>bad</suggestion>?</message>
-        <url>http://some-server.org/the-bed-bad-error</url>
-        <example type="correct">Sorry for my <marker>bad</marker> English.</example>
-        <example correction="bad" type="incorrect">Sorry for my <marker>bed</marker> English.</example>
+        <example correction="bad">Sorry for my <marker>bed</marker> English.</example>
     </rule>
 ```
 
@@ -195,17 +191,16 @@ A short description of the elements and their attributes:
   to the error in more detail. If it contains symbol `&`, then it needs to
   be escaped as `&amp;`.
 * element `short` (optional): A short description of the rule, displayed on
-  the right-click menu in the GUI and in Libre/OpenOffice.
-* element `example`: At least two examples with one correct and one incorrect
-  sentence. The sentence with the attribute `type="incorrect"` is supposed
+  the right-click menu in the GUI and in Libre/OpenOffice. It's supposed
+  to be similar to `message`, but shorter.
+* element `example`: At least one example with an incorrect
+  sentence. The sentence with the attribute `correction="..."` is supposed
   to be matched by this rule's `pattern`. The position of the error must be
   marked up with the sub-element `marker`. Use the `correction` attribute
-  to make the test also check whether the correction suggested by LanguageTool
+  to make the test check whether the correction suggested by LanguageTool
   is what you expect. These sentences are used by the automatic test cases
   that can be run using `sh testrules.sh` (on Linux), `testrules.bat`
-  (on Windows), or `mvn clean test` (for Java developers). The first correct
-  and the first incorrect example will be shown to the user in the stand-alone
-  version of LanguageTool if they look at the details of the error message.
+  (on Windows), or `mvn clean test` (for Java developers).
 
 ## Testing rules
 
