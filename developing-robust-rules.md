@@ -1,24 +1,27 @@
 # Developing Robust Rules
 
-In order to obtain robust, heavily tested rules there are some tips you can follow. Please feel free to improve these if you think you have a good idea. If you don't know how to develop rules yet, please see [our development documentation](http://www.languagetool.org/development/) first.
+In order to obtain robust, heavily tested rules there are some tips you
+can follow. Please feel free to improve these if you think you have
+a good idea. If you don't know how to develop rules yet, please see
+[our development documentation](/development-overview) first.
 
 # The Easy Way
 
 When developing rules, you should test them. The more you test them, 
 the better - but the following two ways to test rules are easy and 
-effective: using the rule editor on our homepage and testing a local 
+effective: using the rule editor on our website and testing a local 
 Wikipedia dump.
 
 ## The Rule Editor
 
 We offer the [rule editor on our 
-homepage](http://www.languagetool.org/ruleeditor/). You can use it to 
-create a simple rule, or you can switch it to "Advanced mode" to test 
-an existing rule. It will run your rule against a part of Wikipedia. It 
-might find real errors in Wikipedia, but its main use is to find false 
-alarms that your rule would trigger. If your rule matches text which is 
-actually correct, please try to make the rule more strict to avoid such 
-cases as far as possible.
+website](https://community.languagetool.org/ruleEditor2/). You can use it to 
+create a simple rule, or you can switch it to "Expert mode" to test 
+an existing rule. It will run your rule against a part of Wikipedia and
+other sources. It might find real errors in Wikipedia, but its main use
+is to find false alarms that your rule would trigger. If your rule matches
+text which is actually correct, please try to make the rule more strict
+to avoid such cases as far as possible.
 
 ## Local Plain Text Checks
 
@@ -29,38 +32,33 @@ it with the needed parameters, make changes to the LanguageTool rules
 and/or source code, and run the script again with the same parameters. 
 It will print a diff of the old versus the new results. This way you 
 can easily spot any newly introduced false alarms. All this requires is 
-a large plain text file that you can LanguageTool to run on (for 
-example from <http://tatoeba.org>  ).
+a large plain text file that you can run LanguageTool on (for 
+example from <http://tatoeba.org>).
 
 ## Local Wikipedia Checks
-
 
 To check your rule against a larger set of Wikipedia documents, 
 download the [LanguageTool-wikipedia-...-snapshot from our nightly 
 builds](http://www.languagetool.org/download/snapshots/?C=M;O=D). Unzip 
 it and run
 
-
     java -jar languagetool-wikipedia.jar
-
 
 This will display the usage. For now, `check-data` is the interesting 
 option for us. You can get its usage by calling
 
-
     java -jar languagetool-wikipedia.jar check-data
 
-
-Now download a dump from <http://dumps.wikimedia.org/dewiki/latest/>   
-- this is the URL for German dumps, simply replace "de" in the URL with 
+Now download a dump from <http://dumps.wikimedia.org/dewiki/latest/> -
+this is the URL for German dumps, replace `de` in the URL with 
 the code of the language you are interested in. The file we suggest to 
-use is "*de*wiki-latest-pages-articles.xml.bz2" (again, with your 
+use is `dewiki-latest-pages-articles.xml.bz2` (again, with your 
 language code instead of "de"). Unpack the dump.
 
-Now, to check a rule with ID `MY_RULE`, you can use a command similar to this:
+Now, to check a rule with ID `MY_RULE`, you can use a command similar
+to this:
 
     java -jar languagetool-wikipedia.jar check-data -l de -f dewiki-20141006-pages-articles1.xml -r MY_RULE --max-errors 100
-
 
 As always, replace `de` with the language code you are working with. 
 This command will check the articles from the dump against rule 
@@ -85,8 +83,8 @@ variety of genres, like mystery, love, science fiction, humour... It's
 advisable to gather also articles and other short text elements, in 
 order to perform quick level 1 tests.
 
-There are several sites with free books, like [*<http://librodot.com>   
-LibroDot.com]. You can find sample texts in plain text files, odf or 
+There are several sites with free books.
+You can find sample texts in plain text files, odf or 
 doc format files and in pdf format files. Working with plain text files 
 is easier, over all for test automation. Therefore I recommend 
 converting files to plain text.
@@ -98,12 +96,11 @@ included in many Gnu/Linux distros and also available for Windows.
 
 ## Use a separate rule file
 
-
 In LanguageTool you can find your language rule file in 
 `org/languagetool/rules/xx/grammar.xml`, whereas `xx` is a language 
-code like *en* or *de*. This is the default rule file and it is the 
+code like `en` or `de`. This is the default rule file and it is the 
 file LanguageTool will load when you run it. But it could come in handy 
-if you create a separate xml file containing rules under development. 
+if you create a separate XML file containing rules under development. 
 This practice brings to you some advantages:
 
 * You always work with a small set of rules, regardless the size of the language `grammar.xml` file.
@@ -143,11 +140,9 @@ and it would be very easy to see if it worked as expected. Of course
 using the "should not warn" file the output expected would be something 
 like
 
-
     Expected text language: Spanish
     Working on texts/dequeismos-bien.txt...
     Time: 1153ms for 25 sentences (21.7 sentences/sec)
-
 
 Sometimes, for some simple rules it isn't worth to make two files, one 
 file should be enough. Be sure to put the correct examples at the tail 
@@ -172,7 +167,6 @@ You can use these files as an input for LanguageTool command line.
 Tend to make it general. If the rule is complex enough, create a separate XML file containing the new XML rules.
 To do this, use the actual `grammar.xml` file as a template:
 
-
     <?xml version="1.0" encoding="UTF-8"?>
     <?xml-stylesheet type="text/xsl" href="../print.xsl" title="Pretty print" ?>
     <?xml-stylesheet type="text/css" href="../rules.css" title="Easy editing stylesheet" ?>
@@ -180,9 +174,7 @@ To do this, use the actual `grammar.xml` file as a template:
       <!-- Here goes the stuff -->
     </rules>
 
-
 and update language code. Let's use xx as a language code. I also like to move the file, so update the stylesheet paths if applicable. For example:
-
 
     <?xml version="1.0" encoding="UTF-8"?>
     <?xml-stylesheet type="text/xsl" href="rules/print.xsl" title="Pretty print" ?>
@@ -190,7 +182,6 @@ and update language code. Let's use xx as a language code. I also like to move t
     <rules lang="xx" xsi:noNamespaceSchemaLocation="../rules.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
       <!-- here goes the stuff -->
     </rules>
-
 
 Now save the file. In order to use it with `languagetool.jar`, use a 
 name like `rules-xx-Actual.xml`. Load this rule file from the "File" 
@@ -206,7 +197,7 @@ menu. Now you can work with your small rule set.
 
 Making a greedy rule set, testing it against the corpus collection and 
 saving the results is always a great idea. Later you can compare if the 
-fine tuned rule matched all the cases in such corpus.
+fine-tuned rule matched all the cases in such a corpus.
 
 > For example, if you want to implement the *"All to gather"* rule 
 (*"All together"*) in a first stage you can make a rule with the tokens 
@@ -251,7 +242,6 @@ wait less when correcting them.
 You can automate this with a very simple shell script. This sample is 
 based upon you have all the texts in a directory called `texts` and 
 they have the same prefix `lt-` (for *long text*):
-
 
     #!/bin/bash
     # testes-tl.sh
@@ -317,7 +307,6 @@ regular `grammar.xml` file and run the tests against the level 2 corpus
 (and also level 1 if you want to be more rigorous) You can use a script 
 like this:
 
-
     #!/bin/bash
     # testes-tl-all.sh
     # Complete test for Spanish grammar
@@ -332,9 +321,8 @@ like this:
     }
     scancorpus
 
-
 Here you can do some benchmarking if you saved the results prior to the 
-new rules integration. For example I have a corpus of roughly 1.7 
+new rules integration. For example, I have a corpus of roughly 1.7 
 million words and it takes for me about 14 minutes, with an average 
 speed of 100 sentences per second.
 
@@ -355,4 +343,3 @@ sure the quality is OK.
 * This development method is optional and of course you can use it at 
   your will, any step can be adapted to your personal needs and to your 
   language particularities.
-
