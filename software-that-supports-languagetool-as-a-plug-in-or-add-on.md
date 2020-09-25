@@ -21,10 +21,10 @@ might be unmaintained.
 * [LanguageTool for MS Word (Windows)](https://github.com/jaumeortola/languagetool-msword10-addin#english), old version
 * [LanguageTool interface to NSSpellServer](https://github.com/ramonpoca/LanguageToolNSServer) to support LanguageTool as a system-wide spellchecker in Mac OSX (experimental)
 * [LanguageTool plugin for OmegaT](https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/), a plugin that enables grammar-checking in computer-aided translation tool OmegaT
-* [LanguageTool for Oxygen XML editor](https://github.com/danielnaber/oxygen-languagetool-plugin) ([source](https://github.com/danielnaber/oxygen-languagetool-plugin))
+* [LanguageTool for Oxygen XML editor](https://github.com/danielnaber/oxygen-languagetool-plugin)
 * [LanguageTool Plugin for SDL Trados](https://appstore.sdl.com/language/app/languagetool-grammar-and-spell-checker/725/)
 * [LanguageTool for Sublime Text](https://packagecontrol.io/packages/LanguageTool) ([source](https://github.com/gtarawneh/languagetool-sublime))
-* [LanguageTool in TexStudio](http://texstudio.sourceforge.net/) uses a server to check (La)TeX files on the fly
+* [LanguageTool in TexStudio](http://texstudio.sourceforge.net/) uses a LT server to check (La)TeX files on the fly
 * [LanguageTool for Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-checker/) ([source](https://github.com/nuald/thb-gramchecker))
 * [LanguageTool for vim](http://www.vim.org/scripts/script.php?script_id=3223)
 * [LanguageTool for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=adamvoss.vscode-languagetool) ([source](https://github.com/adamvoss/vscode-languagetool))

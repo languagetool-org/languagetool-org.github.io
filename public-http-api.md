@@ -1,8 +1,8 @@
 # Public HTTP Proofreading API
 
 We offer a simple HTTPS REST-style service that anybody can use to check texts
-with [LanguageTool](https://languagetool.org). The only public endpoint is the following one
-- do not send your requests to any other endpoints you might find in the homepage's HTML code
+with [LanguageTool](https://languagetool.org). The only public endpoint is the
+following one - do not send your requests to any other endpoints you might find in the homepage's HTML code
 or elsewhere:
 
 ```
@@ -26,7 +26,7 @@ When using it, please keep the following rules in mind:
   deploy new versions, thus the behavior might change without any warning.
 * Read [our privacy policy](https://www.languagetool.org/privacy) to see how we handle
   your texts. You are responsible for giving your users information about how their data is handled.
-* **We expect you to add a link back to https://languagetool.org that's clearly visible.**
+* **We expect you to add a link back to <https://languagetool.org> that's clearly visible.**
 
 ### API documentation
 

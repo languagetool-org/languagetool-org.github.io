@@ -1,14 +1,12 @@
 # How to make a LanguageTool Release
 
 This is our internal documentation for how to make a new release. This 
-is only relevant to release managers. Also see [[[Roadmap]]].
+is only relevant to release managers. Also see [Roadmap](/roadmap).
 
 # How to enter Feature Freeze
 
-* languagetool-community-website:
-  * `./i18n_update.sh`
-* in `languagetool-standalone/scripts`:
-  * `./i18n_update.sh`
+* languagetool-community-website: `./i18n_update.sh`
+* in `languagetool`: `wti pull`
 * send an email to the forum about the code freeze:
   * planned release date
   * ask for [webtranslateit.com](https://webtranslateit.com) updates if needed
@@ -27,7 +25,7 @@ a script, where they can then be released on Maven Central. Note that
 this is independent of the *.zip and *.oxt files we release. If there's 
 a problem with the Sonatype-release for Maven Central (which is only 
 relevant for Java developers), we can always make the release of the 
-user artifacts (*.zip and *.oxt) and care about the other problems 
+user artifacts (`*.zip` and `*.oxt`) and care about the other problems 
 later.
 
 ## Preparation

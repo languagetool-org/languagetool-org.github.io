@@ -1,6 +1,6 @@
 # LanguageTool embedded HTTP Server
 
-LanguageTool comes with its own embedded HTTP/HTTPS server, so you can send a text
+LanguageTool comes with its own embedded HTTP server, so you can send a text
 to LanguageTool via HTTP and get the detected errors back as JSON. This embedded
 server can be started like this.
 
@@ -23,8 +23,8 @@ If this fails with an error saying that `java` cannot be found,
 [install Java 8 or later](https://java.com/en/download/help/download_options.xml) first.
 
 You can remove `--allow-origin "*"` if you do not want to use the server from the browser 
-add-on. The server URL to be used in our add-ons is `http://localhost:8081/v2`
-(visit the add-on's options by clicking the cog icon, then open "Experimental settings").
+add-on. You need to set this server in the browser add-on: visit the add-on's options
+by clicking the cog icon, then open "Experimental settings" and select "Local server".
 
 **NOTE:** This will give you a basic server missing some statistics rules.
 See [here](/finding-errors-using-n-gram-data) for how to set up those.
@@ -44,7 +44,7 @@ You can specify a file with advanced configuration options for the LT server
 with `--config`. Use `--help` to get information about the supported settings in that file.
 
 For security reasons, the server will not be accessible from other hosts. If 
-you want to run a server for remote users you will need to use the `--public` option. 
+you want to run a server for remote users, use the `--public` option. 
 
 ### Starting from stand-alone LT
 

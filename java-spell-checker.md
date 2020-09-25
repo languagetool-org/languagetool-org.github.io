@@ -4,7 +4,7 @@
 
 It's easy to use LanguageTool as a spell checker in your Java projects. While you can also use
 existing projects like [HunspellJNA](https://github.com/dren-dk/HunspellJNA) or
-[HunspellBridJ](https://github.com/thomas-joiner/HunspellBridJ) ([http://search.maven.org/#search|ga|1|a%3A%22hunspell-bridj%22 at Maven Central]),
+[HunspellBridJ](https://github.com/thomas-joiner/HunspellBridJ) ([at Maven Central](http://search.maven.org/#search|ga|1|a%3A%22hunspell-bridj%22)),
 LanguageTool has some advantages:
 
 1. It provides spell checking, but adding more powerful checks, including several grammar checks,
@@ -16,12 +16,13 @@ LanguageTool has some advantages:
    and thus also requires native libraries.
 3. Hunspell can be slow when it comes to generating suggestions for misspelled words. For languages where
    LanguageTool does not internally use Hunspell (see item 2), it's faster in generating suggestions.
-4. LanguageTool is available at Maven Central and comes with dictionaries included. For most languages,
-   those dictionaries are the Hunspell dictionaries also used for LibreOffice/OpenOffice.
+4. LanguageTool is [available at Maven Central](https://search.maven.org/search?q=languagetool) and
+   comes with dictionaries included. For most languages, those dictionaries are the Hunspell
+   dictionaries also used for LibreOffice/OpenOffice.
 
 ## How?
 
-See [[[Java API|our Java API page]]] for the Maven dependency you need to specify. Then, use code
+See [Java API](/java-api) for the Maven dependency you need to specify. Then, use code
 like this to find *only* spelling errors in a string:
 
 ```java
@@ -42,9 +43,9 @@ like this to find *only* spelling errors in a string:
 ```
 
 If you want more than just spell checking, just remove the first `for` loop to activate
-all rules. See [[[development-overview |our development documentation]]] for how
+all rules. See [our development documentation](/development-overview) for how
 those rules work. Need help? Just ask in [our forum](https://forum.languagetool.org).
 
 ## Extending the dictionary
 
-[[[hunspell-support|See this page]]]
+[See this page](/hunspell-support)
