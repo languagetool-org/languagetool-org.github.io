@@ -222,8 +222,8 @@ test all rules, so we recommend you use that during rule development.
 ## Avoiding the disambiguator
 
 If you want to match the original part-of-speech tags - those
-not modified by the [[[developing-a-disambiguator|disambiguator]]] -
-use the `raw_pos="yes"` on the `<pattern>`.
+not modified by the [disambiguator](/developing-a-disambiguator) -
+use `raw_pos="yes"` on the `<pattern>`.
 
 ## Regular Expressions
 
@@ -246,7 +246,7 @@ To avoid this, you'll need to specify boundaries with `\b`,
 for example `<regexp>\bhalf an our\b</regexp>`.
 
 Attributes:
-* `case_sensitive`: Like `<token>`s, `<regexp>` supports the `case_sensitive`
+* `case_sensitive`: Like `<token>`, `<regexp>` supports the `case_sensitive`
   attribute, and like those it is case-insensitive by default.
 * `type`: Supports the values `smart` (the default) and `exact`.
   `smart` interprets spaces in a way that `<regexp>half an our</regexp>`
@@ -298,7 +298,7 @@ integration of LT with other tools easier.
 
 Some rules can be optional, useful only in specific registers,
 or very sensitive. You can turn them off by default by using
-an attribute `default="off"`. The user can turn the rule on/off
+the attribute `default="off"`. The user can turn the rule on/off
 in the Options dialog box, and this setting is being saved
 in the configuration file.
 
@@ -329,13 +329,13 @@ Antipatterns may be added to a group of rules (and then they are
 valid for all rules in the group) and for particular rules in a group.
 
 Be aware that if there is `or` in the pattern this can also lead
-to problems with antipattern matching (as of LT 3.4).
+to problems with antipattern matching (as of LT 5.1).
 
 
 ## Min/Max
 
 To match a token optionally, use the `min` attribute with a value
-of ` 0`. For example, to match *a person* or *a nice person*:
+of `0`. For example, to match *a person* or *a nice person*:
 
 ```xml
     <token>a</token>
@@ -353,7 +353,7 @@ nice person*, or *a nice nice person*:
     <token>person</token>
 ```
 
-## <or>, <and>
+## `<or>`, `<and>`
 
 `or` can be used to match a token if one or both of two conditions are
 matched. This is sometimes a more compact alternative to writing more
@@ -380,7 +380,7 @@ For example, this would only match if a token has both *TAG_A* and *TAG_B*:
 
 ## Skip
 
-The skip attribute of the token element is used in two situations:
+The `skip` attribute of the token element is used in two situations:
 
 **Simulate a simple chunker** for languages with flexible word order,
 e.g., for matching errors of rection; we could for example skip possible
@@ -404,8 +404,8 @@ is equivalent to the pair of rules:
     <token>B</token>
 ```
 
-Using negative value, we can match until the *B* is found, no
-matter how many tokens are skipped. This cannot be easily encoded
+Using a negative value, we can match until the *B* is found, no
+matter how many tokens are skipped. This cannot easily be encoded
 using empty tokens as above because the sentence could be of any length.
 
 **Match coordinated words**, for example to match *both ... as well as* we could write:
@@ -421,7 +421,7 @@ Here the exception is applied only to the skipped tokens.
 
 The scope attribute of the exception is used to make the exception valid only
 for the token the exception is specified (`scope="current"`) or for skipped
-tokens (`scope="next"`). Default behavior is scope="current". Using scopes
+tokens (`scope="next"`). Default behavior is `scope="current"`. Using scopes
 is useful where several different exceptions should be applied to avoid false
 alarms. In some cases, it's useful to use `scope="previous"` in rules that
 already have `skip="-1"`. This way, you can set an exception against a single
@@ -439,7 +439,7 @@ Note that it's very hard to make such an exclusion otherwise.
 
 ## Variables
 
-In XML rules, you can refer to previously matched tokens in the pattern. For example:
+You can refer to previously matched tokens in the pattern. For example:
 
 ```xml
     <pattern>
@@ -454,7 +454,7 @@ The first match (matches are numbered from zero, so it's `<match no="0"/>`)
 is automatically inserted into the second token. Note that this rule will
 match sentences like:
 
-Nie kupiłem **ani** gruszek **ani** jabłek. Kupię to **lub** to **lub** tamto.
+> Nie kupiłem **ani** gruszek **ani** jabłek. Kupię to **lub** to **lub** tamto.
 
 A similar mechanism can be used in suggestions, however there are more
 features, and tokens are numbered from 1 (for compatibility with the
@@ -470,10 +470,8 @@ A more complicated example:
     <pattern>
       <token regexp="yes">^(\p{Lu}{2}+[i]*\p{Lu}+[\p{L}&amp;&amp;[^\p{Lu}]]{1,4}+)</token>
     </pattern>
-    <message>Prawdopodobny błąd zapisu odmiany;
-      skrótowce odmieniamy z dywizem:
-      <suggestion><match no="1"
-        regexp_match="^(\p{Lu}{2}+[i]*\p{Lu}+)([\p{L}&amp;&amp;[^\p{Lu}]]{1,4}+)"
+    <message>Prawdopodobny błąd zapisu odmiany; skrótowce odmieniamy z dywizem: <suggestion><match
+        no="1" regexp_match="^(\p{Lu}{2}+[i]*\p{Lu}+)([\p{L}&amp;&amp;[^\p{Lu}]]{1,4}+)"
         regexp_replace="$1-$2"/></suggestion>
     </message>
 ```
@@ -499,13 +497,12 @@ specified part of speech tag). For example:
      </marker>
      <token><exception postag="VBG"/></token>
     </pattern>
-    <message>
-      Possible agreement error -- use past participle here:
-      <suggestion><match no="2" postag="VBN"/></suggestion>.
+    <message>Possible agreement error - use past participle here: <suggestion><match
+        no="2" postag="VBN"/></suggestion>.
     </message>
 ```
 
-The above rule takes the second verb with a POS tag `VBN`, `VBP` or `VB`
+The above rule takes the second verb with a POS tag `VBD`, `VBP` or `VB`
 and displays its form with a POS tag `VBN` in the suggestion. You can
 also specify POS tags using regular expressions (`postag_regexp="yes"`)
 and replace POS tags – just like in the above example with acronyms.
@@ -542,8 +539,7 @@ You can however use the `match` element to copy POS tags alone
 but to do so, you must use the attribute `setpos="yes"`. All other
 attributes can be applied so that the POS could be converted
 appropriately. This can be useful for creating rules specifying
-grammatical agreement. Currently, such rules must be quite wordy,
-somewhat more terse syntax is in development.
+grammatical agreement.
 
 You can use `postag_replace` to require the suggestion to have
 only some of the same POS tags as the matching word. As always
@@ -559,7 +555,7 @@ and then refer to them using `$1`, `$2` etc:
 
 ## RuleFilter
 
-LanguageTool supports `RuleFilter`s as a way to make rules more powerful
+LanguageTool supports `RuleFilter` as a way to make rules more powerful
 by combining XML syntax and Java code. A `RuleFilter` takes a rule match
 from an XML pattern rule and filters it, i.e. it either keeps it as it
 is, modifies it, or discards it. In XML, the filter is used like this:
@@ -599,7 +595,7 @@ instead.
 
 # Translating the user interface
 
-We use [Transifex](https://www.transifex.com/projects/p/languagetool/) to translate our
+We use [WebTranslateIt](https://webtranslateit.com) to translate our
 property files. Updated translations are only copied to the LanguageTool source before a
 release, so if you need an early preview, say so on the LanguageTool forum and we'll
 update the files accordingly.
