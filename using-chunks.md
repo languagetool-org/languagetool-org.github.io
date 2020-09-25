@@ -2,7 +2,7 @@
 
 ### Example
 
-LanguageTool has a so-called chunker for English since version 2.3. It 
+LanguageTool has a so-called chunker for English. It 
 detects chunks like noun chunks or verb chunks (also known as noun 
 phrases and verb phrases). Consider, for example, this sentence:
 
@@ -14,7 +14,7 @@ It contains three noun phrases, printed in bold:
 
 Its analysis will look like this:
 
-She/**B-NP-singular|E-NP-singular**    
+> She/**B-NP-singular|E-NP-singular**    
 put/B-VP  
 the/**B-NP-plural**  
 big/**I-NP-plural**  
@@ -48,8 +48,7 @@ over the original chunks):
 * `singular`
 * `plural`
 
-To see how a text is chunked, use the menu item `File > Tag Text` in 
-the standalone version or use the `-v` parameter of the command line 
+To see how a text is chunked use the `-v` parameter of the command line 
 tool.
 
 ## Chunks in Pattern Rules
@@ -85,10 +84,10 @@ have to use that instead of our own (but only for chunking).
 
 Here's an overview of the steps that we run to get chunked text:
 
-1. Tokenizer (in EnglishChunker.java)
-2. POS Tagger (in EnglishChunker.java)
-3. Chunker (in EnglishChunker.java)
-4. our own filter (in EnglishChunkFilter.java) - this adds singular/plural information
+1. Tokenizer (in `EnglishChunker.java`)
+2. POS Tagger (in `EnglishChunker.java`)
+3. Chunker (in `EnglishChunker.java`)
+4. our own filter (in `EnglishChunkFilter.java`) - this adds singular/plural information
 
 OpenNLP has been trained on tagged text and uses statistics to get the 
 most probable result. **Thus OpenNLP will not be 100% correct all the 

@@ -2,15 +2,14 @@
 
 Falsche Wörter und solche, die vermutlich Tippfehler ähnlicher Wörter 
 sind. Nützlich zur Qualitätssicherung einer Rechtschreibprüfung. Siehe 
-auch [[[German correct Words|Liste korrekter Wörter]]].
+auch [Liste korrekter Wörter](/collections/german-correct-words).
 
 Siehe auch:
-* http://www.korrekturen.de/beliebte_fehler.html
-* http://de.wikipedia.org/wiki/Rechtschreibfehler
-* http://www.oberlehrer.org/naf.html
-* http://www.frank-roesler.de/dsdr.html
-* http://de.wikipedia.org/wiki/Wikipedia:Helferlein/Rechtschreibprüfung/Wortliste
-* http://www.uni-due.de/~gph120/PSPad/AutoCorr.txt
+* <http://www.korrekturen.de/beliebte_fehler.html>
+* <http://de.wikipedia.org/wiki/Rechtschreibfehler>
+* <http://www.oberlehrer.org/naf.html>
+* <http://www.frank-roesler.de/dsdr.html>
+* <http://de.wikipedia.org/wiki/Wikipedia:Helferlein/Rechtschreibprüfung/Wortliste>
 
 ```
 100-stel

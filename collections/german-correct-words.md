@@ -1,6 +1,6 @@
 # German Correct Words
 
-Korrekte Wörter als Ergänzung zur [Liste der falschen Wörter](/collections/german-wncorrect-words)]].
+Korrekte Wörter als Ergänzung zur [Liste der falschen Wörter](/collections/german-wncorrect-words).
 Nützlich zur Qualitätssicherung einer Rechtschreibprüfung.
 
 * 10-jährig
@@ -1171,4 +1171,4 @@ Nützlich zur Qualitätssicherung einer Rechtschreibprüfung.
 * davorstand
 
 Siehe auch 
-https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/de/src/main/resources/org/languagetool/resource/de/hunspell/ignore.txt
+<https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/de/src/main/resources/org/languagetool/resource/de/hunspell/ignore.txt>

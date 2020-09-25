@@ -1,27 +1,11 @@
 # Improving Spell Checking
 
-You can improve the spell checker without touching the dictionary. For 
-single words (no spaces), you can add your words to one of these files:
+You can improve the spell checker without touching the dictionary. Add your
+words to one of these files:
 
 * `spelling.txt`: words that the spell checker will ignore and use to generate corrections if someone types a similar word
 * `ignore.txt`: words that the spell checker will ignore but not use to generate corrections
 * `prohibited.txt`: words that should be considered incorrect even though the spell checker would accept them
-
-To make LanguageTool ignore phrases like "en gros" in spell checking, 
-you need to add a rule to `disambiguation.xml` like this:
-
-
-```xml
-    <rule name="en gros" id="EN_GROS">
-        <pattern>
-            <marker>
-                <token>en</token>
-                <token>gros</token>
-            </marker>
-        </pattern>
-        <disambig action="ignore_spelling"/>
-   </rule>
-```
 
 After making changes to any of the files listed above, you need to 
 restart LanguageTool for the change to become active. The rest of this 
@@ -29,29 +13,17 @@ page explains how to modify the internal spell checking dictionary.
 
 ## Hunspell
 
-LanguageTool supports spell checking using hunspell via JNA (thanks to 
-[hunspellJNA](http://dren.dk/hunspell.html)) since LanguageTool 1.8. 
-Unfortunately, the performance of creating suggestions is very low, as 
-you can see on the [report 
-attached](http://languagetool.wikidot.com/local--files/hunspell-support/raport.pdf). 
-The report is boring: almost all rules process around 1400 sentences 
-per second on my machine, while hunspell processes around 57 (!). The 
-main bottleneck is the suggestion mechanism - but when it is switched 
-off, hunspell processes around 770 sentences per second, which is still 
-twice as slow as other rules.
+LanguageTool supports spell checking using hunspell via BridJ (thanks to 
+[hunspell-java](https://gitlab.com/dumonts/hunspell-java)). 
+Unfortunately, the Hunspell performance of creating suggestions is very low.
 
-We could probably speed up the process by querying hunspell only for 
-the words outside the tagger dictionary (note: this really needs to 
-look at the raw dictionary for German, as the German tagger might 
-assign tags to misspelled compounds like "Arbeitsnehmer").
-
-# Morfologik
+## Morfologik
 
 Another speller, based on finite-state automata (FSA), was included 
 because of the speed problems with hunspell. The dictionary for the 
-speller is built in the way similar to [[[Developing a tagger 
-dictionary|tagger dictionaries]]]. All it requires is a list of valid 
-words in a language. Note: for Polish, the 3.5 million word list 
+speller is built in the way similar to [Developing a tagger 
+dictionary](/developing-a-tagger-dictionary). All it requires is a list of valid 
+words in a language. Example: for Polish, the 3.5 million word list 
 becomes less than 1MB file in the FSA format.
 
 ## For Users
@@ -120,7 +92,7 @@ The dictionary can be further configured using the `.info` file. Currently, the 
 * `fsa.dict.speller.ignore-diacritics` - if `true`, the speller will treat characters with diacritics as equivalent to the ones without them (hence, "ą" will be equivalent to "a" when generating spelling suggestions; the words without diacritics will *not* be accepted as correct);
 * `fsa.dict.speller.replacement-pairs` - pairs of sequences of characters that are treated as equivalent (useful for typical phonetic errors), which can be written in UTF-8, see also the example below. Note: the more replacement pairs you add, the slower finding suggestions will become;
 * `fsa.dict.speller.equivalent-chars` - pairs of individual characters to be treated as equivalent, see also the example below;
-* `fsa.dict.frequency-included` if set to true, the frequency information is included in the dictionary (see below);
+* `fsa.dict.frequency-included` if set to `true`, the frequency information is included in the dictionary (see below);
 * `fsa.dict.input-conversion` - conversion pairs used to replace non-standard characters before search in a speller dictionary. For example, common ligatures can be replaced here.
 * `fsa.dict.output-conversion` - output conversion pairs to replace non-standard characters before search in a speller dictionary.For example, standard characters can be replaced here into ligatures.
 * `fsa.dict.encoder` - use `NONE` (this replaces the obsolete `fsa.dict.uses-prefixes=false` and `fsa.dict.uses-infixes=false`)
@@ -130,14 +102,14 @@ The dictionary can be further configured using the `.info` file. Currently, the 
 * `fsa.dict.author` - dictionary author;
 * `fsa.dict.created` - creation date.
 
-An example of replacement pairs (just like REP in hunspell):
+An example of replacement pairs (just like `REP` in hunspell):
 
     fsa.dict.speller.replacement-pairs=rz ż, ż rz, ch h, h ch, ę en, en ę
 
 The speller will then suggest "brzuch" if you mistype "bżuch", or even 
 "bżuh".
 
-An example of equivalent chars (this is the same as MAP in hunspell):
+An example of equivalent chars (this is the same as `MAP` in hunspell):
 
     fsa.dict.speller.equivalent-chars=x ź, l ł, u ó, ó u
 
@@ -148,7 +120,7 @@ If you write "wex", the speller will be able to suggest "weź".
 Sorting the suggestions by frequency of their usage is very useful to 
 make our speller work in the expected way for the user.
 
-To include the frequency data, you can run our dictionary builder:
+To include the frequency data, you can run our dictionary builder like this:
 
 
     java -cp languagetool.jar org.languagetool.tools.SpellDictionaryBuilder -i dictionary.dump -info org/languagetool/resource/en/hunspell/en_US.info -freq en_us_wordlist.xml -o /tmp/output.dict
@@ -159,7 +131,7 @@ The frequency data files can be found
 In addition, one needs to include the flag 
 `fsa.dict.frequency-included`. The process of producing the dictionary 
 dump from the current version of the binary dictionary is described on 
-the page [[[Developing a tagger dictionary]]].
+the page [Developing a tagger dictionary](/developing-a-tagger-dictionary).
 
 Note that this approach is of limited value for languages with 
 compounds (like German): only words listed in the dictionary will get 

@@ -10,7 +10,7 @@ Here are some tips for new committers:
   to the commit message.
 * Be aware that every change to the code and the rules that don't break 
   the unit tests will automatically go live on 
-  [languagetool.org](https://languagetool.org) each day at roughly 23:30 
+  [languagetool.org](https://languagetool.org) each day at roughly 22:30 
   CET. As we have more than one server, changes are deployed only to a 
   fraction of the server for about 1-2 hours. During this time, you might 
   get inconsistent results.
@@ -20,21 +20,21 @@ Here are some tips for new committers:
   effects of rule modifications.
 * You might want to *watch* the LanguageTool projects at github (some 
   issues are discussed in the bug tracker and not on our forum)
-* Obey the guidelines for messages: 
-  <https://forum.languagetool.org/t/en-guidelines-rules-for-messages/5350.>  
+* Follow the guidelines for messages: 
+  <https://forum.languagetool.org/t/en-guidelines-rules-for-messages/5350>.  
 * Your commits should not break anything:
- * Get the latest updates from master via `git pull -r` (rebase). This 
-   will prevent the ugly merge commits you get when you just do `git 
-   pull`.
- * If you have issues with git, ask for help on our forum. Never use 
-   git's `--force` option.
- * For Java changes, consider the [style guide](/code-style).
- * Before committing, always run the JUnit tests (`mvn clean test` or 
-   `testrules.sh xx` / `testrules.bat xx` if you've only modified the XML 
-   rules, with `xx` being the language code). See [Maven tips](/maven-tips) for 
-   hints about how to speed this up.
- * Before you push your changes, you will want to check them. `gitk` 
-   works fine for that.
+  * Get the latest updates from master via `git pull -r` (rebase). This 
+    will prevent the ugly merge commits you get when you just do `git 
+    pull`.
+  * If you have issues with git, ask for help on our forum. Never use 
+    git's `--force` option.
+  * For Java changes, consider the [style guide](/code-style).
+  * Before committing, always run the JUnit tests (`mvn clean test` or 
+    `testrules.sh xx` / `testrules.bat xx` if you've only modified the XML 
+    rules, with `xx` being the language code). See [Maven tips](/maven-tips) for 
+    hints about how to speed this up.
+  * Before you push your changes, you will want to check them. `gitk` 
+    works fine for that.
 * Committing large files (e.g. binary files) will grow the git history, 
   and they can basically never be removed. So if you think you need to 
   commit large files, discuss this on the forum first.
@@ -45,10 +45,6 @@ Here are some tips for new committers:
   so please don't modify the translated MessageBundle files directly in git.
 * If your commit only affects one language, start your commit message 
   with `[xx]`, where `xx` is the language code (like `en` for English)
-* Don't create branches - if you think you need one, discuss this on 
-  the forum first (this refers to public branches in the official 
-  LanguageTool repository, of course you can create branches as you wish 
-  locally and on forks).
 * If your code involves a major change to some core functionality 
   (changing XML markup of the rules, adding a new feature, changing 
   important APIs), ask on the forum before you work on it.

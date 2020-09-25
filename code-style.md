@@ -9,7 +9,7 @@ settings](https://raw.githubusercontent.com/languagetool-org/languagetool/master
 * Do not use `final` for parameters or local variables, but write your 
   code as if there was a `final`, i.e. do not re-assign local variables. 
   Configure your IDE to help you with that.
-  * For IntellJ IDEA, the warnings (called "inspections") to activate 
+  * For IntelliJ IDEA, the warnings (called "inspections") to activate 
     are "Reuse of local variable" and "Assignment to method parameter". 
 * Use `final` for member variables if possible.
 * Try to make classes immutable. That means that an object, once 

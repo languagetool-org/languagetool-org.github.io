@@ -25,7 +25,7 @@ parts might be outdated.
 
 ## Performance
 
-Maven comes with some overhead. If it's too slow for you, these tips might help:
+These tips might help to make building faster:
 
 * **If you want to run only the tests for language "xy"** and still be 
   sure that everything this language module depends on is re-built, use 
@@ -34,19 +34,18 @@ Maven comes with some overhead. If it's too slow for you, these tips might help:
 * Don't use Maven that much: seriously, Maven is a build tool and most 
   development can be done without building the software. 
   * As a rule developer, use `testrules.sh` or `testrules.bat` to run 
-    our automatic tests of the grammar.xml rule files. Call 
+    our automatic tests of the `grammar.xml` rule files. Call 
     `./testrules.sh en` to run only the English tests etc., which is much 
     faster than running all tests.
   * As a Java developer, call `mvn clean test` to run all tests (this 
     also isn't fast, but that's not so much a Maven problem). Do all 
     other work directly in your IDE, so you won't need Maven for that. 
     This assumes that you have properly imported all LanguageTool 
-    projects once. All modern IDEs should be capable to do that or they 
-    should have some plugin for it.
+    projects once. All modern IDEs should be capable to do that.
 * Build but skip all unit tests: `mvn clean package -DskipTests`
 * If you build often you can comment out dependencies to languages not 
-  interesting to you in the top-level pom.xml and in 
-  languagetool-language-modules/all/pom.xml
+  interesting to you in the top-level `pom.xml` and in 
+  `languagetool-language-modules/all/pom.xml`.
 * Use `mvn -T 1C test` to run the tests with 1 thread per CPU core, or 
   `mvn -T 2` to use 2 threads.
 

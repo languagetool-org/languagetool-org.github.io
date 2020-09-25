@@ -71,11 +71,11 @@ To match tokens that share some feature, you simply write inside the
 
 ```xml
     <unify>
-    	<feature id="case_sensitivity">
-    		<type id="startupper"/>
-    	</feature>
-        <token/>
-        <token>York</token>
+      <feature id="case_sensitivity">
+        <type id="startupper"/>
+      </feature>
+      <token/>
+      <token>York</token>
     </unify>
 ```
 
@@ -104,8 +104,8 @@ following tokens will have the same features as the starting one:
 ```
 
 This pattern will match only two tokens which have the same gender and 
-number (masculine and singular). You can also skip specifying the types 
-- in this case, LanguageTool will try to match all possible values 
+number (masculine and singular). You can also skip specifying the types - 
+in this case, LanguageTool will try to match all possible values 
 defined as equivalences for the features. Note: you cannot skip 
 features.
 
