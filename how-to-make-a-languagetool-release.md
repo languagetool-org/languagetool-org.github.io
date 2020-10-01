@@ -89,8 +89,8 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
        file, all languages except one get lost)
     * re-zip the directory and run the JAR, it should check a tiny English text fragment with all languages
   * if okay, click "Release" (requires a refresh) - note that once released, the artifacts cannot be deleted or modified! It may take a few hours before the artifacts actually become available.
-* set a tag in git: `git tag -a v**x.y** -m 'version **x.y**'`
-* push the tag: `git push origin v**x.y**`
+* set a tag in git: `git tag -a vX.Y -m 'version X.Y'`
+* push the tag: `git push origin vX.Y`
 
 ## Releasing the ZIP and OXT for end-users
 
@@ -103,13 +103,13 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 * `git checkout vx.y-release`
 * Set the new version (x.y-SNAPSHOT) in these files:
-  * JLanguageTool.VERSION in JLanguageTool.java
-  * manifest.xml
-  * description.xml
+  * `JLanguageTool.VERSION` in `JLanguageTool.java`
+  * `manifest.xml`
+  * `description.xml`
   * property `languagetool.version` in top-level pom.xml (not `version`, the next command will take care of that)
   * all pom.xml files: `mvn versions:set`
   * commit
-* merge the branch back to trunk: `git checkout master; git merge v**x.y**-release`
+* merge the branch back to trunk: `git checkout master; git merge vX.Y-release`
 * update: `git pull` (not pull -r)
 * push your changes: `git push`
 
@@ -118,11 +118,11 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * update `welcome.blade.php`
 * link the release on the server:
   * `cd /home/languagetool/repo/public/download/`
-  * `rm LanguageTool-stable.oxt && ln -s LanguageTool-**4.X**.oxt LanguageTool-stable.oxt && rm LanguageTool-stable.zip && ln -s LanguageTool-**4.X**.zip LanguageTool-stable.zip`
+  * `rm LanguageTool-stable.oxt && ln -s LanguageTool-5.X.oxt LanguageTool-stable.oxt && rm LanguageTool-stable.zip && ln -s LanguageTool-5.X.zip LanguageTool-stable.zip`
 *  update [roadmap](/roadmap)  
 * enter the next feature freeze date in your personal calendar so you don't forget it
 * Javadoc
-  * `git checkout v**x.y**`
+  * `git checkout vX.Y`
   * run `mvn javadoc:aggregate`, then upload `target/site/apidocs/` to server at `/home/languagetool/repo/public/development/api` - note: this requires a local `mvn install -DskipTests`
   * `git checkout master`
 * set new version number in [Java API](/java-api)  
