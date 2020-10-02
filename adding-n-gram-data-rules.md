@@ -1,13 +1,13 @@
 # Adding ngram Data Rules
 
 This page describes how rule developers can make use of the n-gram data 
-to detect errors. As an introduction and for set-up, please see 
-[[[Finding errors using n-gram data]]] first.
+to detect errors. As an introduction and for set-up, please see
+[Finding errors using n-gram data](/finding-errors-using-n-gram-data) first.
 
 To add word pairs, simply add them to the 
 `resource/<languageCode>/confusion_sets.txt` file of your language. If 
 such a file doesn't exist for your language, [ask the 
-developers](https://languagetool.org/forum) to add one. However, you 
+developers](https://forumlanguagetool.org) to add one. However, you 
 need massive amounts of ngram data which is easily available only for 
 English, German, French, Spanish, Italian, Russian, Chinese, and 
 Hebrew. Here's an example line from that file:
@@ -70,7 +70,7 @@ probably false alarms. If they aren't, you should probably clean up the
 input. For English, we use a combination of Wikipedia and Tatoeba as 
 input. The fewer of the affected words appear in Wikipedia and Tatoeba, 
 the less meaningful the evaluation output will become. For English, we 
-try to use 1000 example sentences for each word.
+try to use at least 1000 example sentences for each word.
 
 ### Known Limitations
 

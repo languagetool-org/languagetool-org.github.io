@@ -1,4 +1,4 @@
-# Software That Supports LanguageTool as an Add-On
+# Software that Supports LanguageTool as an Add-On
 
 This software supports LanguageTool one way or the other. Please note that most of
 this software is not supported by the LanguageTool team.
