@@ -7,7 +7,7 @@ to detect errors. As an introduction and for set-up, please see
 To add word pairs, simply add them to the 
 `resource/<languageCode>/confusion_sets.txt` file of your language. If 
 such a file doesn't exist for your language, [ask the 
-developers](https://forumlanguagetool.org) to add one. However, you 
+developers](https://forum.languagetool.org) to add one. However, you 
 need massive amounts of ngram data which is easily available only for 
 English, German, French, Spanish, Italian, Russian, Chinese, and 
 Hebrew. Here's an example line from that file:
