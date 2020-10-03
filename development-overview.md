@@ -261,6 +261,22 @@ You cannot use `<regexp>` to look for specific POS tags. For that, you
 can always use the `regexp="yes"` attribute on a `<token>` and combine
 it with the `postag` or `postag_regexp` attribute.
 
+You cannot use `<antipattern>` with `<regexp>`, but starting with
+LanguageTool 5.2, you can use `RegexAntiPatternFilter` to avoid false
+alarm like this:
+
+```
+<regexp mark="1">(fo.) (bar)</regexp>
+<filter class="org.languagetool.rules.patterns.RegexAntiPatternFilter" args="antipatterns:fou"/>
+```
+
+This would match regexp `(fo.) (bar)`, but not `fou bar`. It’s somewhat limited,
+as the regex cannot contain spaces. There can be more than one regex like this:
+`args="antipatterns:regex1|regex2|regex3"` - i.e. the pipe (`|`) is used to
+delimit several regex. For the antipatttern to match, it’s enough if it
+partially overlaps the match of the `<regexp>`.
+
+
 ## Inflection
 
 The `inflected` attribute of the `token` element is used to match not
