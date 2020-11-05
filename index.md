@@ -5,6 +5,7 @@
 * [Software that supports LanguageTool as a Plug-in or Add-on](/software-that-supports-languagetool-as-a-plug-in-or-add-on)
 * [Checking (La)TeX with LanguageTool](/checking-la-tex-with-languagetool)
 * [Finding errors using n-gram data](/finding-errors-using-n-gram-data)
+* [List of supported languages](/languages)
 
 ## Using LanguageTool as a Developer
 
