@@ -54,7 +54,7 @@ later.
   * test the result in languagetool-wikipedia/target
 * `./build.sh languagetool-office-extension package -DskipTests`
   * test the result in languagetool-office-extension/target, rename the *zip to *oxt and install it in LibreOffice/OpenOffice, test with <https://github.com/languagetool-org/languagetool/blob/master/languagetool-office-extension/src/test/resources/manual-testing.odt?raw=true>  
-* run `org.languagetool.dev.RuleOverview` and paste the result to `languages.blade.php` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
+* run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
 * update CHANGES.md file
   * sort language changes alphabetically
   * make sure list of updated languages matches `languages.blade.php` (but that covers 6 months, so check manually)
