@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css?20200117" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="https://languagetool.org/js/jquery-3.2.1.min.js"></script>
     <script src="https://languagetool.org/js/jquery-ui.min.js"></script>
@@ -16,10 +17,12 @@
 </head>
 <body>
 
-<div id="app">
+<div class="container-lg px-3 my-5 markdown-body">
 
-    <div id="content">
-        <div id="textContent" class="content-section">
+    <h1><a href="https://dev.languagetool.org/">dev.languagetool.org</a></h1>
+
+</div>
+
             <div id="languagesOverview">
 
                 <div class="container">
@@ -101,22 +104,18 @@
                 </div>
 
             </div>
-        </div>
 
         <script type="text/javascript">
             $(document).ready(function() {
                 $(".sortable").tablesorter({
                     headers: {
-                        2: {
-                            sorter: false
-                        }
+                        2: { sorter: false },
+                        5: { sorter: false },
+                        8: { sorter: false }
                     }
                 });
             });
         </script>
-
-    </div>
-</div>
 
 </body>
 </html>
