@@ -48,8 +48,8 @@ you want to run a server for remote users, use the `--public` option.
 
 ### Starting from stand-alone LT
 
-Start the stand-alone application and configure it (*File -> Options...*) to listen
-on a port that is not used yet (the default port, 8081, should often be okay).
+Start the stand-alone application and configure it (*Text Checking -> Options... -> General*)
+to listen on a port that is not used yet (the default port, 8081, should often be okay).
 This way LanguageTool will also be available in server mode until you stop it. 
 
 ## HTTP Parameters and Result
