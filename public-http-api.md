@@ -12,7 +12,7 @@ https://languagetool.org/api/v2/check
 When using it, please keep the following rules in mind:
 
 * Do not send automated requests. For that, set up [your own instance of LanguageTool](http-server) or
-  get [an account for Enterprise use](https://languagetoolplus.com/#premium).
+  get [an account for Enterprise use](https://languagetool.org/proofreading-api).
 * Only send POST requests, not GET requests.
 * Access is currently limited to:
   * 20 requests per IP per minute (this is supposed to be a peak value - don't constantly send this many requests or we would have to block you)
