@@ -15,7 +15,7 @@ this software is not supported by the LanguageTool team.
 * [Grazie - Plugin for IntelliJ](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
 * [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
 * [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
-* [LanguageTool Linter for Visual Studio Code](https://github.com/davidlday/vscode-languagetool-linter)
+* [LanguageTool Linter for VSCode (Visual Studio Code)](https://github.com/davidlday/vscode-languagetool-linter)
 * [LanguageTool for MS Word](https://languagetool.org/#office), part of the LanguageTool Premium version
 * [LanguageTool for Oxygen XML editor](https://github.com/danielnaber/oxygen-languagetool-plugin)
 * [LanguageTool Plugin for SDL Trados](https://appstore.sdl.com/language/app/languagetool-grammar-and-spell-checker/725/)
@@ -24,7 +24,7 @@ this software is not supported by the LanguageTool team.
 * [LanguageTool for Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-checker/) ([source](https://github.com/nuald/thb-gramchecker))
 * [LanguageTool for vim](http://www.vim.org/scripts/script.php?script_id=3223)
 * [pyLanguagetool](https://github.com/Findus23/pyLanguagetool), command-line tool for using the JSON API
-* [LTEX Extension for VS Code](https://github.com/valentjn/vscode-ltex), Grammar/Spell Checker with LanguageTool and LATEX Support
+* [LTEX Extension for VS Code (Visual Studio Code)](https://github.com/valentjn/vscode-ltex), Grammar/Spell Checker with LanguageTool and LATEX Support
 * [vim-grammarous](https://github.com/rhysd/vim-grammarous)
 
 
