@@ -6,7 +6,7 @@ following one - do not send your requests to any other endpoints you might find 
 or elsewhere:
 
 ```
-https://languagetool.org/api/v2/check
+https://api.languagetool.org/v2/check
 ```
 
 When using it, please keep the following rules in mind:
