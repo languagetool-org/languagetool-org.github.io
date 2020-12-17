@@ -23,6 +23,7 @@
 * [How to avoid mistakes when writing rules](/how-to-avoid-mistakes-when-writing-rules)
 * [Developing robust rules](/developing-robust-rules)
 * [Using unification](/using-unification)
+* [Using the AdvancedSynthesizerFilter](/using-asf)
 * [Using chunks](/using-chunks)
 * [Usage of false friends rule](/usage-of-false-friends-rule)
 * [Error Collections](/error-collections)
