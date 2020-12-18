@@ -2,7 +2,7 @@
 
 The ASF is used to transfer the postags from one token to the lemma of another token. This allows for "nested matches" (putting matches inside matches within suggestions).
 
-* This can be used, for example, in combination with **[unification](https://dev.languagetool.org/using-unification)** to check the agreement in parallel structures.
+* This can be used, for example, in combination with **[unification](/using-unification)** to check the agreement in parallel structures.
 
 ## An easy example case
 
@@ -62,6 +62,7 @@ For example, you want a rule that finds and corrects both these errors:
     <marker>
       <token postag="VB[PZD]" postag_regexp="yes"/>
     </marker>
+    </unify>
   </pattern>
   <filter class="org.languagetool.rules.en.AdvancedSynthesizerFilter" args="lemma_from:5 lemma_select:V.* postag_from:3 postag_select:V.*"/>
   <message>The verb '\5' doesn't seem to match '\3'.</message>
