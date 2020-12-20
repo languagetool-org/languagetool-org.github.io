@@ -25,6 +25,7 @@ this software is not supported by the LanguageTool team.
 * [LanguageTool for vim](http://www.vim.org/scripts/script.php?script_id=3223)
 * [pyLanguagetool](https://github.com/Findus23/pyLanguagetool), command-line tool for using the JSON API
 * [LTEX Extension for VS Code (Visual Studio Code)](https://github.com/valentjn/vscode-ltex), Grammar/Spell Checker with LanguageTool and LATEX Support
+* [vim-LanguageTool](https://github.com/dpelle/vim-LanguageTool)
 * [vim-grammarous](https://github.com/rhysd/vim-grammarous)
 
 
