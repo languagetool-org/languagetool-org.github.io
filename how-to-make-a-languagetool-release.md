@@ -57,7 +57,7 @@ later.
 * run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
 * update CHANGES.md file
   * sort language changes alphabetically
-  * make sure list of updated languages matches `languages.blade.php` (but that covers 6 months, so check manually)
+  * make sure list of updated languages matches `languages.html` (but that covers 6 months, so check manually)
 * update README.md file
 * make sure there are no useless files (these would become part of the download file):
   * run `git status` and check the output under "untracked files"
@@ -115,7 +115,6 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 ## Update website
 
-* update `welcome.blade.php`
 * link the release on the server:
   * `cd /home/languagetool/repo/public/download/`
   * `rm LanguageTool-stable.oxt && ln -s LanguageTool-5.X.oxt LanguageTool-stable.oxt && rm LanguageTool-stable.zip && ln -s LanguageTool-5.X.zip LanguageTool-stable.zip`
