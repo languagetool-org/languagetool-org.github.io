@@ -22,7 +22,7 @@ You will need the JAR files in the `libs` directory, the `org` directory, and th
 `META-INF` directory in your classpath. We **strongly** recommend using Maven or Gradle instead.
 
 To use LanguageTool, you just need to create a `JLanguageTool` object and use
-that to check your text. Also see [the API documentation](http://languagetool.org/development/api/).
+that to check your text. Also see [the API documentation (Javadoc)](http://languagetool.org/development/api/).
 For example:
 
 ```java
