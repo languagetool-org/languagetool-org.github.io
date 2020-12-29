@@ -101,11 +101,6 @@ You either build that file yourself, adapted to the languages you support, or yo
 take it from the LanguageTool stand-alone distribution. Of course, the classes
 referenced in that file actually need to be in your classpath.
 
-## GUI
-
-Here's [an example project](https://github.com/pminos/languagetool-wrapper-demo-parent)
-that shows how to integrate LanguageTool in a Swing GUI.
-
 ## Updating to a new Release
 
 LanguageTool releases a new version every three months. While our API is generally
