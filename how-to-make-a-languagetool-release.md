@@ -97,7 +97,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * check out the new tag from git and run `mvn clean package`
 * copy the stand-alone LT to a path with a space and test some sentences
 * upload to the server:
-  * `scp LanguageTool-5.x.zip LanguageTool-5.x.oxt LanguageTool/CHANGES.md LanguageTool/README.md languagetool@languagetool.org:repo/public/download/`
+  * `scp LanguageTool-5.x.zip LanguageTool-5.x.oxt CHANGES.md README.md languagetool@ltp1:/home/languagetool/old-lt-org/download/`
 
 ## After the Release
 
@@ -116,7 +116,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 ## Update website
 
 * link the release on the server:
-  * `cd /home/languagetool/repo/public/download/`
+  * `cd /home/languagetool/old-lt-org/download`
   * `rm LanguageTool-stable.oxt && ln -s LanguageTool-5.X.oxt LanguageTool-stable.oxt && rm LanguageTool-stable.zip && ln -s LanguageTool-5.X.zip LanguageTool-stable.zip`
 *  update [roadmap](/roadmap)  
 * enter the next feature freeze date in your personal calendar so you don't forget it
