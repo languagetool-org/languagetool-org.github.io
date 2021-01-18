@@ -13,7 +13,7 @@ how many rules LanguageTool already knows for your language):
 * Open `LanguageTool-xx/org/languagetool/rules/en/grammar.xml` in your
   preferred text editor or in an XML editor, where "xx" stands for the
   version number of the package you downloaded.
-* Search for `name="Possible Typos"` (it's quite at the top), add this
+* Search for `name="Possible Typo"` (it's quite at the top), add this
   odd rule just after that `<category ...>` tag and save the file: 
 
 ```xml
