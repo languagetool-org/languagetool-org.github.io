@@ -21,7 +21,7 @@ this software is not supported by the LanguageTool team.
 * [LanguageTool Plugin for SDL Trados](https://appstore.sdl.com/language/app/languagetool-grammar-and-spell-checker/725/)
 * [LanguageTool for Sublime Text](https://packagecontrol.io/packages/LanguageTool) ([source](https://github.com/gtarawneh/languagetool-sublime))
 * [LanguageTool in TexStudio](http://texstudio.sourceforge.net/) uses a LT server to check (La)TeX files on the fly
-* [LanguageTool for Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-checker/) ([source](https://github.com/nuald/thb-gramchecker))
+* [LanguageTool for Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-checker/)
 * [LanguageTool for vim](http://www.vim.org/scripts/script.php?script_id=3223)
 * [pyLanguagetool](https://github.com/Findus23/pyLanguagetool), command-line tool for using the JSON API
 * [LTEX Extension for VS Code (Visual Studio Code)](https://github.com/valentjn/vscode-ltex), Grammar/Spell Checker with LanguageTool and LATEX Support

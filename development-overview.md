@@ -43,7 +43,7 @@ what the elements of a rule mean and how to build more complex rules or
 to build simple rules. Check out the
 [text analyzer](http://community.languagetool.org/analysis/index?lang=en) to
 get an understanding of how LanguageTool analyzes text internally.
-[Send us](http://languagetool.org/contact/) your rules so we can add
+[Send us](https://forum.languagetool.org/) your rules so we can add
 them to the next release of LanguageTool. 
 
 # Help wanted!

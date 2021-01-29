@@ -10,7 +10,7 @@ first read [the overview](/development-overview).
 
 For English, an easy way to get frequency data is the [Google Web 1T 
 5-Gram 
-Database](http://corpora.linguistik.uni-erlangen.de/demos/cgi-bin/Web1T5/Web1T5_freq.perl) 
+Database](https://corpora.linguistik.uni-erlangen.de/cgi-bin/demos/Web1T5/Web1T5_freq.perl) 
 - just search for `xyz *` if you're interested in which words follow 
 `xyz`, or `* xyz` if you're interested in which words precede it. You 
 can also search for `xyz * *` to get the most common two following 

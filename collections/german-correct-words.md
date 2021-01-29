@@ -1,6 +1,6 @@
 # German Correct Words
 
-Korrekte Wörter als Ergänzung zur [Liste der falschen Wörter](/collections/german-wncorrect-words).
+Korrekte Wörter als Ergänzung zur [Liste der falschen Wörter](/collections/german-incorrect-words).
 Nützlich zur Qualitätssicherung einer Rechtschreibprüfung.
 
 * 10-jährig
