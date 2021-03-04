@@ -25,6 +25,8 @@ If this fails with an error saying that `java` cannot be found,
 You can remove `--allow-origin "*"` if you do not want to use the server from the browser 
 add-on. You need to set this server in the browser add-on: visit the add-on's options
 by clicking the cog icon, then open "Experimental settings" and select "Local server".
+Note that Safari seems to require https, so you'd need to set up a reverse proxy and
+configure `https://localhost:8082/v2` as "Other server" ([source](https://forum.languagetool.org/t/languagetool-for-safari/5554/24?u=dnaber)).
 
 **NOTE:** This will give you a basic server missing some statistics rules.
 See [here](/finding-errors-using-n-gram-data) for how to set up those.
