@@ -30,7 +30,6 @@ later.
 
 ## Preparation
 
-* 5.3 only: remove `wagon-webdav` and `distributionManagement` from top-level pom.xml
 * make sure you're on Java 1.8 (we support Java 1.8 and being on Java 1.8 is the easiest way to ensure that): `java -version`
 * update local source: `git pull -r`
 * work in a local branch: `git checkout -b vX.Y-release`
