@@ -6,7 +6,7 @@ is only relevant to release managers. Also see [Roadmap](/roadmap).
 # How to enter Feature Freeze
 
 * languagetool-community-website: `./i18n_update.sh`
-* in `languagetool`: `wti pull`
+* in `languagetool`: `wti push` and `wti pull`
 * send an email to the forum about the code freeze:
   * planned release date
   * ask for [webtranslateit.com](https://webtranslateit.com) updates if needed
