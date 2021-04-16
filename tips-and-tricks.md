@@ -228,13 +228,13 @@ The above tokens match only `"A"`, `'A'` or `"a'` (but not `" A "`).
 When you want to change the case of a match, use 
 
 ```xml
-    <match no="1" case_conversion ="startupper"/>
+    <match no="1" case_conversion="startupper"/>
 ```
 
 or
 
 ```xml
-    <match no="1" case_conversion ="startlower"/>
+    <match no="1" case_conversion="startlower"/>
 ```
 
 `allupper` and `alllower` are supported, too.
