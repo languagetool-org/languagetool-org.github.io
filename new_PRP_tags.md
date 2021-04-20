@@ -14,6 +14,7 @@ Example:
 ```xml
 <token postag="PRP"><exception postag="PRP(_.*)?" postag_regexp="yes" negate_pos="yes"/>
 ```
+<br>**Also:** If you want to write an `exception` for `PRP` (or `PRP\$`), you might have to use `PRP(_.*)?` (or `PRP\$(_.*)?`) for the exception to work.
 
 ## Konwn bug and workaround
 
@@ -30,6 +31,8 @@ If you use the new postags to convert, e.g. an object pronoun to a possessive pr
 <match no="3" postag="PRP_O(.*)" postag_replace="PRP._P$1" postag_regexp="yes"/>
 ```
 → use a `.` instead of the contentious `$` sign. It's unambiguous in that position anyway.
+
+<br>**Rule of thumb:** Inexplicable build fails can go away if you replace `\$` or `$` with `.`.
 
 ## The new PRP tags
 
