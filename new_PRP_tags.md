@@ -93,6 +93,7 @@ their	they	PRP$_A3P
 ```
 
 ### Possessive pronouns (PRP$_P.*)
+
 ```
 mine	I	PRP$_P1S
 yours	you	PRP$_P2S
