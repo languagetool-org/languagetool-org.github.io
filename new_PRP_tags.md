@@ -16,7 +16,7 @@ Example:
 ```
 <br>**Also:** If you want to write an `exception` for `PRP` (or `PRP\$`), you might have to use `PRP(_.*)?` (or `PRP\$(_.*)?`) for the exception to work.
 
-## Konwn bug and workaround
+## Known bug and workaround
 
 If you use the new postags to convert, e.g. an object pronoun to a possessive pronoun, there is a conflict with the interpretation of the `$` no matter if you escape it or not.
 <br><br>**These two ways of writing it will make the test fail:**
