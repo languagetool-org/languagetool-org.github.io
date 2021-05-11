@@ -156,4 +156,5 @@ silently add these to the unified sequence, simply use:
 ```
 
 The comma will be then added without checking whether it agrees with 
-other tokens (frankly, it cannot, as commas are not inflected).
+other tokens (frankly, it cannot, as commas are not inflected).<br><br>
+**Beware:** The first token inside `<unify>` cannot be ignored using `<unify-ignore>` (this will cause bugs). In that case, open `<unify>` after the token that should be ignored anyway.
