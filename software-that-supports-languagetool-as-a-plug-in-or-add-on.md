@@ -4,7 +4,6 @@ This software supports LanguageTool one way or the other. **Please note that mos
 this software is not supported by the LanguageTool team.**
 
 * [linter-languagetool](https://atom.io/packages/linter-languagetool) for Atom ([source](https://github.com/wysiib/linter-languagetool))
-* [LanguageTool for Android](https://play.google.com/store/apps/details?id=org.softcatala.corrector) ([source](https://github.com/Softcatala/LanguageToolAndroidService))
 * [LanguageTool in CheckMate](http://www.opentag.com/okapi/wiki/index.php?title=CheckMate) used as a server to enhance translation QA
 * [LanguageTool for Chrome](https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji)
 * [LanguageTool Eclipse Plugin](https://github.com/vogellacompany/languagetool-eclipse-plugin)
@@ -38,6 +37,7 @@ this software is not supported by the LanguageTool team.**
 
 Add-ons that haven't been updated for quite some time and that seem to be unmaintained:
 
+* [LanguageTool for Android (source)](https://github.com/Softcatala/LanguageToolAndroidService)
 * [LanguageTool for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=adamvoss.vscode-languagetool) ([source](https://github.com/adamvoss/vscode-languagetool))
 * [vscode-languagetool](https://github.com/cfjedimaster/vscode-languagetool), VS Code extension to wrap the LanguageTool API
 * [LanguageTool for LyX](http://wiki.lyx.org/Tools/LyX-GrammarChecker)
