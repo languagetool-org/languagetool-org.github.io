@@ -24,7 +24,6 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool for Safari](https://apps.apple.com/app/languagetool-for-safari/id1534275760?l=en&mt=12)
 * [LanguageTool for Sublime Text](https://packagecontrol.io/packages/LanguageTool) ([source](https://github.com/gtarawneh/languagetool-sublime))
 * [LanguageTool in TexStudio](http://texstudio.sourceforge.net/) uses a LT server to check (La)TeX files on the fly
-* [LanguageTool for Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-checker/)
 * [LanguageTool for vim](http://www.vim.org/scripts/script.php?script_id=3223)
 * [pyLanguagetool](https://github.com/Findus23/pyLanguagetool), command-line tool for using the JSON API
 * [LTEX Extension for VS Code (Visual Studio Code)](https://github.com/valentjn/vscode-ltex), Grammar/Spell Checker with LanguageTool and LaTeX Support
@@ -35,7 +34,7 @@ this software is not supported by the LanguageTool team.**
 
 ## Archive
 
-Add-ons that haven't been updated for quite some time and that seem to be unmaintained:
+Add-ons that haven't been updated for quite some time and that seem to be **unmaintained**:
 
 * [LanguageTool for Android (source)](https://github.com/Softcatala/LanguageToolAndroidService)
 * [LanguageTool for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=adamvoss.vscode-languagetool) ([source](https://github.com/adamvoss/vscode-languagetool))
@@ -44,4 +43,5 @@ Add-ons that haven't been updated for quite some time and that seem to be unmain
 * [LanguageTool for MS Word (Windows)](https://github.com/jaumeortola/languagetool-msword10-addin#english), old version
 * [LanguageTool interface to NSSpellServer](https://github.com/ramonpoca/LanguageToolNSServer) to support LanguageTool as a system-wide spellchecker in Mac OSX (experimental)
 * [LanguageTool plugin for OmegaT](https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/), a plugin that enables grammar-checking in computer-aided translation tool OmegaT
+* [LanguageTool for old versions of Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-checker/)
 * [LanguageTool for TinyMCE 4](https://github.com/KnowZero/tinymce4-languagetool) (experimental)
