@@ -15,6 +15,7 @@ this software is not supported by the LanguageTool team.**
 * [Grazie - Plugin for IntelliJ](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
 * [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
 * [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
+* [OnlyOffice](https://github.com/ONLYOFFICE/plugin-languagetool/tree/master)
 * [Obsidian LanguageTool Plugin](https://github.com/Clemens-E/obsidian-languagetool-plugin)
 * [LanguageTool Linter for VS Code (Visual Studio Code)](https://github.com/davidlday/vscode-languagetool-linter)
 * [LanguageTool for MS Word](https://languagetool.org/#office)
