@@ -45,5 +45,4 @@ Add-ons that haven't been updated for quite some time and that seem to be **unma
 * [LanguageTool for MS Word (Windows)](https://github.com/jaumeortola/languagetool-msword10-addin#english), old version
 * [LanguageTool interface to NSSpellServer](https://github.com/ramonpoca/LanguageToolNSServer) to support LanguageTool as a system-wide spellchecker in Mac OSX (experimental)
 * [LanguageTool plugin for OmegaT](https://sourceforge.net/projects/omegat-plugins/files/OmegaT-LanguageTool/), a plugin that enables grammar-checking in computer-aided translation tool OmegaT
-* [LanguageTool for old versions of Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-checker/)
 * [LanguageTool for TinyMCE 4](https://github.com/KnowZero/tinymce4-languagetool) (experimental)
