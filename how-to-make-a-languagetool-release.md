@@ -75,17 +75,16 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * open the `stage-artifacts.sh` script
   * set the version number
   * make sure the list of Maven projects to be deployed is up-to-date
-  * `./stage-artifacts.sh` (this will sign and upload the artifacts to the staging area, this will take > 30 minutes)
+  * `./stage-artifacts.sh` (this will sign and upload the artifacts to the staging area, it will take > 30 minutes. NOTE: this requires a proper set-up of `~/.m2/settings.xml`)
 * log in at <https://oss.sonatype.org>  
   * go to "Staging Repositories" page.
   * select the staging repository: `orglanguagetool-xyz` (usually at the bottom of the list)
   * click "Close"
   * test the artifacts in project languagetool-client-example:
     * adapt the pom.xml (set the new "orglanguagetool-xyz" as a repo and update the dependencies)
-    * clean local m2 repo
-    * run `mvn clean package`
-    * unzip the uberjar and replace `META-INF/org/langetool/language-module.properties` with the
-      `language-module.properties` from languagetool-standalone (this is needed because with the original
+    * clean local m2 repo: `rm -r  ~/.m2/repository/org/languagetool/`
+    * `./build-opensource.sh` (unzips the uberjar and replaces `META-INF/org/langetool/language-module.properties` with the
+      `language-module.properties` from languagetool-standalone - this is needed because with the original
        file, all languages except one get lost)
     * re-zip the directory and run the JAR, it should check a tiny English text fragment with all languages
   * if okay, click "Release" (requires a refresh) - note that once released, the artifacts cannot be deleted or modified! It may take a few hours before the artifacts actually become available.
