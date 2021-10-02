@@ -57,7 +57,7 @@ later.
 * run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
 * update CHANGES.md file
   * sort language changes alphabetically
-  * make sure list of updated languages matches `languages.html` (but that covers 6 months, so check manually)
+  * make sure list of updated languages matches `languages.html`
 * update README.md file
 * make sure there are no useless files (these would become part of the download file):
   * run `git status` and check the output under "untracked files"
