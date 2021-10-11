@@ -27,6 +27,25 @@ Say you want to write a rule that finds and corrects both these errors:
   <example correction="grandchildren">He has many children and <marker>grandchild</marker>.</example>
 </rule>
 ```
+## A complex example case
+
+If you want to transfer the postags from one token to another, but put other things into the suggestion as well, the form synthesized by the ASF can be invoked by using `{suggestion}` in a regular `<suggestion>`. Here is an example case:
+
+```xml
+	<rule id="PROCEED_TO_VB" name="he proceeded to do (did / then did / went on to do">
+		<pattern>
+			<token postag="V.*" postag_regexp="yes" inflected="yes">proceed<exception>proceeding</exception></token>
+			<token>to</token>
+			<token postag="VB"/>
+		</pattern>
+		<filter class="org.languagetool.rules.en.AdvancedSynthesizerFilter" args="lemmaFrom:3 lemmaSelect:V.* postagFrom:1 postagSelect:V.*"/>
+		<message>The phrase 'proceed to \3' might be wordy. Consider a shorter alternative to elevate your style.</message>
+		<suggestion>{suggestion}</suggestion>
+		<suggestion>then {suggestion}</suggestion>
+		<suggestion><match no="1" postag="(V.*)" postag_regexp="yes" postag_replace="$1">go</match> on to \3</suggestion>
+		<example correction="scheduled|then scheduled|went on to schedule">She <marker>proceeded to schedule</marker> a meeting.</example>
+	</rule>
+```
 
 ## Some pointers for using the ASF
 
@@ -34,9 +53,17 @@ As you can see the in the above example, you invoke the ASF by referencing `org.
 The arguments (`args`) of the ASF are pretty straightforward: choose the `lemmaFrom` token number X, take the `postagFrom` token number Y (here, the first token is numbered `1`). The elements `lemmaSelect` and `postagSelect` ensure that the token is correctly interpreted. If a token were `houses`, `lemmaSelect:N.*` makes sure this word is interpreted as a noun, not as the verb "to house something". The same goes for `postagSelect`.<br><br>
 **Keep in mind the following things:**
 
-* The ASF replaces the `<suggestion>`
+* The ASF generates a `<suggestion>` automatically. Unless you want to use `{suggestion}` in a regular `<suggestion>` (see above), you don't need to write this: `<suggestion>{suggestion}</suggestion>` 
 * Put the ASF **above** the `<message>` (other than you would do with the suggestion. Otherwise, it won't work)
 * The ASF doesn't like `<token min="0">` — if the optional token isn't there, the `lemmaFrom` number will no longer be correct.
+
+## Postag regex replacement in the ASF
+
+If you would like to use some of the postags of a token, but not all, you can replace postags using `postagReplace:`. An important difference is that capturing groups cannot be invoked using `$1`. You need to use `\b1` instead. Here is an example for Spanish:
+
+```xml
+<filter class="org.languagetool.rules.es.AdvancedSynthesizerFilter" args="lemmaFrom:marker lemmaSelect:V.* postagFrom:marker postagSelect:V(...)3S(.) postagReplace:V\b13P\b2"/>
+```
 
 ## Combining the ASF with unification
 
