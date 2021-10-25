@@ -1,18 +1,11 @@
 # Usage of the false friends rule
 
-False friends can be used for checking texts in two different situations:
+A false friend is a pair of words in different languages that look or sound
+similar, but differ significantly in meaning.
 
-* in texts written in a language that is not user's mother tongue, 
-  which is why the user tends to use false cognates; 
-* in texts translated from another language: unexperienced, busy or 
-  distracted translators can easily use false friends in translation.
-
-## False friends as a tool for checking translations
-
-In that case, set the "mother tongue" option to the language of the 
-source text.
-
-## Understanding false friends rules
+**This section is outdated:** The `false-friends.xml` is not used anymore to
+decide whether a word is a false friend, but only to generate the error message.
+See e.g. [confusion_sets_l2_de.txt](https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/confusion_sets_l2_de.txt) instead.
 
 Take an example:
 
@@ -42,9 +35,3 @@ If you, however, are dealing with a Polish text checked with the option
 "mother tongue" set to English, you will see a warning for every 
 instance of Polish word "abnegacja"; it will tell you that actually in 
 Polish, it means the same as English "slovenliness" or "untidiness".
-
-## Editing
-
-Please edit the file using xxe. There is a 
-[css file](https://raw.githubusercontent.com/languagetool-org/languagetool/master/languagetool-core/src/main/resources/org/languagetool/rules/false-friends.css) 
-that makes your life easier.
