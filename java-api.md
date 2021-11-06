@@ -1,6 +1,6 @@
 # Embedding LanguageTool in Java applications
 
-LanguageTool requires Java 8 or later.
+[LanguageTool](https://languagetool.org) requires Java 8 or later.
 
 Get LanguageTool by adding a dependency like this to your
 [Maven](http://maven.apache.org/run-maven/) `pom.xml`:
