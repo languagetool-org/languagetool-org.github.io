@@ -9,6 +9,12 @@ or elsewhere:
 https://api.languagetool.org/v2/check
 ```
 
+Example usage:
+
+```
+curl -d "text=This is an test." -d "language=auto" https://api.languagetool.org/v2/check
+```
+
 When using it, please keep the following rules in mind:
 
 * Do not send automated requests. For that, set up [your own instance of LanguageTool](http-server) or
