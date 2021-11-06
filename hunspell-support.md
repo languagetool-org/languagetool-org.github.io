@@ -1,6 +1,6 @@
 # Improving Spell Checking
 
-You can improve the spell checker without touching the dictionary. Add your
+You can improve the [LanguageTool](https://languagetool.org) spell checker without touching the dictionary. Add your
 words to one of these files:
 
 * `spelling.txt`: words that the spell checker will ignore and use to generate corrections if someone types a similar word

@@ -1,6 +1,6 @@
 # Translating LanguageTool
 
-You can translate the LanguageTool user interface [online at 
+You can translate the [LanguageTool](https://languagetool.org) user interface [online at 
 webtranslateit.com](https://webtranslateit.com). The English strings 
 are downloaded automatically from github 3 times a day. If a new string 
 appears, the completion status of all languages will be less than 100% 

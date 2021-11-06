@@ -1,6 +1,6 @@
 # Java Code Style
 
-These are our basic style rules for new Java code. For IntelliJ IDEA, 
+These are our basic style rules for new Java code in [LanguageTool](https://languagetool.org). For IntelliJ IDEA, 
 you might want to use [these inspection 
 settings](https://raw.githubusercontent.com/languagetool-org/languagetool/master/languagetool-dev/code-analysis/IDEA-IntelliJ-Inspections.xml).
 

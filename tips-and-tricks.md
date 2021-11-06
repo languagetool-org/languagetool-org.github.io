@@ -1,7 +1,7 @@
 # Tips and Tricks
 
 There are many simple but non-obvious ways how you can build 
-error-checking rules. Here are some tips. As a beginner, you should 
+error-checking rules for [LanguageTool](https://languagetool.org). Here are some tips. As a beginner, you should 
 first read [the overview](/development-overview).  
 
 ## Misc

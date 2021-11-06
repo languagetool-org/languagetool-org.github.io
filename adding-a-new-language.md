@@ -1,6 +1,6 @@
 # Adding a new Language
 
-Adding support for a new language to LanguageTool requires setting up a 
+Adding support for a new language to [LanguageTool](https://languagetool.org) requires setting up a 
 new Maven project. This page will guide you through all the necessary 
 steps. It was written for software developers with Java and Maven 
 experience. If you aren't a software developer, but are still willing 

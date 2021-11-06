@@ -1,6 +1,6 @@
 # Software that Supports LanguageTool as an Add-On
 
-This software supports LanguageTool one way or the other. **Please note that most of
+This software supports [LanguageTool](https://languagetool.org) one way or the other. **Please note that most of
 this software is not supported by the LanguageTool team.**
 
 * [linter-languagetool](https://atom.io/packages/linter-languagetool) for Atom ([source code](https://github.com/wysiib/linter-languagetool))

@@ -1,6 +1,6 @@
 # Developing Robust Rules
 
-In order to obtain robust, heavily tested rules there are some tips you
+In order to obtain robust, heavily tested [LanguageTool](https://languagetool.org) rules there are some tips you
 can follow. Please feel free to improve these if you think you have
 a good idea. If you don't know how to develop rules yet, please see
 [our development documentation](/development-overview) first.

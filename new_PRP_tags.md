@@ -1,6 +1,6 @@
 # Advanced tags for personal pronouns in English
 
-Before 2021-04-20, LT only knew `PRP` (like 'I', 'me', 'myself') and `PRP$` (like 'my' and 'mine'). Now, you can distinguish more precisely and synthesize one form from another (e.g. 'I' from 'myself').
+Before 2021-04-20, [LanguageTool](https://languagetool.org) only knew `PRP` (like 'I', 'me', 'myself') and `PRP$` (like 'my' and 'mine'). Now, you can distinguish more precisely and synthesize one form from another (e.g. 'I' from 'myself').
 
 ## Immediate consequences
 

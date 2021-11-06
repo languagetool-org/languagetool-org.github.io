@@ -1,6 +1,6 @@
 # LanguageTool embedded HTTP Server
 
-LanguageTool comes with its own embedded HTTP server, so you can send a text
+[LanguageTool](https://languagetool.org) comes with its own embedded HTTP server, so you can send a text
 to LanguageTool via HTTP and get the detected errors back as JSON. This embedded
 server can be started like this.
 

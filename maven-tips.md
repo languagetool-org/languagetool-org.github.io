@@ -1,6 +1,6 @@
 # Maven Tips
 
-LanguageTool uses Maven 3.x. Here you will find some tips for building LanguageTool with Maven.
+[LanguageTool](https://languagetool.org) uses Maven 3.x. Here you will find some tips for building LanguageTool with Maven.
 
 ## The Basics
 

@@ -1,6 +1,6 @@
 # Checking (La)TeX with LanguageTool
 
-LanguageTool does not support stripping TeX formatting markup, so we
+[LanguageTool](https://languagetool.org) does not support stripping TeX formatting markup, so we
 recommend using external tools.
 
 * Use [Overleaf](https://overleaf.com) with [our browser add-on](https://languagetool.org/addon-redirect)

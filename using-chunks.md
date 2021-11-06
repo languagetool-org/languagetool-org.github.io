@@ -2,7 +2,7 @@
 
 ### Example
 
-LanguageTool has a so-called chunker for English. It 
+[LanguageTool](https://languagetool.org) has a so-called chunker for English. It 
 detects chunks like noun chunks or verb chunks (also known as noun 
 phrases and verb phrases). Consider, for example, this sentence:
 

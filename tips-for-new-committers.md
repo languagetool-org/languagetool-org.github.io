@@ -1,6 +1,6 @@
 # Tips for new Committers
 
-Here are some tips for new committers:
+Here are some tips for new [LanguageTool](https://languagetool.org) committers:
 
 * [Subscribe to the 
   forum](https://forum.languagetool.org/t/how-to-use-this-forum-like-a-mailing-list/1067) 

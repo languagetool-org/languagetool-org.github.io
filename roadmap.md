@@ -1,6 +1,6 @@
 # Release Roadmap
 
-LanguageTool uses a time-based release cycle, with a new release every 
+[LanguageTool](https://languagetool.org) uses a time-based release cycle, with a new release every 
 three months. This is a list of upcoming LanguageTool releases. If 
 you're working on a major feature, please plan accordingly so the 
 feature will be ready a few weeks before release, so that enough time 

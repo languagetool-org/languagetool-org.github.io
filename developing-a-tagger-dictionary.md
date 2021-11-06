@@ -3,7 +3,7 @@
 ## A Shortcut
 
 If you just want to add a few missing words and their part-of-speech 
-information to LanguageTool and don't care about the technical details, 
+information to [LanguageTool](https://languagetool.org) and don't care about the technical details, 
 please see "Adding words to the POS tagger" on
 [Tips and Tricks](/tips-and-tricks#adding-words-to-the-pos-tagger).
 

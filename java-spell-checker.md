@@ -2,7 +2,7 @@
 
 ## Why?
 
-It's easy to use LanguageTool as a spell checker in your Java projects. While you can also use
+It's easy to use [LanguageTool](https://languagetool.org) as a spell checker in your Java projects. While you can also use
 existing projects like [HunspellJNA](https://github.com/dren-dk/HunspellJNA) or
 [HunspellBridJ](https://github.com/thomas-joiner/HunspellBridJ) ([at Maven Central](http://search.maven.org/#search|ga|1|a%3A%22hunspell-bridj%22)),
 LanguageTool has some advantages:

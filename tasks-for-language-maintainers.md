@@ -1,6 +1,6 @@
 # Tasks for Language Maintainers
 
-LanguageTool supports [more than 25 languages](http://languagetool.org/languages/),
+[LanguageTool](https://languagetool.org) supports [more than 25 languages](http://languagetool.org/languages/),
 but not all of them have active maintainers. If you want 
 LanguageTool to support your language well, consider becoming a 
 maintainer. You do *not* need to know a programming language, and you 

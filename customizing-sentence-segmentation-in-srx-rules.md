@@ -1,6 +1,6 @@
 # Customizing sentence segmentation in SRX rules
 
-LanguageTool supports specifying the sentence segmentation rules in 
+[LanguageTool](https://languagetool.org) supports specifying the sentence segmentation rules in 
 [SRX format](https://www.gala-global.org/srx-10), thanks to 
 [segment](https://github.com/loomchild/segment) Java library. The rules 
 for all languages are contained in `/resource/segment.srx` file, which 

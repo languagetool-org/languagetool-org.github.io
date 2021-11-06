@@ -1,5 +1,7 @@
 ## LanguageTool
 
+[LanguageTool](https://languagetool.org) is a style and grammar checker.
+
 ## User documentation
 
 * [Software that supports LanguageTool as a Plug-in or Add-on](/software-that-supports-languagetool-as-a-plug-in-or-add-on)

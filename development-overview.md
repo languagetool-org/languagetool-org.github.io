@@ -1,6 +1,6 @@
 # Development Overview
 
-This page has everything you need to know to teach LanguageTool new error detection rules,
+This page has everything you need to know to teach [LanguageTool](https://languagetool.org) new error detection rules,
 plus more. You don't even have to be a programmer for that.
 
 # The three-minute introduction
