@@ -1,24 +1,22 @@
-## LanguageTool
-
 [LanguageTool](https://languagetool.org) is a style and grammar checker.
 
-## User documentation
+### User documentation
 
 * [Software that supports LanguageTool as a Plug-in or Add-on](/software-that-supports-languagetool-as-a-plug-in-or-add-on)
 * [Checking (La)TeX with LanguageTool](/checking-la-tex-with-languagetool)
 * [Finding errors using n-gram data](/finding-errors-using-n-gram-data)
 * [List of supported languages](/languages)
 
-## Using LanguageTool as a Developer
+### Using LanguageTool as a Developer
 
 * [Public HTTP Proofreading API](/public-http-api)
 * [Embedded HTTP server](/http-server)
 * [LanguageTool as a Java-based spell checker](/java-spell-checker)
 * [Embedding LanguageTool in Java applications](/java-api)
 
-## Working on LanguageTool as a Developer
+### Working on LanguageTool as a Developer
 
-### Rule Development
+#### Rule Development
 
 * [Development Overview](/development-overview)
 * [Tips and tricks for rule development](/tips-and-tricks)
@@ -31,7 +29,7 @@
 * [Usage of false friends rule](/usage-of-false-friends-rule)
 * [Error Collections](/error-collections)
 
-### General Development
+#### General Development
 
 * [Release Roadmap](/roadmap)
 * [Tasks for Language Maintainers](/tasks-for-language-maintainers)
@@ -39,7 +37,7 @@
 * [Translating messages - i18n](/translating-messages)
 * [Spell check](/hunspell-support)
 
-### Java Software Development
+#### Java Software Development
 
 * [Code Style](/code-style)
 * [Maven tips](/maven-tips)
@@ -48,7 +46,7 @@
 * [Customizing sentence segmentation in SRX rules](/customizing-sentence-segmentation-in-srx-rules)
 * [Adding a new language](/adding-a-new-language)
 
-### Internal
+#### Internal
 
 * [How to make a LanguageTool release](/how-to-make-a-languagetool-release), including actions for feature freeze
 * [How to add a new committer](/how-to-add-a-new-committer)
