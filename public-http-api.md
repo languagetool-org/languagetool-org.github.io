@@ -20,11 +20,10 @@ When using it, please keep the following rules in mind:
   * 20KB text per request
   * Only up to 30 misspelled words will have suggestions.
   * These limits may change anytime.
-* Only HTTPS is supported, not HTTP.
 * This is a free service, thus there are no guarantees about performance or availability.
 * The LanguageTool version installed may be the latest official release or some snapshot. We will simply
-  deploy new versions, thus the behavior might change without any warning.
-* Read [our privacy policy](https://www.languagetool.org/privacy) to see how we handle
+  deploy new versions, thus the behavior will change without any warning.
+* Read [our privacy policy](https://languagetool.org/legal/privacy) to see how we handle
   your texts. You are responsible for giving your users information about how their data is handled.
 * **We expect you to add a link back to <https://languagetool.org> that's clearly visible.**
 
