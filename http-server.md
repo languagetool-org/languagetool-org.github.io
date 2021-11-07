@@ -1,8 +1,7 @@
 # LanguageTool embedded HTTP Server
 
 [LanguageTool](https://languagetool.org) comes with its own embedded HTTP server, so you can send a text
-to LanguageTool via HTTP and get the detected errors back as JSON. This embedded
-server can be started like this.
+to a local instance of LanguageTool. This page describes how to set this up.
 
 **WARNING:** This approach is only supposed to be used by advanced users who
 are familiar with using the command line. If you're not, we recommend using
@@ -11,7 +10,8 @@ the default settings, which use our Cloud servers.
 ### Getting the server
 
 Download the [LanguageTool Desktop version for offline use](https://languagetool.org/download/LanguageTool-stable.zip)
-(>170MB) and unzip it.
+(>200MB) and unzip it. Note that this approach relies on our old desktop version, the new
+ones ([Windows](https://languagetool.org/windows), [Mac](https://languagetool.org/mac)) will not work with this approach.
 
 ### Starting from Command Line
 
@@ -19,16 +19,16 @@ On the command line, go to the unzipped directory and start LanguageTool using t
 
     java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin "*"
 
-If this fails with an error saying that `java` cannot be found,
-[install Java 8 or later](https://java.com/en/download/help/download_options.xml) first.
+* If this fails with an error saying that `java` cannot be found,
+  [install Java 8 or later](https://java.com/en/download/help/download_options.xml) first.
+* You can remove `--allow-origin "*"` if you do not want to use the server from the browser 
+  add-on.
+* You now need to set this server in the browser add-on: visit the add-on's options
+  by clicking the cog icon, then open "Experimental settings" and select "Local server".
+  Note that Safari seems to require https, so you'd need to set up a reverse proxy and
+  configure `https://localhost:8082/v2` as "Other server" ([source](https://forum.languagetool.org/t/languagetool-for-safari/5554/24?u=dnaber)).
 
-You can remove `--allow-origin "*"` if you do not want to use the server from the browser 
-add-on. You need to set this server in the browser add-on: visit the add-on's options
-by clicking the cog icon, then open "Experimental settings" and select "Local server".
-Note that Safari seems to require https, so you'd need to set up a reverse proxy and
-configure `https://localhost:8082/v2` as "Other server" ([source](https://forum.languagetool.org/t/languagetool-for-safari/5554/24?u=dnaber)).
-
-**NOTE:** This will give you a basic server missing some statistics rules.
+NOTE: This will give you a basic server missing some rules based on statistics.
 See [here](/finding-errors-using-n-gram-data) for how to set up those.
 
 ### Testing the server
@@ -40,7 +40,7 @@ You can test the server by calling this URL in your browser:
 If you're not just testing, you should use HTTP POST to transfer your data. You can
 test it like this, using [curl](http://curl.haxx.se/):
 
-    curl --data "language=en-US&text=a simple test" http://localhost:8081/v2/check
+    curl -d "language=en-US" -d "text=a simple test" http://localhost:8081/v2/check
 
 You can specify a file with advanced configuration options for the LT server 
 with `--config`. Use `--help` to get information about the supported settings in that file.
