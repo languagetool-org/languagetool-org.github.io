@@ -49,7 +49,7 @@ If you want to transfer the postags from one token to another, but put other thi
 
 ## Some pointers for using the ASF
 
-As you can see the in the above example, you invoke the ASF by referencing `org.languagetool.rules.en.AdvancedSynthesizerFilter`. You can replace `en` with `de`, `fr`, `ca` or `es` if you want to use it in German, French, Catalan or Spanish.<br><br>
+As you can see the in the above example, you invoke the ASF by referencing `org.languagetool.rules.en.AdvancedSynthesizerFilter`. You can replace `en` with `de`, `fr`, `ca`, `ru` or `es` if you want to use it in German, French, Catalan or Spanish.<br><br>
 The arguments (`args`) of the ASF are pretty straightforward: choose the `lemmaFrom` token number X, take the `postagFrom` token number Y (here, the first token is numbered `1`). The elements `lemmaSelect` and `postagSelect` ensure that the token is correctly interpreted. If a token were `houses`, `lemmaSelect:N.*` makes sure this word is interpreted as a noun, not as the verb "to house something". The same goes for `postagSelect`.<br><br>
 **Keep in mind the following things:**
 
