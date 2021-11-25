@@ -528,7 +528,7 @@ see the Polish rule file:
 
 Sometimes the rule should change the case of the matched word. For this
 purpose, you can use `case_conversion` attribute values: `startlower`,
-`startupper`, `allupper` and `alllower`.
+`startupper`, `allupper`, `alllower` and `firstupper`.
 
 Another useful thing is that `match` can refer to a token, but apply its
 POS to another word. This is useful for suggesting another word with the
