@@ -15,9 +15,13 @@ ones ([Windows](https://languagetool.org/windows), [Mac](https://languagetool.or
 
 ### Starting from Command Line
 
-On the command line, go to the unzipped directory and start LanguageTool using this command:
+On the command line, go to the unzipped directory and start LanguageTool HTTP server using these commands:
 
     java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin "*"
+
+Or this command that is useful for system package management installs like for archlinux:
+
+    languagetool --http --port 8081 --allow-origin "*"
 
 * If this fails with an error saying that `java` cannot be found,
   [install Java 8 or later](https://java.com/en/download/help/download_options.xml) first.
