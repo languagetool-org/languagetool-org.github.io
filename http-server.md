@@ -27,6 +27,8 @@ On the command line, go to the unzipped directory and start LanguageTool using t
   by clicking the cog icon, then open "Experimental settings" and select "Local server".
   Note that Safari seems to require https, so you'd need to set up a reverse proxy and
   configure `https://localhost:8082/v2` as "Other server" ([source](https://forum.languagetool.org/t/languagetool-for-safari/5554/24?u=dnaber)).
+  Note: The LanguageTool server doesn't support synonyms, so the synonym feature in the add-on
+  will not work.
 
 NOTE: This will give you a basic server missing some rules based on statistics.
 See [here](/finding-errors-using-n-gram-data) for how to set up those.
