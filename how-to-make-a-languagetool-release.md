@@ -129,11 +129,8 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 ## Write announcements
 
 * <http://forum.languagetool.org> - include checksums (Unix command: `sha256sum <file>`).
-* LanguageTool Announcement list using SendGrid
-* Social networks via [Zoho Social](https://www.zoho.eu/social/login.html#home) (twitter, Facebook)
 * <http://extensions.services.openoffice.org/project/languagetool>  
 * <https://extensions.libreoffice.org/extensions/languagetool>   via <https://extensions.libreoffice.org/admin>   (Note: set the "State" to "final release")
-* optional: the personal Xing account of the maintainer who makes the release
 * Update this release documentation if there have been any changes in the process
 
 ## Update the web app at [community.languagetool.org](http://community.languagetool.org)
