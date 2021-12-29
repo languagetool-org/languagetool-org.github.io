@@ -136,13 +136,6 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * optional: the personal Xing account of the maintainer who makes the release
 * Update this release documentation if there have been any changes in the process
 
-## API Server Update
-
-No action is needed, the API gets re-deployed every day with the latest 
-snapshot by 
-[create-snapshot.sh](https://github.com/languagetool-org/languagetool-website/blob/master/create-snapshot.sh) 
-(unless there are test failures).
-
 ## Update the web app at [community.languagetool.org](http://community.languagetool.org)
 
 Just update the LT dependencies in `BuildConfig.groovy`. Deployment 
