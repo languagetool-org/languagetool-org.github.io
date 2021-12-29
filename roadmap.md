@@ -6,12 +6,13 @@ you're working on a major feature, please plan accordingly so the
 feature will be ready a few weeks before release, so that enough time 
 remains for testing.
 
-* 5.6 planned release: Wednesday, 2021-12-29 - feature freeze 2021-12-22
 * 5.7 planned release: Monday, 2022-03-28 - feature freeze 2022-03-21
 * 5.8 planned release: Tuesday, 2022-06-28 - feature freeze 2022-06-21
+* 5.9 planned release: Wednesday, 2022-09-28 - feature freeze 2022-09-21
 
 ## Archive
 
+* 5.6 release date: 2021-12-29
 * 5.5 release date: 2021-10-02
 * 5.4 release date: 2021-06-25
 * 5.3 release date: 2021-03-29

@@ -83,7 +83,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
   * test the artifacts in project languagetool-client-example:
     * adapt the pom.xml (set the new "orglanguagetool-xyz" as a repo and update the dependencies)
     * clean local m2 repo: `rm -r  ~/.m2/repository/org/languagetool/`
-    * adapt version in `./build-opensource.sh` and run it (unzips the uberjar and replaces `META-INF/org/langetool/language-module.properties`
+    * adapt version in `pom.xml` and `build-opensource.sh` and run it (unzips the uberjar and replaces `META-INF/org/langetool/language-module.properties`
       with the `language-module.properties` from languagetool-standalone - this is needed because with the original
       file, all languages except one get lost)
   * if okay, click "Release" (requires a refresh) - note that once released, the artifacts cannot be deleted or modified! It may take a few hours before the artifacts actually become available.
@@ -104,7 +104,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
   * `JLanguageTool.VERSION` in `JLanguageTool.java`
   * `manifest.xml`
   * `description.xml`
-  * property `languagetool.version` in top-level pom.xml (not `version`, the next command will take care of that)
+  * property `revision` in top-level pom.xml (not `version`, the next command will take care of that)
   * all pom.xml files: `mvn versions:set`
   * commit
 * merge the branch back to trunk: `git checkout master; git merge vX.Y-release`
