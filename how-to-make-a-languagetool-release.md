@@ -42,7 +42,7 @@ later.
   * `JLanguageTool.VERSION` in `JLanguageTool.java`
   * `manifest.xml`
   * `description.xml`
-  * top-level pom.xml: only set property `languagetool.version`
+  * top-level pom.xml: only set property `revision`
   * all pom.xml files: `mvn versions:set`
   * commit changes
 * `mvn clean test`
