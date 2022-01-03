@@ -43,7 +43,7 @@ later.
   * `manifest.xml`
   * `description.xml`
   * top-level pom.xml: only set property `revision`
-  * all pom.xml files: `mvn versions:set`
+  * ~~all pom.xml files: mvn versions:set~~
   * commit changes
 * `mvn clean test`
 * `./build.sh languagetool-standalone package -DskipTests`
@@ -104,8 +104,8 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
   * `JLanguageTool.VERSION` in `JLanguageTool.java`
   * `manifest.xml`
   * `description.xml`
-  * property `revision` in top-level pom.xml (not `version`, the next command will take care of that)
-  * all pom.xml files: `mvn versions:set`
+  * property `revision` in top-level pom.xml
+  * ~~all pom.xml files: mvn versions:set~~
   * commit
 * merge the branch back to trunk: `git checkout master; git merge vX.Y-release`
 * update: `git pull` (not pull -r)
