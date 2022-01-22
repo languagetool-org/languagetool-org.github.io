@@ -17,11 +17,11 @@ ones ([Windows](https://languagetool.org/windows), [Mac](https://languagetool.or
 
 On the command line, go to the unzipped directory and start LanguageTool using this command:
 
-    java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin "*"
+    java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin
 
 * If this fails with an error saying that `java` cannot be found,
   [install Java 8 or later](https://java.com/en/download/help/download_options.xml) first.
-* You can remove `--allow-origin "*"` if you do not want to use the server from the browser 
+* You can remove `--allow-origin` if you do not want to use the server from the browser 
   add-on.
 * You now need to set this server in the browser add-on: visit the add-on's options
   by clicking the cog icon, then open "Experimental settings" and select "Local server".
