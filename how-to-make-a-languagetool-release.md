@@ -95,7 +95,9 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * check out the new tag from git and run `mvn clean package`
 * copy the stand-alone LT to a path with a space and test some sentences
 * upload to the server:
-  * `scp LanguageTool-5.x.zip LanguageTool-5.x.oxt CHANGES.md README.md user@storagebox:`
+  * `scp LanguageTool-5.x.zip LanguageTool-5.x.oxt CHANGES.md README.md user@storagebox:old-lt-org/download/`
+  * `scp LanguageTool-5.x.oxt user@storagebox:old-lt-org/download/LanguageTool-stable.oxt`
+  * `scp LanguageTool-5.x.zip user@storagebox:old-lt-org/download/LanguageTool-stable.zip`
 
 ## After the Release
 
@@ -113,14 +115,11 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 ## Update website
 
-* link the release on the server:
-  * `cd /home/languagetool/old-lt-org/download`
-  * `rm LanguageTool-stable.oxt && ln -s LanguageTool-5.X.oxt LanguageTool-stable.oxt && rm LanguageTool-stable.zip && ln -s LanguageTool-5.X.zip LanguageTool-stable.zip`
-*  update [roadmap](/roadmap)  
+* update [roadmap](/roadmap)  
 * enter the next feature freeze date in your personal calendar so you don't forget it
 * Javadoc
   * `git checkout vX.Y`
-  * run `mvn javadoc:aggregate`, then upload `target/site/apidocs/` to server at `/home/languagetool/old-lt-org/development/api` - note: this requires a local `mvn install -DskipTests`
+  * run `mvn javadoc:aggregate`, then upload `target/site/apidocs/` to storagebox (see above) at `old-lt-org/development/api` - note: this requires a local `mvn install -DskipTests`
   * `git checkout master`
 * set new version number in [Java API](/java-api)  
 * set new version in `languagetool.update.xml` (this is linked in resources/description.xml and allows updating LT from within the LO/OO extension manager)
