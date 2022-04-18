@@ -10,18 +10,12 @@ Here are some tips for new [LanguageTool](https://languagetool.org) committers:
   to the commit message.
 * Be aware that every change to the code and the rules that don't break 
   the unit tests will automatically go live on 
-  [languagetool.org](https://languagetool.org) each day at roughly 22:30 
+  [languagetool.org](https://languagetool.org) each day at about 21:15 
   CET. As we have more than one server, changes are deployed only to a 
-  fraction of the server for about 1-2 hours. During this time, you might 
+  fraction of the servers for about 1 hour. During this time, you might 
   get inconsistent results.
-* You might want to subscribe to the [commit message mailing 
-  list](https://lists.sourceforge.net/lists/listinfo/languagetool-commits). 
-  This list receives the daily regression test emails which show the 
-  effects of rule modifications.
 * You might want to *watch* the LanguageTool projects at github (some 
   issues are discussed in the bug tracker and not on our forum)
-* Follow the guidelines for messages: 
-  <https://forum.languagetool.org/t/en-guidelines-rules-for-messages/5350>.  
 * Your commits should not break anything:
   * Get the latest updates from master via `git pull -r` (rebase). This 
     will prevent the ugly merge commits you get when you just do `git 
