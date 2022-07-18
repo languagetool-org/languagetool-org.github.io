@@ -181,12 +181,16 @@ A short description of the elements and their attributes:
   given token as a regular expression
 * element `message`: The text displayed to the user if this rule matches.
   Use sub-element `suggestion` to suggest a possible replacement that corrects
-  the error. It is possible to conditionally suppress a suggestion if it is
-  misspelled with the attribute `suppress_misspelled="yes"`. You can even
-  suppress the whole rule from being matched if you use the same attribute
-  in the message element. Note: the tagger of the given language is used
-  to make it work, so if you don't have a tagger yet, you cannot use
-  this feature.
+  the error, or use separate `suggestion` elements after the `message` element.
+  * While there's no technical limit to the number of suggestions, most add-ons
+    using LanguageTool limit the number of suggestions shown to 5. 
+  * It is possible to conditionally suppress a suggestion if it is
+    misspelled with the attribute `suppress_misspelled="yes"`. You can even
+    suppress the whole rule from being matched if you use the same attribute
+    in the message element.
+  * Note: the tagger of the given language is used
+    to make it work, so if you don't have a tagger yet, you cannot use
+    this feature.
 * element `url` (optional): An URL to a page that explains the rule leading
   to the error in more detail. If it contains symbol `&`, then it needs to
   be escaped as `&amp;`.
