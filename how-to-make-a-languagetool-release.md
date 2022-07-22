@@ -120,7 +120,8 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
   * run `mvn javadoc:aggregate`, then upload `target/site/apidocs/` to storagebox (see above) at `old-lt-org/development/api` - note: this requires a local `mvn install -DskipTests`
   * `git checkout master`
 * set new version number in [Java API](/java-api)  
-* set new version in `languagetool.update.xml` (this is linked in resources/description.xml and allows updating LT from within the LO/OO extension manager)
+* set new version in `languagetool.update.xml` (this is linked in resources/description.xml and allows updating LT from within the LO/OO extension manager) - 
+  see personal Zim notes at "LanguageTooler -> Release" for how to access the file 
   * install the old version of LT in LibreOffice and see if the automatic update from extension manager works
 
 ## Write announcements
