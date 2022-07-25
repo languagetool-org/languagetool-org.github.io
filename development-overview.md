@@ -332,6 +332,7 @@ interrelations. In such a case, one may use an antipattern:
       <antipattern>
           <token>word1</token>
           <token>word2</token>
+          <example>text word1 word2 more text</example>
       </antipattern>
       <pattern>
           <token>word1</token>
@@ -344,6 +345,10 @@ This rule would match "This is a word1" but not "This is a word1 word2".
 You can use all subelements of `pattern` in `antipattern` but `phrase`
 and `or`. The text matched by the antipattern needs to overlap the
 text matched by the pattern for the antipattern to become active.
+
+The optional `example`s are used to check that the rule doesn't match for these 
+example sentences. Please note it is *not* checked whether it is this specific
+antipattern that prevents a match.
 
 Antipatterns may be added to a group of rules (and then they are
 valid for all rules in the group) and for particular rules in a group.
