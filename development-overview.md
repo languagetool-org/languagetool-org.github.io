@@ -539,6 +539,12 @@ Sometimes the rule should change the case of the matched word. For this
 purpose, you can use `case_conversion` attribute values: `startlower`,
 `startupper`, `allupper`, `alllower` and `firstupper`.
 
+`startlower` converts only the first character to lowercase and leaves the rest unaltered, e.g. _EXAMPLE_ ⇾ _eXAMPLE_.  
+`startupper` converts only the first character to uppercase and leaves the rest unaltered, e.g. _example_ ⇾ _Example_.  
+`allupper` converts all characters to uppercase, e.g. _eXaMpLe_ ⇾ _EXAMPLE_.  
+`alllower` converts all characters to lowercase, e.g. _eXaMpLe_ ⇾ _example_.  
+`firstupper` converts the first character to uppercase and the remaining ones to lowercase, e.g. _eXaMpLe_ ⇾ _Example_.
+
 Another useful thing is that `match` can refer to a token, but apply its
 POS to another word. This is useful for suggesting another word with the
 same part of speech. There is a special abbreviated syntax used for this purpose:
