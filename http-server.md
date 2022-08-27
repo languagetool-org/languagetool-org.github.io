@@ -68,5 +68,5 @@ disable or enable any rules, then the configuration set by the user will be sile
 
 ## Using SSL/TLS
 
-We recommend using the HTTP server of LanguageTool and run it behind an Apache or
+We recommend using the HTTP server of LanguageTool and running it behind an Apache or
 nginx reverse proxy with SSL/TLS support.
