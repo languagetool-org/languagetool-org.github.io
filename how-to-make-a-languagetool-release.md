@@ -105,7 +105,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
   * `manifest.xml`
   * `description.xml`
   * property `revision` in top-level pom.xml
-  * mvn versions:set (use ${revision})
+  * `mvn versions:set` (use `${revision}` when prompted for new version)
   * commit
 * merge the branch back to trunk: `git checkout master; git merge vX.Y-release`
 * update: `git pull` (not pull -r)
