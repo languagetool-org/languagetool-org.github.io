@@ -45,6 +45,8 @@ later.
   * top-level pom.xml: only set property `revision`
   * `mvn versions:set` (set the version number of today's release when prompted)
   * commit changes
+  * update `<version>${revision}</version>` to the new version number in all `pom.xml` files (using `${revision}`
+    as a variable would cause issues when publishing the artifact via Sonatype)
 * `mvn clean test`
 * `./build.sh languagetool-standalone package -DskipTests`
   * test the result in `languagetool-standalone/target/`
@@ -133,10 +135,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 ## Update the web app at [community.languagetool.org](http://community.languagetool.org)
 
-Just update the LT dependencies in `BuildConfig.groovy`. Deployment 
-happens automatically, the 
-[create-snapshot.sh](https://github.com/languagetool-org/languagetool-website-2018/blob/master/create-snapshot.sh) 
-script does this automatically every day.
+Just update the LT dependencies in `BuildConfig.groovy`. Deployment happens automatically.
   
 ## Backups and Misc
 
