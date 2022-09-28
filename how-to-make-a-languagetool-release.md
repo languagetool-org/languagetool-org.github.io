@@ -43,7 +43,7 @@ later.
   * `manifest.xml`
   * `description.xml`
   * top-level pom.xml: only set property `revision`
-  * mvn versions:set
+  * `mvn versions:set` (set the version number of today's release when prompted)
   * commit changes
 * `mvn clean test`
 * `./build.sh languagetool-standalone package -DskipTests`
@@ -51,14 +51,14 @@ later.
   * also test `testrules.sh` and `testrules.bat`
   * check how much bigger the ZIP has become compared to the previous release
 * `./build.sh languagetool-wikipedia package -DskipTests`
-  * test the result in languagetool-wikipedia/target
+  * test the result in `languagetool-wikipedia/target`
 * `./build.sh languagetool-office-extension package -DskipTests`
-  * test the result in languagetool-office-extension/target, rename the *zip to *oxt and install it in LibreOffice/OpenOffice, test with <https://github.com/languagetool-org/languagetool/blob/master/languagetool-office-extension/src/test/resources/manual-testing.odt?raw=true>  
+  * test the result in `languagetool-office-extension/target`, rename the *.zip to *.oxt and install it in LibreOffice/OpenOffice, test with <https://github.com/languagetool-org/languagetool/blob/master/languagetool-office-extension/src/test/resources/manual-testing.odt?raw=true>  
 * run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
-* update CHANGES.md file
+* update `CHANGES.md` file
   * sort language changes alphabetically
   * make sure list of updated languages matches `languages.html`
-* update README.md file
+* update `README.md` file
 * make sure there are no useless files (these would become part of the download file):
   * run `git status` and check the output under "untracked files"
   * make sure there are no `*.bak` files in resources
