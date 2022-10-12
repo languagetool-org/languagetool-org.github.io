@@ -119,6 +119,18 @@ This is just a test sentence...
                             ^^^
 ```
 
+### Find which antipattern causes a rule not to match
+
+If a rule with many antipatterns doesn't match (but should), it can be difficult
+to find the antipattern that's responsible for this behavior. In this case:
+
+1. Edit `languagetool-commandline/src/main/resources/logback.xml` so that it
+   contains `<root level="debug">` (instead of `level="info"`)
+2. Write the affected sentence to a file and use `org.languagetool.commandline.Main`
+   to check that file
+3. The output will then contain a line like this, pointing to the matching antipattern:
+   `DEBUG o.languagetool.AnalyzedTokenReadings 'wise' is immunized by antipattern in line 41901`
+
 ### Adding rules to an external file
 
 You can add your own rules to some external file. For that, you need to 
