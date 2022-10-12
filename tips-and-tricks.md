@@ -102,6 +102,23 @@ std-err (`2>`) and std-in (`>`) to the same file.
 Check the [development overview](/development-overview) page to learn 
 basics of adding new XML rules.
 
+### Find the location of a subrule in XML
+
+A `<rulegroup>` can contain many subrules. The subrule's id will then be
+something like `RULE_ID[n]` with `n` being a number. It can be annoying to find
+the n'th rule in the XML file, as the subrules don't have numbers. To find
+the line number of a subrule, run `org.languagetool.commandline.Main` with
+`-v` (verbose) as a parameter. The (sub)rule's line number in the XML will
+then be printed like this:
+
+```
+1.) Line 1, column 29, Rule ID: ELLIPSIS[1] premium: false line=136645
+Message: Consider using the typographical ellipsis character here instead.
+Suggestion: …
+This is just a test sentence...
+                            ^^^
+```
+
 ### Adding rules to an external file
 
 You can add your own rules to some external file. For that, you need to 
