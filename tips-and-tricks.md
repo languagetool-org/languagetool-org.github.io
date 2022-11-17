@@ -143,7 +143,7 @@ versions of LanguageTool, without modifying existing files. The `grammar_custom.
 needs to use the same XML syntax as `grammar.xml` and it must not introduce rule IDs
 that are in use by other rules already.
 
-##### Using any othe file
+##### Using any other file
 
 You can add your own rules to some external file. For that, you need to 
 add a reference to that file to the `grammar.xml`. You need to add 
