@@ -133,6 +133,18 @@ to find the antipattern that's responsible for this behavior. In this case:
 
 ### Adding rules to an external file
 
+##### Using `grammar_custom.xml`
+
+Starting with LanguageTool 6.0, you can put a file `grammar_custom.xml` into the same
+directory that contains the
+`grammar.xml` file for your language. This file will be loaded in addition to
+`grammar.xml`. It can contain custom rules that you want to use now and with future
+versions of LanguageTool, without modifying existing files. The `grammar_custom.xml`
+needs to use the same XML syntax as `grammar.xml` and it must not introduce rule IDs
+that are in use by other rules already.
+
+##### Using any othe file
+
 You can add your own rules to some external file. For that, you need to 
 add a reference to that file to the `grammar.xml`. You need to add 
 something like the following to the top of the file after 
