@@ -10,14 +10,14 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool for Emacs](https://github.com/mhayashi1120/Emacs-langtool)
 * [LanguageTool for FidusWriter](https://github.com/fiduswriter/fiduswriter-languagetool)
 * [LanguageTool for Firefox](https://addons.mozilla.org/firefox/addon/languagetool/)
-* [LanguageTool for Google Docs](https://gsuite.google.com/marketplace/app/grammatik_und_rechtschreibpr%C3%BCfung_langua/805250893316) - we recommend using [the browser add-on](languagetool.org/addon-redirect) instead, which also supports Google Docs
+* ~~[LanguageTool for Google Docs](https://gsuite.google.com/marketplace/app/grammatik_und_rechtschreibpr%C3%BCfung_langua/805250893316)~~ - we recommend using [the browser add-on](languagetool.org/addon-redirect) instead, which also supports Google Docs
 * [Grazie - Plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
 * [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source code](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
 * [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source code](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
-* [OnlyOffice](https://github.com/ONLYOFFICE/plugin-languagetool/tree/master)
+* [OnlyOffice](https://www.onlyoffice.com/en/app-directory/languagetool) ([source code](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/master/sdkjs-plugins/content/languagetool))
 * [Obsidian LanguageTool Plugin](https://github.com/Clemens-E/obsidian-languagetool-plugin)
 * [LanguageTool Linter for VS Code (Visual Studio Code)](https://github.com/davidlday/vscode-languagetool-linter)
-* [LanguageTool for MS Word](https://languagetool.org/#office)
+* [LanguageTool for MS Word](https://languagetool.org/word)
 * [LanguageTool for Opera](https://addons.opera.com/extensions/details/grammar-and-spell-checker-languagetool/)
 * [LanguageTool Plugin for Trados Studio](https://appstore.rws.com/plugin/95/) (formerly also known as SDL Trados Studio)
 * [LanguageTool for Safari](https://apps.apple.com/app/languagetool-for-safari/id1534275760?l=en&mt=12)
