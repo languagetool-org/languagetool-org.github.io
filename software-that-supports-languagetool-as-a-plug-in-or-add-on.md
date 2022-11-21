@@ -19,7 +19,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool Linter for VS Code (Visual Studio Code)](https://github.com/davidlday/vscode-languagetool-linter)
 * [LanguageTool for MS Word](https://languagetool.org/#office)
 * [LanguageTool for Opera](https://addons.opera.com/extensions/details/grammar-and-spell-checker-languagetool/)
-* [LanguageTool Plugin for Trados Studio](https://appstore.sdl.com/language/app/languagetool-grammar-and-spell-checker/725/) (formerly also known as SDL Trados Studio)
+* [LanguageTool Plugin for Trados Studio](https://appstore.rws.com/plugin/95/) (formerly also known as SDL Trados Studio)
 * [LanguageTool for Safari](https://apps.apple.com/app/languagetool-for-safari/id1534275760?l=en&mt=12)
 * [LanguageTool for Sublime Text](https://packagecontrol.io/packages/LanguageTool) ([source code](https://github.com/gtarawneh/languagetool-sublime))
 * [LanguageTool in TeXstudio](http://texstudio.sourceforge.net/) uses a LT server to check (La)TeX files on the fly. Other ways to [check LaTeX](https://dev.languagetool.org/checking-la-tex-with-languagetool).
