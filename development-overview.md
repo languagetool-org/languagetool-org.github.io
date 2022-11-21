@@ -607,6 +607,31 @@ match will be discarded. If it returns a new rule match, that will be shown
 to the user. It can also simply return the rule match it gets as a parameter
 to accept the match.
 
+## Repetition rules
+
+Sometimes we want a rule to match only when a pattern has occurred several times 
+in a text. To do this, we would need, in general, a Java text-level rule. But we have 
+added some settings to XML pattern rules in order to do it using only pattern rules. 
+
+These settings can be added to a rule or to a rulegroup (but not simultaneuously to a rulegroup
+and to rules inside this rulegroup). If used in a rulegroup, a match of any of the rules inside 
+the rulegroup will be considered a repetition. 
+
+```xml
+    <rule min_prev_matches="2" distance_tokens="80">
+      <pattern>
+        <token inflected="yes">test</token>
+      </pattern>
+      <message>Repeated word.</message>
+      <example correction="">test</example>
+    </rule>
+```
+
+This rule will match only when there are at least 2 previous matches within a total distance of 80 
+tokens (80 tokens from first match to last match). If `distance_tokens` is not specified, the default 
+value is 60 tokens for `min_prev_matches="1"`, 120 tokens for `min_prev_matches="2"`, 
+180 tokens for `min_prev_matches="3"`, and so on.
+
 # Adding new Java rules
 
 Rules that cannot be expressed with a pattern in `grammar.xml` can be written
