@@ -12,7 +12,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool for Firefox](https://addons.mozilla.org/firefox/addon/languagetool/)
 * ~~[LanguageTool for Google Docs](https://gsuite.google.com/marketplace/app/grammatik_und_rechtschreibpr%C3%BCfung_langua/805250893316)~~ - we recommend using [the browser add-on](https://languagetool.org/addon-redirect) instead, which also supports Google Docs
 * [Grazie - Plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
-* [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source code](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
+* [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source code](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension)) - also [available without installing an add-on](https://languagetool.org/insights/post/product-libreoffice/)
 * [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source code](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
 * [OnlyOffice](https://www.onlyoffice.com/en/app-directory/languagetool) ([source code](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/master/sdkjs-plugins/content/languagetool))
 * [Obsidian LanguageTool Plugin](https://github.com/Clemens-E/obsidian-languagetool-plugin)
