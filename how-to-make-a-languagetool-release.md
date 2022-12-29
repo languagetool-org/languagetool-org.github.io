@@ -44,9 +44,9 @@ later.
   * `description.xml`
   * top-level pom.xml: only set property `revision`
   * `mvn versions:set` (set the version number of today's release when prompted)
-  * commit changes
   * update `<version>${revision}</version>` to the new version number in all `pom.xml` files (using `${revision}`
     as a variable would cause issues when publishing the artifact via Sonatype)
+  * commit changes
 * `mvn clean test`
 * `./build.sh languagetool-standalone package -DskipTests`
   * test the result in `languagetool-standalone/target/`
