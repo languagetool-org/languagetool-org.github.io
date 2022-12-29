@@ -133,7 +133,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 * <http://forum.languagetool.org> - include checksums (Unix command: `sha256sum <file>`).
 * <http://extensions.services.openoffice.org/project/languagetool>  
-* <https://extensions.libreoffice.org/extensions/languagetool>   via <https://extensions.libreoffice.org/admin>   (Note: set the "State" to "final release")
+* ~~<https://extensions.libreoffice.org/extensions/languagetool>   via <https://extensions.libreoffice.org/admin>   (Note: set the "State" to "final release")~~ Fred takes care of this now
 * Update this release documentation if there have been any changes in the process
 
 ## Update the web app at [community.languagetool.org](http://community.languagetool.org)
