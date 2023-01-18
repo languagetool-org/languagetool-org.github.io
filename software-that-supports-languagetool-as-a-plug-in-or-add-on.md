@@ -19,6 +19,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool Linter for VS Code (Visual Studio Code)](https://github.com/davidlday/vscode-languagetool-linter)
 * [LanguageTool for MS Word](https://languagetool.org/word)
 * [LanguageTool for Opera](https://addons.opera.com/extensions/details/grammar-and-spell-checker-languagetool/)
+* [LanguageTool for Outlook](https://languagetool.org/windows-desktop) - a desktop app for Windows (beta version), supports Outlook
 * [LanguageTool Plugin for Trados Studio](https://appstore.rws.com/plugin/95/) (formerly also known as SDL Trados Studio)
 * [LanguageTool for Safari](https://apps.apple.com/app/languagetool-for-safari/id1534275760?l=en&mt=12)
 * [LanguageTool for Sublime Text](https://packagecontrol.io/packages/LanguageTool) ([source code](https://github.com/gtarawneh/languagetool-sublime))
