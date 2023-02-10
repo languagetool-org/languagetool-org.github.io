@@ -17,7 +17,8 @@ this software is not supported by the LanguageTool team.**
 * [OnlyOffice](https://www.onlyoffice.com/en/app-directory/languagetool) ([source code](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/master/sdkjs-plugins/content/languagetool))
 * [Obsidian LanguageTool Plugin](https://github.com/Clemens-E/obsidian-languagetool-plugin)
 * [LanguageTool Linter for VS Code (Visual Studio Code)](https://github.com/davidlday/vscode-languagetool-linter)
-* [LanguageTool for MS Word](https://languagetool.org/word)
+* [Mac desktop app](https://languagetool.org/mac-desktop) - currently supports Apple Mail, Notes, Messages, Slack, and MS Word
+* [LanguageTool for MS Word](https://languagetool.org/word) - for Mac, consider using the [Mac desktop app](https://languagetool.org/mac-desktop) instead
 * [LanguageTool for Opera](https://addons.opera.com/extensions/details/grammar-and-spell-checker-languagetool/)
 * [LanguageTool for Outlook](https://languagetool.org/windows-desktop) - a desktop app for Windows (beta version), supports Outlook
 * [LanguageTool Plugin for Trados Studio](https://appstore.rws.com/plugin/95/) (formerly also known as SDL Trados Studio)
