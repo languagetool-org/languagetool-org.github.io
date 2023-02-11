@@ -378,6 +378,8 @@ nice person*, or *a nice nice person*:
     <token>person</token>
 ```
 
+Use `max="-1"` to match an unlimited number of occurrences.
+
 ## `<or>`, `<and>`
 
 `or` can be used to match a token if one or both of two conditions are
