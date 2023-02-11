@@ -3,7 +3,6 @@
 This software supports [LanguageTool](https://languagetool.org) one way or the other. **Please note that most of
 this software is not supported by the LanguageTool team.**
 
-* [linter-languagetool](https://atom.io/packages/linter-languagetool) for Atom ([source code](https://github.com/wysiib/linter-languagetool))
 * [LanguageTool in CheckMate](http://www.opentag.com/okapi/wiki/index.php?title=CheckMate) used as a server to enhance translation QA
 * [LanguageTool for Chrome](https://chrome.google.com/webstore/detail/languagetool/oldceeleldhonbafppcapldpdifcinji)
 * [LanguageTool for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/hfjadhjooeceemgojogkhlppanjkbobc)
@@ -11,7 +10,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool for FidusWriter](https://github.com/fiduswriter/fiduswriter-languagetool)
 * [LanguageTool for Firefox](https://addons.mozilla.org/firefox/addon/languagetool/)
 * ~~[LanguageTool for Google Docs](https://gsuite.google.com/marketplace/app/grammatik_und_rechtschreibpr%C3%BCfung_langua/805250893316)~~ - we recommend using [the browser add-on](https://languagetool.org/addon-redirect) instead, which also supports Google Docs
-* [Grazie - Plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
+* [Grazie Lite - Plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
 * [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source code](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension)) - also [available without installing an add-on](https://languagetool.org/insights/post/product-libreoffice/)
 * [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source code](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension))
 * [OnlyOffice](https://www.onlyoffice.com/en/app-directory/languagetool) ([source code](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/master/sdkjs-plugins/content/languagetool))
@@ -38,6 +37,7 @@ this software is not supported by the LanguageTool team.**
 
 Add-ons that haven't been updated for quite some time and that seem to be **unmaintained**:
 
+* [linter-languagetool](https://atom.io/packages/linter-languagetool) for Atom ([source code](https://github.com/wysiib/linter-languagetool))
 * [LanguageTool for Android (source)](https://github.com/Softcatala/LanguageToolAndroidService)
 * [LanguageTool Eclipse Plugin](https://github.com/vogellacompany/languagetool-eclipse-plugin)
 * [vscode-languagetool](https://github.com/cfjedimaster/vscode-languagetool), VS Code extension to wrap the LanguageTool API
