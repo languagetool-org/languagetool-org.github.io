@@ -9,7 +9,7 @@ This section tells you in a nutshell how to write your own LanguageTool rules fo
 detecting errors (see [this overview](https://languagetool.org/languages/) for
 how many rules LanguageTool already knows for your language):
 
-* Download the stand-alone version of LanguageTool [from the homepage](https://languagetool.org) and unzip it.
+* Download [the stand-alone version of LanguageTool](https://languagetool.org/download/LanguageTool-stable.zip) and unzip it.
 * Open `LanguageTool-xx/org/languagetool/rules/en/grammar.xml` in your
   preferred text editor or in an XML editor, where "xx" stands for the
   version number of the package you downloaded.
