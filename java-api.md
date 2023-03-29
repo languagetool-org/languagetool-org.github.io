@@ -14,7 +14,7 @@ Get LanguageTool by adding a dependency like this to your
 ```
 
 This will get the dependencies needed to check English. Use `language-de` as an
-`artifactId` for German etc. ([show all artifacts](http://search.maven.org/#search|ga|1|languagetool)).
+`artifactId` for German etc. ([show all artifacts](https://central.sonatype.com/search?smo=true&q=languagetool&namespace=org.languagetool&sort=published)).
 If you want to use all languages that LanguageTool supports, use `language-all`.
 
 If you don't use Maven (or a similar system), download the stand-alone ZIP instead.
