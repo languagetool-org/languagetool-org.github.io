@@ -24,7 +24,7 @@ When applying toneTags to XML style rules for the backend implementation, here a
 - Rules tagged with `clarity` are also always active, but it is still important to tag them as such in case changes need to be made to the backend.
 
 ## Description of toneTags
-|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tone Tags     | Description                                                                                                                                                                                                                                                                                                                                                  |
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | academic      | Rules that emphasize a scholarly writing style suitable for academic or research-oriented content. Also included is adherence to culturally-specific academic conventions.                                                                                                                                                                                   |
@@ -43,11 +43,11 @@ When applying toneTags to XML style rules for the backend implementation, here a
 | professional  | Rules that emphasize a formal and polished writing style suitable for business and professional settings. Encompasses rules aimed at maintaining a level of competence, credibility, and adherence to professional standards. Differs from formal in the sense that it focuses on suggestions that are tailored for a business and professional environment. |
 | scientific    | Rules that pertain to writing in a rigorous and objective manner within the scientific domain. Encompasses rules aimed at maintaining precision and adherence to scientific principles and methodologies. Promotes the use of specialized terminology, logical reasoning, and evidence-based arguments.                                                      |
 | shorten_it    | Rules related to shortening sentence length (user option).                                                                                                                                                                                                                                                                                                   |
-|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 ## Mapping toneTags to Writing Goals
-|------------------------|-------------------------------------------------------------------|
+|------------------------+-------------------------------------------------------------------|
 | Writing Goal           | Relevant toneTags                                                 |
 |------------------------|-------------------------------------------------------------------|
 | Serious & Professional | clarity, confident, formal, general, positive, professional       |
@@ -55,7 +55,7 @@ When applying toneTags to XML style rules for the backend implementation, here a
 | Confident & Persuasive | clarity, confident, general, persuasive, positive                 |
 | Personal & Encouraging | clarity, general, informal, positive, povadd                      |
 | Original & Expressive  | clarity, general                                                  |
-|------------------------|-------------------------------------------------------------------|
+|------------------------+-------------------------------------------------------------------|
 
 
 __Note:__ 
