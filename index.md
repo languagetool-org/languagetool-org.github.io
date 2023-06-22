@@ -28,6 +28,7 @@
 * [Advanced personal pronoun postags](/new_PRP_tags.md)
 * [Usage of false friends rule](/usage-of-false-friends-rule)
 * [Error Collections](/error-collections)
+* [Style Tone Tags](/style_tone_tags)
 
 #### General Development
 
