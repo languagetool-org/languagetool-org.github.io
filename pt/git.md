@@ -40,7 +40,7 @@ Maus exemplos seriam: `maria_22_de_abril`, `regras`.
 Use [estas diretrizes](https://cbea.ms/git-commit/) (em inglês).
 
 Dentro do possível, mantenha seus *commits* bem descritos:
-- comece todos as suas mensagens de *commit* com a tag `[pt]`;
+- comece todas as suas mensagens de *commit* com a tag `[pt]`;
 - escreva-as em inglês;
 - a primeira linha da sua mensagem não deve ultrapassar 50 caracteres;
 - a não ser que suas mudanças sejam gerais (ou seja, se apliquem a várias regras), busque pôr o nome da regra na primeira linha da mensagem.
