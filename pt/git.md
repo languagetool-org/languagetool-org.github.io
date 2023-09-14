@@ -37,9 +37,12 @@ Maus exemplos seriam: `maria_22_de_abril`, `regras`.
 
 ## [Mensagens de *commit*](https://xkcd.com/1296/)
 
-Dentro do possível, mantenha seus *commits* bem descritos:
-- comece todos as suas mensagens de *commit* com a tag `[pt]`;
-- prefira escrevê-las em inglês;
-- a primeira linha da sua mensagem não deve ultrapassar 50 caracteres.
+Use [estas diretrizes](https://cbea.ms/git-commit/) (em inglês).
 
-O adágio "*commit early, commit often*" só se aplica ao seu trabalho **local**.
+Dentro do possível, mantenha seus *commits* bem descritos:
+- comece todas as suas mensagens de *commit* com a tag `[pt]`;
+- escreva-as em inglês;
+- a primeira linha da sua mensagem não deve ultrapassar 50 caracteres;
+- a não ser que suas mudanças sejam gerais (ou seja, se apliquem a várias regras), busque pôr o nome da regra na primeira linha da mensagem.
+
+O adágio "*commit early, commit often*" só se aplica ao seu trabalho **local**. Ao criar um *pull request*, o ideal é que ele seja composto de poucos *commits* razoavelmente completos. Prefira fazer *squash* se você tiver muitos *commits* com mensagens do tipo `"[pt] Fix error"`, `"[pt] Add antipattern"`.
