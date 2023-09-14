@@ -585,6 +585,7 @@ and then refer to them using `$1`, `$2` etc:
            postag_regexp="yes"
            postag_replace="$1:sg:.*nom.*:n1\.n2.*$2"></match>
 ```
+It should be noted that the token matching the pattern has to match the pattern in the suggestion. If the expression is not the same a runtime exception error can occur (see more information on runtime exception errors [here](https://languagetooler.atlassian.net/wiki/spaces/DEV/pages/1959297044/XML+Rules+Possible+Error+Messages+How+to+solve).
 
 ## RuleFilter
 
