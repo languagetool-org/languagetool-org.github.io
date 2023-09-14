@@ -51,3 +51,12 @@
 
 * [How to make a LanguageTool release](/how-to-make-a-languagetool-release), including actions for feature freeze
 * [How to add a new committer](/how-to-add-a-new-committer)
+
+#### Language-specific development
+
+##### Portuguese
+
+* [Observações gerais](pt/overview)
+* [Mensagens](/pt/messages)
+* [Regras](/pt/rules)
+* [Git](pt/git)
