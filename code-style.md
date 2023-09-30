@@ -23,6 +23,13 @@ settings](https://raw.githubusercontent.com/languagetool-org/languagetool/master
   with `x.y` being the version number of the next release.
 * Add `@Nullable` to methods that might return `null`, no matter if 
   these methods are public or not.
+* Do not share same package path among submodules/subprojects, 
+  ex. between `language-en` and `language-core`. It is known as `split package`
+  problem that prevent a migration for Java Platform Module System (JPMS)
+  introduced in Java 9. Each individual language module should have its own
+  and unique package path which will end with a language code,
+  ex. `org.languagetool.language.en` and `org.languagetool.language.rules.en`
+  for English language project.
 
 Examples for proper use of whitespace:
 

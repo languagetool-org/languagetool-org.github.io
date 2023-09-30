@@ -26,7 +26,7 @@ that to check your text. Also see [the API documentation (Javadoc)](http://langu
 For example:
 
 ```java
-    JLanguageTool langTool = new JLanguageTool(new BritishEnglish());
+    JLanguageTool langTool = new JLanguageTool(Languages.getLanguageForName("English (GB)"));
     // comment in to use statistical ngram data:
     //langTool.activateLanguageModelRules(new File("/data/google-ngram-data"));
     List<RuleMatch> matches = langTool.check("A sentence with a error in the Hitchhiker's Guide tot he Galaxy");
@@ -52,7 +52,7 @@ that accepts the `AnnotatedText` object.
 ## Multi-Threading
 
 The `JLanguageTool` class is not thread safe. Create one instance of `JLanguageTool`
-per thread, but create the language only once (e.g. `new BritishEnglish()`) and
+per thread, but create the language only once (e.g. `Languages.getLanguageByName("English (GB)")`) and
 use that for all instances of `JLanguageTool`. The same is true for
 `MultiThreadedJLanguageTool` - its name refers to the fact that it uses
 threads internally, but it's not thread safe itself.
@@ -61,14 +61,14 @@ threads internally, but it's not thread safe itself.
 
 If you want spell checking and the language you're working with has variants,
 you will need to specify that variant in the `JLanguageTool` constructor, e.g.
-`new AmericanEnglish()` instead of just `new English()`.
+`Languages.getLanguageByName("English (US)")` instead of `Languages.getLanguageByName("English")`.
 
 To ignore words, i.e. exclude them from spell checking, call the `addIgnoreTokens(...)`
 method of the spell checking rule you're using. You first have to find the rule by
 iterating over all active rules. Example:
 
 ```java
-    JLanguageTool lt = new JLanguageTool(new AmericanEnglish());
+    JLanguageTool lt = new JLanguageTool(Langauges.getLanguageByName("English (US)")));
     for (Rule rule : lt.getAllActiveRules()) {
       if (rule instanceof SpellingCheckRule) {
         List<String> wordsToIgnore = Arrays.asList("specialword", "myotherword");
@@ -93,9 +93,9 @@ LanguageTool determines which languages it supports at runtime by reading
 them from a file `META-INF/org/languagetool/language-module.properties`
 in the classpath. The file may look like this:
 
-    languageClasses=org.languagetool.language.Italian
-    languageClasses=org.languagetool.language.Polish
-    languageClasses=org.languagetool.language.English,org.languagetool.language.AmericanEnglish
+    languageClasses=org.languagetool.language.it.Italian
+    languageClasses=org.languagetool.language.pl.Polish
+    languageClasses=org.languagetool.language.en.English,org.languagetool.language.en.AmericanEnglish
 
 You either build that file yourself, adapted to the languages you support, or you
 take it from the LanguageTool stand-alone distribution. Of course, the classes
