@@ -1,2 +1,2 @@
 # languagetool-org
-repo for Github pages
+repo for GitHub pages

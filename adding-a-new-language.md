@@ -8,7 +8,7 @@ to write XML rules for a new language, please ask on our
 [forum](https://forum.languagetool.org/). We will help you set up the 
 new language so no programming will be required by you. If you are a 
 developer, fork [LanguageTool on 
-github](https://github.com/languagetool-org/languagetool) and make the 
+GitHub](https://github.com/languagetool-org/languagetool) and make the 
 following changes in your fork. Once you've added enough error 
 detection rules and we've checked your changes, you can send a pull 
 request. Please note that we're only going to add a language to the 
@@ -19,12 +19,12 @@ request.
 
 Note that the changes listed are just the technical changes needed so 
 your language can be selected in LanguageTool. How useful support for 
-the new language will be depends solely on the rules you're going to 
+the new language will depend solely on the rules you're going to 
 write. These rules decide how many errors can actually be found and how 
 many false alarms the system shows. Well-supported languages have more 
 than 1000 rules in LanguageTool.
 
-1. Fork the code [at github](https://github.com/languagetool-org/languagetool).
+1. Fork the code [at GitHub](https://github.com/languagetool-org/languagetool).
 2. Clone your forked repository.
 3. Switch to the `languagetool-language-modules` directory.
 4. Create a new project using Maven: `mvn archetype:generate -DgroupId=org.languagetool -DartifactId=**xy** -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false` (replace xy with the [ISO 639-1 Code](http://www.loc.gov/standards/iso639-2/php/code_list.php) of your language).
