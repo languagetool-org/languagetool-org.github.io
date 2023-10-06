@@ -9,7 +9,7 @@ Get LanguageTool by adding a dependency like this to your
     <dependency>
       <groupId>org.languagetool</groupId>
       <artifactId>language-en</artifactId>
-      <version>6.1</version>
+      <version>6.3</version>
     </dependency>
 ```
 
