@@ -6,6 +6,7 @@ words to one of these files:
 * `spelling.txt`: words that the spell checker will ignore and use to generate corrections if someone types a similar word
 * `ignore.txt`: words that the spell checker will ignore but not use to generate corrections
 * `prohibited.txt`: words that should be considered incorrect even though the spell checker would accept them
+* `spelling_global.txt`: words like proper names, brands or common acronyms (e.g. Google, Schwarz Group, BMW); works like `spelling.txt` (see above), but for all languages. Therefore, please add only words that are valid for any language. (Note: At times, a language may favor an alternative spelling. In Dutch, for instance: Londen instead of London; Parijs instead of Paris. Another example: transcriptions of Russian names are usually different for each language (Fyodor Dostoevsky, Fjodor Dostojewski, Fiodor Dostoïevski…). They shouldn't be added. Warning: Added words that are similar to other words can lead to undetected errors.)
 
 After making changes to any of the files listed above, you need to 
 restart LanguageTool for the change to become active. The rest of this 
