@@ -6,7 +6,7 @@ words to one of these files:
 * `spelling.txt`: words that the spell checker will ignore and use to generate corrections if someone types a similar word
 * `ignore.txt`: words that the spell checker will ignore but not use to generate corrections
 * `prohibited.txt`: words that should be considered incorrect even though the spell checker would accept them
-* `spelling_global.txt`: words like proper names, brands or common acronyms (e.g. Google, Schwarz Group, BMW); works like `spelling.txt` (see above), but for all languages. Therefore, please add only words that are valid for any language. (Note: Remember that some words may be a typo of another word, or an error in another language. These cases should not be added, as this can lead to undetected errors).
+* `spelling_global.txt`: words like proper names, brands or common acronyms (e.g. Google, Schwarz Group, BMW); works like `spelling.txt` (see above), but for all languages. Therefore, please add only words that are valid for any language. (Note: Remember that some words may be a typo of another word, or an error in another language. These cases should not be added, as this can lead to undetected errors.)
 
 After making changes to any of the files listed above, you need to 
 restart LanguageTool for the change to become active. The rest of this 
