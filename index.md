@@ -60,3 +60,7 @@
 * [Mensagens](/pt/messages)
 * [Regras](/pt/rules)
 * [Git](pt/git)
+
+### General
+
+* [Imprint/Impressum](https://languagetool.org/legal/)
