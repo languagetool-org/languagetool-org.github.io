@@ -63,4 +63,4 @@
 
 ### General
 
-* [Imprint/Impressum](https://languagetool.org/legal/)
+* [Imprint/Impressum](https://languagetool.org/legal/) - [Privacy Policy](https://languagetool.org/legal/privacy)
