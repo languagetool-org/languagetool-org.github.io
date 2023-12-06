@@ -507,7 +507,7 @@ words, e.g. to detect that "children" is a plural noun in English. How
 to create and update that dictionary is described at [Developing a 
 tagger dictionary](/developing-a-tagger-dictionary). An easier approach
 is to simply add words to 
-`org/languagetool/resource/XX/added.txt` (`XX` being a language code). 
+`org/languagetool/resource/XX/added_custom.txt` (`XX` being a language code). 
 Add words to that file in the form `fullform lemma pos_tag`, separated 
 by tabs, for example: `children child NNS` (note than tabs are not 
 displayed here). The words you've added will be recognized 
