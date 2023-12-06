@@ -39,6 +39,12 @@ less than 3MB, plus the speed of the automaton tagger is really high.
 
 ## Exporting the data
 
+**Note:** some languages get their dictionary data from an external depdendency
+(e.g. [the German dict](https://github.com/languagetool-org/german-pos-dict),
+the [Dutch dict](https://github.com/languagetool-org/dutch-pos-dict)).
+In these cases, the command below needs to be adapted to point to the `.dict`
+and `.info` files in those JARs.
+
 Run `DictionaryExporter` with the `*.dict` file as a parameter like this:
 
     java -cp languagetool.jar org.languagetool.tools.DictionaryExporter -i org/languagetool/resource/en/english.dict -info org/languagetool/resource/en/english.info -o dictionary.dump
