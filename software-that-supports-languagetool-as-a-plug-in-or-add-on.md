@@ -19,7 +19,7 @@ this software is not supported by the LanguageTool team.**
 * [Mac desktop app](https://languagetool.org/mac-desktop) - currently supports Apple Mail, Notes, Messages, Slack, and MS Word
 * [LanguageTool for MS Word](https://languagetool.org/word) - for Mac, consider using the [Mac desktop app](https://languagetool.org/mac-desktop) instead
 * [LanguageTool for Opera](https://addons.opera.com/extensions/details/grammar-and-spell-checker-languagetool/)
-* [LanguageTool for Outlook](https://languagetool.org/windows-desktop) - a desktop app for Windows (beta version), supports Outlook
+* [LanguageTool for Windows](https://languagetool.org/windows-desktop) - a desktop app for Windows, supports Outlook and MS Word
 * [LanguageTool Plugin for Trados Studio](https://appstore.rws.com/plugin/95/) (formerly also known as SDL Trados Studio)
 * [LanguageTool for Safari](https://apps.apple.com/app/languagetool-for-safari/id1534275760?l=en&mt=12)
 * [LanguageTool for Sublime Text](https://packagecontrol.io/packages/LanguageTool) ([source code](https://github.com/gtarawneh/languagetool-sublime))
