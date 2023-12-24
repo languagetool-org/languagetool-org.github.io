@@ -10,8 +10,13 @@ the default settings, which use our Cloud servers.
 ### Getting the server
 
 Download the [LanguageTool Desktop version for offline use](https://languagetool.org/download/LanguageTool-stable.zip)
-(>200MB) and unzip it. Note that this approach relies on our old desktop version, the new
-ones ([Windows](https://languagetool.org/windows), [Mac](https://languagetool.org/mac)) will not work with this approach.
+(>200MB) and unzip it.
+
+**Please note:**
+  * This will give you a basic LanguageTool server without AI-based rules. The
+  AI-based rules are only available in the Cloud or for [Premium business
+users](https://languagetool.org/business).
+  * The [Windows](https://languagetool.org/windows) and [Mac](https://languagetool.org/mac) desktop apps will not work with this approach.
 
 ### Starting from Command Line
 
@@ -37,9 +42,6 @@ On MacOS you can start the server using [brew](https://github.com/Homebrew/brew)
   configure `https://localhost:8082/v2` as "Other server" ([source](https://forum.languagetool.org/t/languagetool-for-safari/5554/24?u=dnaber)).
   Note: The LanguageTool server doesn't support synonyms, so the synonym feature in the add-on
   will not work.
-
-NOTE: This will give you a basic server missing some rules based on statistics.
-See [here](/finding-errors-using-n-gram-data) for how to set up those.
 
 ### Testing the server
 
