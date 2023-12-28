@@ -20,13 +20,30 @@ users](https://languagetool.org/business).
 
 ### Starting from Command Line
 
-On the command line, go to the unzipped directory and start LanguageTool HTTP server using these commands:
+The next three steps are optional but strongly recommended on Linux and Mac for 
+good language detection - on Windows, fastText is not available and LanguageTool's
+language detection will not work that well:
 
-    java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081 --allow-origin
+1. Build fastText as described at https://fasttext.cc/docs/en/support.html
+2. Download the [fastText language identification model](https://fasttext.cc/docs/en/language-identification.html)
+3. Create a file `server.properties` with this content (change `/path/to/fasttext`
+   to your fastText installation):
+   ```
+   fasttextModel=/path/to/fasttext/lid.176.bin
+   fasttextBinary=/path/to/fasttext/fasttext
+   ```
 
-Or this command that is useful for system package management installs like for Arch Linux:
+If you skip these steps, create an empty `server.properties` file instead.
 
-    languagetool --http --port 8081 --allow-origin "*"
+On the command line, go to the unzipped LanguageTool directory and start the
+LanguageTool HTTP server using these commands:
+
+    java -cp languagetool-server.jar org.languagetool.server.HTTPServer --config server.properties --port 8081 --allow-origin
+
+Or this command that is useful for system package management installs like
+for Arch Linux:
+
+    languagetool --http --config server.properties --port 8081 --allow-origin "*"
 
 On MacOS you can start the server using [brew](https://github.com/Homebrew/brew):
 
