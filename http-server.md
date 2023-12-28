@@ -24,7 +24,7 @@ The next three steps are optional but strongly recommended on Linux and Mac for
 good language detection - on Windows, fastText is not available and LanguageTool's
 language detection will not work that well:
 
-1. Build fastText as described at https://fasttext.cc/docs/en/support.html
+1. [Build fastText](https://fasttext.cc/docs/en/support.html)
 2. Download the [fastText language identification model](https://fasttext.cc/docs/en/language-identification.html)
 3. Create a file `server.properties` with this content (change `/path/to/fasttext`
    to your fastText installation):
