@@ -18,6 +18,10 @@ Download the [LanguageTool Desktop version for offline use](https://languagetool
 users](https://languagetool.org/business).
   * The [Windows](https://languagetool.org/windows) and [Mac](https://languagetool.org/mac) desktop apps will not work with this approach.
 
+On MacOS you can install the server using [brew](https://github.com/Homebrew/brew):
+
+    brew install languagetool
+
 ### Starting from Command Line
 
 The next three steps are optional but strongly recommended on Linux and Mac for 
@@ -47,7 +51,7 @@ for Arch Linux:
 
 On MacOS you can start the server using [brew](https://github.com/Homebrew/brew):
 
-    brew services start languagetool
+    languagetool-server --config server.properties --port 8081 --allow-origin "*"
 
 * If this fails with an error saying that `java` cannot be found,
   [install Java 8 or later](https://java.com/en/download/help/download_options.xml) first.
