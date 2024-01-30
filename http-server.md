@@ -18,7 +18,8 @@ Download the [LanguageTool Desktop version for offline use](https://languagetool
 users](https://languagetool.org/business).
   * The [Windows](https://languagetool.org/windows) and [Mac](https://languagetool.org/mac) desktop apps will not work with this approach.
 
-On MacOS you can install the server using [brew](https://github.com/Homebrew/brew):
+On MacOS you can install the server using [brew](https://github.com/Homebrew/brew) (please
+note the brew support is not provided by the LanguageTool team):
 
     brew install languagetool
 
