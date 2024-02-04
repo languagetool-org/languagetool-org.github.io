@@ -19,7 +19,7 @@ users](https://languagetool.org/business).
   * The [Windows](https://languagetool.org/windows) and [Mac](https://languagetool.org/mac) desktop apps will not work with this approach.
 
 On MacOS you can install the server using [brew](https://github.com/Homebrew/brew) (please
-note the brew support is not provided by the LanguageTool team):
+note that Homebrew support is not provided by the LanguageTool team):
 
     brew install languagetool
 
@@ -50,9 +50,9 @@ for Arch Linux:
 
     languagetool --http --config server.properties --port 8081 --allow-origin "*"
 
-On MacOS you can start the server using [brew](https://github.com/Homebrew/brew):
+On MacOS you can start the server as a service in the background using [brew](https://github.com/Homebrew/brew):
 
-    languagetool-server --config server.properties --port 8081 --allow-origin "*"
+    brew services start languagetool
 
 * If this fails with an error saying that `java` cannot be found,
   [install Java 8 or later](https://java.com/en/download/help/download_options.xml) first.
