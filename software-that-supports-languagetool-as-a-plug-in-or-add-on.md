@@ -1,6 +1,6 @@
 # Software that Supports LanguageTool as an Add-On
 
-This software supports [LanguageTool](https://languagetool.org) one way or the other. **Please note that most of
+This software supports [LanguageTool](https://languagetool.org) in one way or another. **Please note that most of
 this software is not supported by the LanguageTool team.**
 
 * [LanguageTool in CheckMate](http://www.opentag.com/okapi/wiki/index.php?title=CheckMate) used as a server to enhance translation QA
@@ -16,7 +16,7 @@ this software is not supported by the LanguageTool team.**
 * [OnlyOffice](https://www.onlyoffice.com/en/app-directory/languagetool) ([source code](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/master/sdkjs-plugins/content/languagetool))
 * [Obsidian LanguageTool Plugin](https://github.com/Clemens-E/obsidian-languagetool-plugin)
 * [LanguageTool Linter for VS Code (Visual Studio Code)](https://github.com/davidlday/vscode-languagetool-linter)
-* [Mac desktop app](https://languagetool.org/mac-desktop) - currently supports Apple Mail, Notes, Messages, Slack, and MS Word
+* [Mac desktop app](https://languagetool.org/mac-desktop) - currently supports Apple Mail, Apple Pages, Notes, Messages, Slack, MS Word, and Teams
 * [LanguageTool for MS Word](https://languagetool.org/word) - for Mac, consider using the [Mac desktop app](https://languagetool.org/mac-desktop) instead
 * [LanguageTool for Opera](https://addons.opera.com/extensions/details/grammar-and-spell-checker-languagetool/)
 * [LanguageTool for Windows](https://languagetool.org/windows-desktop) - a desktop app for Windows, supports Outlook and MS Word
