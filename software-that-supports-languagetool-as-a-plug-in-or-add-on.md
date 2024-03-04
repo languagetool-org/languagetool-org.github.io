@@ -9,6 +9,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool for Emacs](https://github.com/mhayashi1120/Emacs-langtool)
 * [LanguageTool for FidusWriter](https://github.com/fiduswriter/fiduswriter-languagetool)
 * [LanguageTool for Firefox](https://addons.mozilla.org/firefox/addon/languagetool/)
+* [LanguageToolAnnotator for Fonto](https://documentation.fontoxml.com/latest/languagetoolannotator-0fc7ac104aa0)
 * ~~[LanguageTool for Google Docs](https://gsuite.google.com/marketplace/app/grammatik_und_rechtschreibpr%C3%BCfung_langua/805250893316)~~ - we recommend using [the browser add-on](https://languagetool.org/addon-redirect) instead, which also supports Google Docs
 * [Grazie Lite - Plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
 * [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source code](https://github.com/languagetool-org/languagetool/tree/master/languagetool-office-extension)) - also [available without installing an add-on](https://languagetool.org/insights/post/product-libreoffice/)
