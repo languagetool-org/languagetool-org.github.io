@@ -6,7 +6,7 @@ you're working on a major feature, please plan accordingly so the
 feature will be ready a few weeks before release, so that enough time 
 remains for testing.
 
-* 6.4 planned release: Tuesday, 2024-03-28 - feature freeze 2024-03-21
+* 6.4 planned release: Thursday, 2024-03-28 - feature freeze 2024-03-21
 * 6.5 planned release: Friday, 2024-09-27 - feature freeze 2024-09-21
  
 ## Archive
