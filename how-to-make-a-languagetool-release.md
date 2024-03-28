@@ -103,7 +103,6 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 * `git checkout vx.y-release`
 * Set the new version (x.y-SNAPSHOT) in these files:
-  * `JLanguageTool.VERSION` in `JLanguageTool.java`
   * `manifest.xml`
   * `description.xml`
   * property `revision` in top-level pom.xml
