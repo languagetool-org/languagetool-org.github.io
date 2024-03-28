@@ -1,16 +1,14 @@
 # Release Roadmap
 
 [LanguageTool](https://languagetool.org) uses a time-based release cycle, with a new release every 
-six months. This is a list of upcoming LanguageTool releases. If 
-you're working on a major feature, please plan accordingly so the 
-feature will be ready a few weeks before release, so that enough time 
-remains for testing.
+six months. This is a list of upcoming LanguageTool releases.
 
-* 6.4 planned release: Thursday, 2024-03-28 - feature freeze 2024-03-21
 * 6.5 planned release: Friday, 2024-09-27 - feature freeze 2024-09-21
+* 6.6 planned release: Thursday, 2025-03-27 - feature freeze 2025-03-20
  
 ## Archive
 
+* 6.4 release date: 2024-03-28
 * 6.3 release date: 2023-10-06
 * 6.2 release date: 2023-07-02 (stand-alone only)
 * 6.1 release date: 2023-03-28
