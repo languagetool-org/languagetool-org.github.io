@@ -1,6 +1,9 @@
 # LanguageTool as a Java-based spell checker
 
-## Why?
+**Note:** We recommend using the [LanguageTool HTTP server](public-http-api) instead
+of using the Java API directly.
+
+## Why use LanguageTool?
 
 It's easy to use [LanguageTool](https://languagetool.org) as a spell checker in your Java projects. While you can also use
 existing projects like [HunspellJNA](https://github.com/dren-dk/HunspellJNA) or
