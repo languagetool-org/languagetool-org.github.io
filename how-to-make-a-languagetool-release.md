@@ -51,8 +51,6 @@ later.
   * test the result in `languagetool-standalone/target/`
   * also test `testrules.sh` and `testrules.bat`
   * check how much bigger the ZIP has become compared to the previous release
-* `./build.sh languagetool-wikipedia package -DskipTests`
-  * test the result in `languagetool-wikipedia/target`
 * `./build.sh languagetool-office-extension package -DskipTests`
   * test the result in `languagetool-office-extension/target`, rename the *.zip to *.oxt and install it in LibreOffice/OpenOffice, test with <https://github.com/languagetool-org/languagetool/blob/master/languagetool-office-extension/src/test/resources/manual-testing.odt?raw=true>  
 * run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
