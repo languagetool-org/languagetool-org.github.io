@@ -1,5 +1,8 @@
 # Embedding LanguageTool in Java applications
 
+**Note:** We recommend using the [LanguageTool HTTP server](public-http-api) instead
+of using the Java API directly.
+
 [LanguageTool](https://languagetool.org) requires Java 8 or later.
 
 Get LanguageTool by adding a dependency like this to your
@@ -9,7 +12,7 @@ Get LanguageTool by adding a dependency like this to your
     <dependency>
       <groupId>org.languagetool</groupId>
       <artifactId>language-en</artifactId>
-      <version>6.3</version>
+      <version>6.4</version>
     </dependency>
 ```
 
@@ -22,8 +25,7 @@ You will need the JAR files in the `libs` directory, the `org` directory, and th
 `META-INF` directory in your classpath. We **strongly** recommend using Maven or Gradle instead.
 
 To use LanguageTool, you just need to create a `JLanguageTool` object and use
-that to check your text. Also see [the API documentation (Javadoc)](http://languagetool.org/development/api/).
-For example:
+that to check your text. For example:
 
 ```java
     JLanguageTool langTool = new JLanguageTool(Languages.getLanguageForShortCode("en-GB"));
