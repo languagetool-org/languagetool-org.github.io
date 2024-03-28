@@ -39,7 +39,6 @@ later.
 * update the i18n property files by running `wti pull`
   * Daniel has the API key for webtranslateit.com
 * Update the version number in:
-  * `JLanguageTool.VERSION` in `JLanguageTool.java`
   * `manifest.xml`
   * `description.xml`
   * top-level pom.xml: only set property `revision`
