@@ -94,8 +94,8 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * check out the new tag from git and run `mvn clean package`
 * copy the stand-alone LT to a path with a space and test some sentences
 * upload to the server (see personal notes at LanguageTooler -> Release for how to access the drive):
-  * `LanguageTool-5.x.zip` also as `LanguageTool-stable.zip`
-  * `LanguageTool-5.x.oxt` also as `LanguageTool-stable.oxt`
+  * `LanguageTool-6.x.zip` also as `LanguageTool-stable.zip`
+  * `LanguageTool-6.x.oxt` also as `LanguageTool-stable.oxt`
   * `CHANGES.md`
   * `README.md`
 
