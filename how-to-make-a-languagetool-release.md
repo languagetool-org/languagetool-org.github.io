@@ -105,7 +105,8 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * Set the new version (x.y-SNAPSHOT) in these files:
   * `manifest.xml`
   * `description.xml`
-  * property `revision` in top-level pom.xml
+  * set `<version>x.y</version>` to `<version>${revision}</version>` in all `pom.xml` files
+  * top-level pom.xml: set property `properties` -> `revision` to the new x.y-SNAPSHOT version
   * `mvn versions:set` (use `${revision}` when prompted for new version)
   * commit
 * merge the branch back to trunk: `git checkout master; git merge vX.Y-release`
