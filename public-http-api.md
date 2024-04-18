@@ -38,8 +38,6 @@ When using it, please keep the following rules in mind:
 
 ### Libraries to simplify usage
 
-* Java: LanguageTool comes with [RemoteLanguageTool](https://languagetool.org/development/api/org/languagetool/remote/RemoteLanguageTool.html)
-  in the [languagetool-http-client](https://search.maven.org/search?q=a:languagetool-http-client) module
 * Python: [pyLanguagetool](https://github.com/Findus23/pyLanguagetool)
 * Rust: [LanguageTool-Rust](https://github.com/jeertmans/languagetool-rust)
 * R: [ggspell](https://github.com/nicucalcea/ggspell)
