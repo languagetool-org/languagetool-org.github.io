@@ -25,9 +25,10 @@ When using it, please keep the following rules in mind:
   * 75KB text per IP per minute
   * 20KB text per request
   * Only up to 30 misspelled words will have suggestions.
-* This is a free service, thus there are no guarantees about performance or availability. The limits may change anytime.
+* This is a free service, thus there are no guarantees about performance or availability. The limits may change at any time.
 * The LanguageTool version installed may be the latest official release or some snapshot. We will simply
-  deploy new versions, thus the behavior will change without any warning.
+  deploy new versions, thus the behavior **will** change without any warning. Error detection rules might be
+  active that are not part of the Open Source version.
 * Read [our privacy policy](https://languagetool.org/legal/privacy) to see how we handle
   your texts. You are responsible for giving your users information about how their data is handled.
 * **We expect you to add a link back to <https://languagetool.org> that's clearly visible.**
