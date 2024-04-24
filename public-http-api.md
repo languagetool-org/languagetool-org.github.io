@@ -31,7 +31,7 @@ When using it, please keep the following rules in mind:
   active that are not part of the Open Source version.
 * Read [our privacy policy](https://languagetool.org/legal/privacy) to see how we handle
   your texts. You are responsible for giving your users information about how their data is handled.
-* **We expect you to add a link back to <https://languagetool.org> that's clearly visible.**
+* **We expect you to add a link back to <https://languagetool.org> that's clearly visible and that does not use `rel="nofollow"`.**
 
 ### API documentation
 
