@@ -69,14 +69,17 @@ If you are a Java developer and you want to extend LanguageTool or if you want
 to use the latest development version, check out LanguageTool from
 [github](https://github.com/languagetool-org/languagetool/):
 
-    git clone https://github.com/languagetool-org/languagetool.git
+    git clone --depth=1 https://github.com/languagetool-org/languagetool.git
 
-Note that due to the embedded dictionaries our git repository is quite
-large (>800MB), so cloning might take some time. You can then build the
-code with `mvn clean package` or just run the tests with `mvn clean test`.
-You need at least Java 8 for building LT. Maven's default memory settings
-are often too low, so you will probably need to set your environment
-variable `MAVEN_OPTS` to:
+(omit the `--depth=1` switch if you're required to have the full git history
+(>1.4 GB) repository, so cloning might take some time)
+
+# Building the project
+
+You can build the code with `mvn clean package` or just run the tests with 
+`mvn clean test`. You need at least Java 8 for building LT. Maven's default 
+memory settings are often too low, so you will probably need to set your 
+environment variable `MAVEN_OPTS` to:
 
     -Xmx1550m
 
