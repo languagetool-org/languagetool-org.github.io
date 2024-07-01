@@ -42,3 +42,4 @@ When using it, please keep the following rules in mind:
 * Python: [pyLanguagetool](https://github.com/Findus23/pyLanguagetool)
 * Rust: [LanguageTool-Rust](https://github.com/jeertmans/languagetool-rust)
 * R: [ggspell](https://github.com/nicucalcea/ggspell)
+* Emacs: [emacs-langtool](https://github.com/mhayashi1120/Emacs-langtool)
