@@ -5,7 +5,6 @@ is only relevant to release managers. Also see [Roadmap](/roadmap).
 
 # How to enter Feature Freeze
 
-* languagetool-community-website: `./i18n_update.sh`
 * in `languagetool`: `wti push` and `wti pull`
 * send an email to the forum about the code freeze:
   * planned release date
@@ -13,7 +12,6 @@ is only relevant to release managers. Also see [Roadmap](/roadmap).
   * ask for fixing bugs at <https://github.com/languagetool-org/languagetool/issues?state=open>  
   * ask for updating the `CHANGES.md`
   * no new i18n strings allowed
-* ask people to test the snapshots on twitter and in the forum
 * run more tests locally to catch exceptions (locally for dnaber: `/media/Data/languagetool/regression-test/*.sh`)
 * build the ZIPs and see how much bigger they have become compared to the latest release
 * optionally, run `checkurl.bash` to fix old URLs
@@ -33,14 +31,9 @@ later.
 * make sure you're on Java 1.8 (we support Java 1.8 and being on Java 1.8 is the easiest way to ensure that): `java -version`
 * update local source: `git pull -r`
 * work in a local branch: `git checkout -b vX.Y-release`
-* make sure licenses in languagetool-office-extension, languagetool-wikipedia, and languagetool-standalone are in sync (src/main/resources/third-party-licenses), except `icons.txt`:
-  * `diff -r languagetool-office-extension/src/main/resources/third-party-licenses languagetool-wikipedia/src/main/resources/third-party-licenses`
-  * `diff -r languagetool-office-extension/src/main/resources/third-party-licenses languagetool-standalone/src/main/resources/third-party-licenses`
 * update the i18n property files by running `wti pull`
   * Daniel has the API key for webtranslateit.com
 * Update the version number in:
-  * `manifest.xml`
-  * `description.xml`
   * top-level pom.xml: only set property `revision`
   * `mvn versions:set` (set the version number of today's release when prompted)
   * update `<version>${revision}</version>` to the new version number in all `pom.xml` files (using `${revision}`
@@ -51,8 +44,6 @@ later.
   * test the result in `languagetool-standalone/target/`
   * also test `testrules.sh` and `testrules.bat`
   * check how much bigger the ZIP has become compared to the previous release
-* `./build.sh languagetool-office-extension package -DskipTests`
-  * test the result in `languagetool-office-extension/target`, rename the *.zip to *.oxt and install it in LibreOffice/OpenOffice, test with <https://github.com/languagetool-org/languagetool/blob/master/languagetool-office-extension/src/test/resources/manual-testing.odt?raw=true>  
 * run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
 * update `CHANGES.md` file
   * sort language changes alphabetically
