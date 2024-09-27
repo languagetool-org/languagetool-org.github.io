@@ -108,15 +108,10 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * update [roadmap](/roadmap)  
 * enter the next feature freeze date in your personal calendar so you don't forget it
 * set new version number in [Java API](/java-api)  
-* set new version in `languagetool.update.xml` (this is linked in resources/description.xml and allows updating LT from within the LO/OO extension manager) - 
-  see personal Zim notes at "LanguageTooler -> Release" for how to access the file 
-  * install the old version of LT in LibreOffice and see if the automatic update from extension manager works
 
 ## Write announcements
 
 * <http://forum.languagetool.org> - include checksums (Unix command: `sha256sum <file>`).
-* <http://extensions.services.openoffice.org/project/languagetool>  
-* ~~<https://extensions.libreoffice.org/extensions/languagetool>   via <https://extensions.libreoffice.org/admin>   (Note: set the "State" to "final release")~~ Fred takes care of this now
 * Update this release documentation if there have been any changes in the process
 
 ## Update the web app at [community.languagetool.org](http://community.languagetool.org)
