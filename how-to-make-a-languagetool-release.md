@@ -66,11 +66,13 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
   * set the version number
   * make sure the list of Maven projects to be deployed is up-to-date
   * `./stage-artifacts.sh` (this will sign and upload the artifacts to the staging area, it will take > 30 minutes. NOTE: this requires a proper set-up of `~/.m2/settings.xml`)
+  * if this doesn't work, go to <https://oss.sonatype.org/#profile;User%20Token> and create a token,
+    copying the XML to `~/.m2/settings.xml` and using `sonatype-nexus-staging` as the `<id>`
 * log in at <https://oss.sonatype.org>  
   * go to "Staging Repositories" page.
   * select the staging repository: `orglanguagetool-xyz` (usually at the bottom of the list)
   * click "Close"
-  * test the artifacts in project languagetool-client-example:
+  * test the artifacts in project `languagetool-client-example`:
     * adapt the pom.xml (set the new "orglanguagetool-xyz" as a repo and update the dependencies)
     * clean local m2 repo: `rm -r  ~/.m2/repository/org/languagetool/`
     * adapt version in `pom.xml` and `build-opensource.sh` and run it (unzips the uberjar and replaces `META-INF/org/langetool/language-module.properties`
@@ -86,7 +88,6 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * copy the stand-alone LT to a path with a space and test some sentences
 * upload to the server (see personal notes at LanguageTooler -> Release for how to access the drive):
   * `LanguageTool-6.x.zip` also as `LanguageTool-stable.zip`
-  * `LanguageTool-6.x.oxt` also as `LanguageTool-stable.oxt`
   * `CHANGES.md`
   * `README.md`
 
@@ -94,8 +95,6 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 * `git checkout vx.y-release`
 * Set the new version (x.y-SNAPSHOT) in these files:
-  * `manifest.xml`
-  * `description.xml`
   * set `<version>x.y</version>` to `<version>${revision}</version>` in all `pom.xml` files
   * top-level pom.xml: set property `properties` -> `revision` to the new x.y-SNAPSHOT version
   * `mvn versions:set` (use `${revision}` when prompted for new version)
