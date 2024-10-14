@@ -14,9 +14,8 @@ Download the [LanguageTool Desktop version for offline use](https://languagetool
 
 **Please note:**
   * This will give you a basic LanguageTool server without AI-based rules. The
-  AI-based rules are only available in the Cloud or for [Premium business
-users](https://languagetool.org/business).
-  * The [Windows](https://languagetool.org/windows) and [Mac](https://languagetool.org/mac) desktop apps will not work with this approach.
+    AI-based rules are only available in the Cloud.
+  * The [Windows](https://languagetool.org/windows) desktop app will not work with this approach.
 
 On MacOS you can install the server using [brew](https://github.com/Homebrew/brew) (please
 note that Homebrew support is not provided by the LanguageTool team):
