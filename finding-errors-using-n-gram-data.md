@@ -4,21 +4,20 @@
 are often confused, like *their* and *there*. The n-gram data set is huge and thus
 not part of the LT download. To make use of it, you have two choices:
 
-* Use the form on <https://languagetool.org>, which always has the latest and best ngram data.
+* Use the editor on <https://languagetool.org>, which always has the latest and best ngram data.
 * Set up your own LT server with the n-gram data.
 
 To use the data locally:
 
 1. Make sure you have a fast disk, i.e. an SSD. Without an SSD, using this data can make
    LanguageTool *much* slower.
-2. Download the data (8GB!) from <http://languagetool.org/download/ngram-data/> - note: data
-   is currently only available for English, German, French, and Spanish (plus some data
-   for untested languages).
+2. Download the data (~8GB) from <http://languagetool.org/download/ngram-data/> - note: data
+   is currently only available for English, German, French, and Spanish.  
+   Use `ngrams-xx-2015*` files for LanguageTool <= 6.5, `ngrams-xx-2024*` files for LanguageTool >= 6.6. 
 3. Unzip it and put it in its own directory named `en`, `de`, `fr`, or `es`, depending on the
    language. The path you need to set in the next step is the directory that the `en` etc.
    directory is in, not that directory itself.
 4. Then, depending on how you use LanguageTool:
-   * LibreOffice/OpenOffice add-on: open the Options dialog and set the n-gram directory.
    * Command line: start with the `--languagemodel` option pointing to the ngram-index directory.
    * Server mode: Start with the `--languageModel` option. Alternatively, you can start with
      the `--config file` option. This properties file needs to have a `languageModel=...` entry
