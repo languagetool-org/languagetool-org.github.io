@@ -3,7 +3,7 @@
 [LanguageTool](https://languagetool.org) uses a time-based release cycle, with a new release every 
 six months. This is a list of upcoming LanguageTool releases.
 
-* 6.6 planned release: Thursday, 2025-03-27 - feature freeze 2025-03-20 (will require new ngram format, download from https://languagetool.org/download/ngram-data/ngrams-XX-20150915.zip, with `XX` being your language code)
+* 6.6 planned release: Thursday, 2025-03-27 - feature freeze 2025-03-20; will require new ngram format (if you use ngrams at all), download files from https://languagetool.org/download/ngram-data/ (files named `ngrams-XX-2024*.zip`, with `XX` being your language code)
  
 ## Archive
 
