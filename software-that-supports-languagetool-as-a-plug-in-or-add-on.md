@@ -12,8 +12,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageToolAnnotator for Fonto](https://documentation.fontoxml.com/latest/languagetoolannotator-0fc7ac104aa0)
 * ~~[LanguageTool for Google Docs](https://gsuite.google.com/marketplace/app/grammatik_und_rechtschreibpr%C3%BCfung_langua/805250893316)~~ - we recommend using [the browser add-on](https://languagetool.org/addon-redirect) instead, which also supports Google Docs
 * [Grazie Lite - Plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
-* [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source code](https://github.com/languagetool-org/languagetool-for-libreoffice)) - also [available without installing an add-on](https://languagetool.org/insights/post/product-libreoffice/)
-* [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source code](https://github.com/languagetool-org/languagetool-for-libreoffice))
+* [WritingTool, a writing assistant for LibreOffice](https://writingtool.org) - LT can also be used [without installing an add-on](https://languagetool.org/insights/post/product-libreoffice/)
 * [OnlyOffice](https://www.onlyoffice.com/en/app-directory/languagetool) ([source code](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/master/sdkjs-plugins/content/languagetool))
 * [Obsidian LanguageTool Plugin](https://github.com/Clemens-E/obsidian-languagetool-plugin)
 * [LanguageTool Linter for VS Code (Visual Studio Code)](https://marketplace.visualstudio.com/items?itemName=davidlday.languagetool-linter)
@@ -38,6 +37,8 @@ this software is not supported by the LanguageTool team.**
 
 Add-ons that haven't been updated for quite some time and that seem to be **unmaintained**:
 
+* [LanguageTool for LibreOffice](https://extensions.libreoffice.org/en/extensions/show/languagetool) ([source code](https://github.com/languagetool-org/languagetool-for-libreoffice))
+* [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source code](https://github.com/languagetool-org/languagetool-for-libreoffice))
 * [linter-languagetool](https://atom.io/packages/linter-languagetool) for Atom ([source code](https://github.com/wysiib/linter-languagetool))
 * [LanguageTool for Android (source)](https://github.com/Softcatala/LanguageToolAndroidService)
 * [LanguageTool Eclipse Plugin](https://github.com/vogellacompany/languagetool-eclipse-plugin)
