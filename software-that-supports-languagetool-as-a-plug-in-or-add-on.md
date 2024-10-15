@@ -16,7 +16,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool for OpenOffice](https://extensions.openoffice.org/en/project/languagetool) ([source code](https://github.com/languagetool-org/languagetool-for-libreoffice))
 * [OnlyOffice](https://www.onlyoffice.com/en/app-directory/languagetool) ([source code](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/master/sdkjs-plugins/content/languagetool))
 * [Obsidian LanguageTool Plugin](https://github.com/Clemens-E/obsidian-languagetool-plugin)
-* [LanguageTool Linter for VS Code (Visual Studio Code)](https://github.com/davidlday/vscode-languagetool-linter)
+* [LanguageTool Linter for VS Code (Visual Studio Code)](https://marketplace.visualstudio.com/items?itemName=davidlday.languagetool-linter)
 * [Mac desktop app](https://languagetool.org/mac-desktop) - currently supports Apple Mail, Apple Pages, Notes, Messages, Slack, MS Word, and Teams
 * [LanguageTool for MS Word](https://languagetool.org/word) - for Mac, consider using the [Mac desktop app](https://languagetool.org/mac-desktop) instead
 * [LanguageTool for Opera](https://addons.opera.com/extensions/details/grammar-and-spell-checker-languagetool/)
@@ -28,7 +28,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool for Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-and-spell-checker/)
 * [LanguageTool for vim](http://www.vim.org/scripts/script.php?script_id=3223)
 * [pyLanguagetool](https://github.com/Findus23/pyLanguagetool), command-line tool for using the JSON API
-* [LTEX Extension for VS Code (Visual Studio Code)](https://github.com/valentjn/vscode-ltex), Grammar/Spell Checker with LanguageTool and LaTeX Support. Other ways to [check LaTeX](https://dev.languagetool.org/checking-la-tex-with-languagetool).
+* [LTeX Extension for VS Code (Visual Studio Code)](https://valentjn.github.io/ltex/), Grammar/Spell Checker with LanguageTool and LaTeX Support. Other ways to [check LaTeX](https://dev.languagetool.org/checking-la-tex-with-languagetool).
 * [TeXtidote](https://github.com/sylvainhalle/textidote), a correction tool for LaTeX documents and other formats.  Other ways to [check LaTeX](https://dev.languagetool.org/checking-la-tex-with-languagetool).  
 * [vim-LanguageTool](https://github.com/dpelle/vim-LanguageTool)
 * [vim-grammarous](https://github.com/rhysd/vim-grammarous)
