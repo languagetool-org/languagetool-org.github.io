@@ -27,7 +27,7 @@ than 1000 rules in LanguageTool.
 1. Fork the code [at GitHub](https://github.com/languagetool-org/languagetool).
 2. Clone your forked repository.
 3. Switch to the `languagetool-language-modules` directory.
-4. Create a new project using Maven: `mvn archetype:generate -DgroupId=org.languagetool -DartifactId=**xy** -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false` (replace xy with the [ISO 639-1 Code](http://www.loc.gov/standards/iso639-2/php/code_list.php) of your language).
+4. Create a new project using Maven: `mvn archetype:generate -DgroupId=org.languagetool -DartifactId=**xy** -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false` (replace xy with the [ISO 639-1 Code](http://www.loc.gov/standards/iso639-2/php/code_list.php) of your language, or the ISO 639-3 if the later does not exist, as described in the IETF [RCF 3066](https://datatracker.ietf.org/doc/html/rfc3066#section-2.2)).
 5. Switch to the `xy` directory that has just been created.
 6. Copy the [pom.xml for English](https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/pom.xml) over your `pom.xml` and adapt the `artifactId` and `name` elements.
 7. Now you will need to create some files - just copy them over from language-en and adapt them:
@@ -38,8 +38,6 @@ than 1000 rules in LanguageTool.
    - Add an entry `xy = Mylanguage` to `languagetool-core/src/main/resources/org/languagetool/MessagesBundle.properties`, with `xy` being your language code (e.g. `fr`) and Mylanguage being the language name (e.g. French)
 8. Add your language project as a dependency in `languagetool-language-modules/all/pom.xml`.
 9. Add `<module>languagetool-language-modules/xy</module>` to the top-level `pom.xml`
-10. For your language to be accessible in LibreOffice/OpenOffice, add it to `Linguistic.xcu` in project `languagetool-office-extension`.
-11. To translate the LibreOffice/OpenOffice menus, adapt `languagetool-office-extension/src/main/resources/description.xml` and `languagetool-office-extension/src/main/resources/Addons.xcu`.
-12. Finally, run `mvn clean package` in the LanguageTool directory. The result in `languagetool-standalone/target` should now support your new language.
-13. If your language has a part-of-speech tagger, add a file `resource/xy/tagset.txt` that describes the tags, like [this one for English](https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt) does.
-14. To translate the user interface for your language, ask us to add your language at [WebTranslateIt](/translating-messages).
+10. Finally, run `mvn clean package` in the LanguageTool directory. The result in `languagetool-standalone/target` should now support your new language.
+11. If your language has a part-of-speech tagger, add a file `resource/xy/tagset.txt` that describes the tags, like [this one for English](https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt) does.
+12. To translate the user interface for your language, ask us to add your language at [WebTranslateIt](/translating-messages).
