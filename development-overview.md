@@ -77,7 +77,7 @@ to use the latest development version, check out LanguageTool from
 # Building the project
 
 You can build the code with `mvn clean package` or just run the tests with 
-`mvn clean test`. You need at least Java 8 for building LT. Maven's default 
+`mvn clean test`. You need at least Java 17 for building LT. Maven's default 
 memory settings are often too low, so you will probably need to set your 
 environment variable `MAVEN_OPTS` to:
 
