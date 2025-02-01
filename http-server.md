@@ -9,8 +9,8 @@ the default settings, which use our Cloud servers.
 
 ### Getting the server
 
-Download the [LanguageTool Desktop version for offline use](https://languagetool.org/download/LanguageTool-stable.zip)
-(>200MB) and unzip it.
+Download a recent [LanguageTool snapshot](https://internal1.languagetool.org/snapshots/), 
+named `LanguageTool-yyyymmdd-snapshot.zip` and unzip it.
 
 **Please note:**
   * This will give you a basic LanguageTool server without AI-based rules. The
