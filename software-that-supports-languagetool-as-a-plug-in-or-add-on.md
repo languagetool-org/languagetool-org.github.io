@@ -31,6 +31,7 @@ this software is not supported by the LanguageTool team.**
 * [TeXtidote](https://github.com/sylvainhalle/textidote), a correction tool for LaTeX documents and other formats.  Other ways to [check LaTeX](https://dev.languagetool.org/checking-la-tex-with-languagetool).  
 * [vim-LanguageTool](https://github.com/dpelle/vim-LanguageTool)
 * [vim-grammarous](https://github.com/rhysd/vim-grammarous)
+* [Eloquent Linux application](https://flathub.org/apps/re.sonny.Eloquent)
 
 
 ## Archive
