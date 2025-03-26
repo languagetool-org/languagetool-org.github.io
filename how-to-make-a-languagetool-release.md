@@ -20,10 +20,10 @@ is only relevant to release managers. Also see [Roadmap](/roadmap).
 
 We build artifacts with Maven and upload them to oss.sonatype.org with 
 a script, where they can then be released on Maven Central. Note that 
-this is independent of the *.zip and *.oxt files we release. If there's 
+this is independent of the *.zip files we release. If there's 
 a problem with the Sonatype-release for Maven Central (which is only 
 relevant for Java developers), we can always make the release of the 
-user artifacts (`*.zip` and `*.oxt`) and care about the other problems 
+user artifacts (`*.zip`) and care about the other problems 
 later.
 
 ## Preparation
@@ -82,7 +82,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * set a tag in git: `git tag -a vX.Y -m 'version X.Y'`
 * push the tag: `git push origin vX.Y`
 
-## Releasing the ZIP and OXT for end-users
+## Releasing the ZIP for end-users
 
 * check out the new tag from git and run `mvn clean package`
 * copy the stand-alone LT to a path with a space and test some sentences
