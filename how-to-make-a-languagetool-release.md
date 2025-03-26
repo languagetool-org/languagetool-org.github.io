@@ -28,7 +28,7 @@ later.
 
 ## Preparation
 
-* make sure you're on Java 1.8 (we support Java 1.8 and being on Java 1.8 is the easiest way to ensure that): `java -version`
+* make sure you're on Java 17 (we support Java 17 and being on Java 17 is the easiest way to ensure that): `java -version`
 * update local source: `git pull -r`
 * work in a local branch: `git checkout -b vX.Y-release`
 * update the i18n property files by running `wti pull`
