@@ -4,7 +4,7 @@ This is our internal documentation for how to make a new release. This
 is only relevant to release managers.
 
 **NOTE:** As of March 2025, LanguageTool has switched to a snapshot-based release model.
-Get the latest snashot from [https://languagetool.org/download/snapshots/](https://languagetool.org/download/snapshots/).
+Get the latest snapshot from [https://languagetool.org/download/snapshots/](https://languagetool.org/download/snapshots/).
 
 ## Preparation
 
@@ -23,7 +23,7 @@ Get the latest snashot from [https://languagetool.org/download/snapshots/](https
 * Optional: run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
 * update `CHANGES.md` file
   * sort language changes alphabetically
-  * make sure list of updated languages matches `languages.html`
+  * make sure list the of updated languages matches `languages.html`
 * update `README.md` file
 * make sure there are no useless files (these would become part of the download file):
   * run `git status` and check the output under "untracked files"
@@ -86,6 +86,6 @@ Just update the LT dependencies in `BuildConfig.groovy`. Deployment happens auto
   
 ## Backups and Misc
 
-Not really related to a release, but should be done once in a while and the release is a good opportunity:
+Not really related to a release, but should be done once in a while, and the release is a good opportunity:
 
 * Download forum backup at <http://forum.languagetool.org/admin/backups>  
