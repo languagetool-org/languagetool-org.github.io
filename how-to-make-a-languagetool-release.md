@@ -1,30 +1,10 @@
 # How to make a LanguageTool Release
 
 This is our internal documentation for how to make a new release. This 
-is only relevant to release managers. Also see [Roadmap](/roadmap).
+is only relevant to release managers.
 
-# How to enter Feature Freeze
-
-* in `languagetool`: `wti push` and `wti pull`
-* send an email to the forum about the code freeze:
-  * planned release date
-  * ask for [webtranslateit.com](https://webtranslateit.com) updates if needed
-  * ask for fixing bugs at <https://github.com/languagetool-org/languagetool/issues?state=open>  
-  * ask for updating the `CHANGES.md`
-  * no new i18n strings allowed
-* run more tests locally to catch exceptions (locally for dnaber: `/media/Data/languagetool/regression-test/*.sh`)
-* build the ZIPs and see how much bigger they have become compared to the latest release
-* optionally, run `checkurl.bash` to fix old URLs
-
-# How to make a LanguageTool release
-
-We build artifacts with Maven and upload them to oss.sonatype.org with 
-a script, where they can then be released on Maven Central. Note that 
-this is independent of the *.zip files we release. If there's 
-a problem with the Sonatype-release for Maven Central (which is only 
-relevant for Java developers), we can always make the release of the 
-user artifacts (`*.zip`) and care about the other problems 
-later.
+**NOTE:** As of March 2025, LanguageTool has switched to a snapshot-based release model.
+Get the latest snashot from https://languagetool.org/download/snapshots/.
 
 ## Preparation
 
@@ -32,7 +12,7 @@ later.
 * update local source: `git pull -r`
 * work in a local branch: `git checkout -b vX.Y-release`
 * update the i18n property files by running `wti pull`
-  * Daniel has the API key for webtranslateit.com
+  * see webtranslateit.com under "Settings / API Tokens" for the API key
 * Update the version number in:
   * top-level pom.xml: only set property `revision`
   * `mvn versions:set` (set the version number of today's release when prompted)
@@ -40,11 +20,7 @@ later.
     as a variable would cause issues when publishing the artifact via Sonatype)
   * commit changes
 * `mvn clean test`
-* `./build.sh languagetool-standalone package -DskipTests`
-  * test the result in `languagetool-standalone/target/`
-  * also test `testrules.sh` and `testrules.bat`
-  * check how much bigger the ZIP has become compared to the previous release
-* run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
+* Optional: run `org.languagetool.dev.RuleOverview` and paste the result to `languages.html` (when running from IntelliJ IDEA, set "Working directory" to `$MODULE_WORKING_DIR$`)
 * update `CHANGES.md` file
   * sort language changes alphabetically
   * make sure list of updated languages matches `languages.html`
@@ -82,15 +58,6 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 * set a tag in git: `git tag -a vX.Y -m 'version X.Y'`
 * push the tag: `git push origin vX.Y`
 
-## Releasing the ZIP for end-users
-
-* check out the new tag from git and run `mvn clean package`
-* copy the stand-alone LT to a path with a space and test some sentences
-* upload to the server (see personal notes at LanguageTooler -> Release for how to access the drive):
-  * `LanguageTool-6.x.zip` also as `LanguageTool-stable.zip`
-  * `CHANGES.md`
-  * `README.md`
-
 ## After the Release
 
 * `git checkout vx.y-release`
@@ -105,8 +72,7 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 ## Update website
 
-* update [roadmap](/roadmap)  
-* enter the next feature freeze date in your personal calendar so you don't forget it
+* enter the next release date in your personal calendar so you don't forget it
 * set new version number in [Java API](/java-api)  
 
 ## Write announcements
