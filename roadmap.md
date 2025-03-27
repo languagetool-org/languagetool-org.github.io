@@ -1,13 +1,13 @@
 # Release Roadmap
 
-[LanguageTool](https://languagetool.org) uses a time-based release cycle, with a new release every 
-six months. This is a list of upcoming LanguageTool releases.
+In March 2025, [LanguageTool](https://languagetool.org) has switched to a snapshot-based release model.
+This means that there will be no new ZIP files with a fixed version number `X.Y` anymore.
+Instead, you can download the latest daily snapshot from
+https://languagetool.org/download/snapshots/.
 
-* 6.6 planned release: Thursday, 2025-03-27 - feature freeze 2025-03-20 
-  * will require JDK 17 to compile and run
-  
 ## Archive
 
+* 6.6 release date: 2025-03-27 (requires Java 17 to compile and run)
 * 6.5 release date: 2024-09-27
 * 6.4 release date: 2024-03-28
 * 6.3 release date: 2023-10-06
