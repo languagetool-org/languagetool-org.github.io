@@ -3,7 +3,7 @@
 In March 2025, [LanguageTool](https://languagetool.org) has switched to a snapshot-based release model.
 This means that there will be no new ZIP files with a fixed version number `X.Y` anymore.
 Instead, you can download the latest daily snapshot from
-https://languagetool.org/download/snapshots/.
+[https://languagetool.org/download/snapshots/](https://languagetool.org/download/snapshots/).
 
 ## Archive
 

@@ -4,7 +4,7 @@ This is our internal documentation for how to make a new release. This
 is only relevant to release managers.
 
 **NOTE:** As of March 2025, LanguageTool has switched to a snapshot-based release model.
-Get the latest snashot from https://languagetool.org/download/snapshots/.
+Get the latest snashot from [https://languagetool.org/download/snapshots/](https://languagetool.org/download/snapshots/).
 
 ## Preparation
 
