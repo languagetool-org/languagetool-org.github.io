@@ -3,8 +3,8 @@
 **Note:** We recommend using the [LanguageTool HTTP server](public-http-api) instead
 of using the Java API directly.
 
-[LanguageTool](https://languagetool.org) requires Java 17 since 11/2024, and Java 8 or later
-before that (up to version 6.5).
+[LanguageTool](https://languagetool.org) requires Java 17 since version 6.6 (vs. Java 8 or later
+before that).
 
 Get LanguageTool by adding a dependency like this to your
 [Maven](http://maven.apache.org/run-maven/) `pom.xml`:
@@ -13,7 +13,7 @@ Get LanguageTool by adding a dependency like this to your
     <dependency>
       <groupId>org.languagetool</groupId>
       <artifactId>language-en</artifactId>
-      <version>6.5</version>
+      <version>6.6</version>
     </dependency>
 ```
 
