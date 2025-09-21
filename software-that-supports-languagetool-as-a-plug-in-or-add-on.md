@@ -27,7 +27,7 @@ this software is not supported by the LanguageTool team.**
 * [LanguageTool for Thunderbird](https://addons.thunderbird.net/thunderbird/addon/grammar-and-spell-checker/)
 * [LanguageTool for vim](http://www.vim.org/scripts/script.php?script_id=3223)
 * [pyLanguagetool](https://github.com/Findus23/pyLanguagetool), command-line tool for using the JSON API
-* [LTeX Extension for VS Code (Visual Studio Code)](https://valentjn.github.io/ltex/), Grammar/Spell Checker with LanguageTool and LaTeX Support. Other ways to [check LaTeX](https://dev.languagetool.org/checking-la-tex-with-languagetool).
+* [LTeX+ Extension for VS Code (Visual Studio Code)](https://ltex-plus.github.io/ltex-plus), Grammar/Spell Checker Using LanguageTool with Support for LaTeX, Markdown, and Others. Other ways to [check LaTeX](https://dev.languagetool.org/checking-la-tex-with-languagetool).
 * [TeXtidote](https://github.com/sylvainhalle/textidote), a correction tool for LaTeX documents and other formats.  Other ways to [check LaTeX](https://dev.languagetool.org/checking-la-tex-with-languagetool).  
 * [vim-LanguageTool](https://github.com/dpelle/vim-LanguageTool)
 * [vim-grammarous](https://github.com/rhysd/vim-grammarous)
@@ -51,3 +51,4 @@ Add-ons that haven't been updated for quite some time and that seem to be **unma
 * [LanguageTool for Oxygen XML editor](https://github.com/danielnaber/oxygen-languagetool-plugin)
 * [LanguageTool for TinyMCE 4](https://github.com/KnowZero/tinymce4-languagetool) (experimental)
 * [LanguageTool for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=adamvoss.vscode-languagetool) ([source code](https://github.com/adamvoss/vscode-languagetool))
+* [LTeX Extension for VS Code (Visual Studio Code)](https://valentjn.github.io/ltex/), Grammar/Spell Checker with LanguageTool and LaTeX Support. 
