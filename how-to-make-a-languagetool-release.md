@@ -34,27 +34,13 @@ at <http://central.sonatype.org/pages/ossrh-guide.html>:
 
 ## Releasing the artifacts to Maven Central
 
-* `mvn clean install`
-* `mvn javadoc:jar`
-* `mvn source:jar`
-* `cd languagetool-standalone/scripts`
-* open the `stage-artifacts.sh` script
-  * set the version number
-  * make sure the list of Maven projects to be deployed is up-to-date
-  * `./stage-artifacts.sh` (this will sign and upload the artifacts to the staging area, it will take > 30 minutes. NOTE: this requires a proper set-up of `~/.m2/settings.xml`)
-  * if this doesn't work, go to <https://oss.sonatype.org/#profile;User%20Token> and create a token,
-    copying the XML to `~/.m2/settings.xml` and using `sonatype-nexus-staging` as the `<id>`
-* log in at <https://oss.sonatype.org>  
-  * go to "Staging Repositories" page.
-  * select the staging repository: `orglanguagetool-xyz` (usually at the bottom of the list)
-  * click "Close"
-  * test the artifacts in project `languagetool-client-example`:
-    * adapt the pom.xml (set the new "orglanguagetool-xyz" as a repo and update the dependencies)
-    * clean local m2 repo: `rm -r  ~/.m2/repository/org/languagetool/`
-    * adapt version in `pom.xml` and `build-opensource.sh` and run it (unzips the uberjar and replaces `META-INF/org/langetool/language-module.properties`
-      with the `language-module.properties` from languagetool-standalone - this is needed because with the original
-      file, all languages except one get lost)
-  * if okay, click "Release" (requires a refresh) - note that once released, the artifacts cannot be deleted or modified! It may take a few hours before the artifacts actually become available.
+* `mvn clean javadoc:jar source:jar install -DskipTests`
+* `mvn -P sign-and-release deploy -DskipTests`
+  * if this doesn't work, go to <https://central.sonatype.com/usertoken> and create a token,
+    copying the XML to `~/.m2/settings.xml` and using `central` as the `<id>`
+* log in at <https://central.sonatype.com/publishing/deployments>  
+  * Check deployment
+  * Publish
 * set a tag in git: `git tag -a vX.Y -m 'version X.Y'`
 * push the tag: `git push origin vX.Y`
 
