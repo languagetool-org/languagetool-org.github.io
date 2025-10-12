@@ -37,7 +37,12 @@ than 1000 rules in LanguageTool.
    - This is a minimal setup so far. It's enough to write rules that refer to words, but not to part-of-speech tags. Add other Java classes like Tokenizers and Taggers, depending on what you need. For example, a trivial tagger that only assigns null tags to words is [DemoTagger](https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/java/org/languagetool/tagging/xx/DemoTagger.java).
    - Add an entry `xy = Mylanguage` to `languagetool-core/src/main/resources/org/languagetool/MessagesBundle.properties`, with `xy` being your language code (e.g. `fr`) and Mylanguage being the language name (e.g. French)
 8. Add your language project as a dependency in `languagetool-language-modules/all/pom.xml`.
-9. Add `<module>languagetool-language-modules/xy</module>` to the top-level `pom.xml`
-10. Finally, run `mvn clean package` in the LanguageTool directory. The result in `languagetool-standalone/target` should now support your new language.
-11. If your language has a part-of-speech tagger, add a file `resource/xy/tagset.txt` that describes the tags, like [this one for English](https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt) does.
-12. To translate the user interface for your language, ask us to add your language at [WebTranslateIt](/translating-messages).
+10. Add `<module>languagetool-language-modules/xy</module>` to the top-level `pom.xml`.
+11. Add a `common_words.txt` in `languagetool-language-modules/xy/src/main/resources/org/languagetool/resource/xy/common_words.txt` to pass the `languagetool-commandline` tests.
+12. If the language is a regional language, if the flag of the country code does not correspond to the flag the language should have, add a 16x16 .pgn of the flag to `languagetool-standalone/src/main/resources/org/languagetool/resource/flags/bytag` with the full IETF language code as its name, that is, `xy-XY.png` where `xy` is the language code and `XY` is the country code.
+13. In `languagetool-core/src/main/resources/org/languagetool/resource/segment.srx`, add:
+   - A `<languagemap languagepattern="(XY|xy).*" languagerulename="Mylanguage"></languagemap>` tag, replacing `xy` by uppercase and lowercase IETF language code of your language and `MyLanguage` the English name of your language.
+   - A `<languagerule languagerulename="MyLanguage">...</` block with the rules necessary to pass the `SRXSentenceTokenizerTest`, copy-pasting from another language's block close to your language.
+12.Finally, run `mvn clean package` in the LanguageTool directory. The result in `languagetool-standalone/target` should now support your new language.
+13. If your language has a part-of-speech tagger, add a file `resource/xy/tagset.txt` that describes the tags, like [this one for English](https://github.com/languagetool-org/languagetool/blob/master/languagetool-language-modules/en/src/main/resources/org/languagetool/resource/en/tagset.txt) does.
+14. To translate the user interface for your language, ask us to add your language at [WebTranslateIt](/translating-messages).
