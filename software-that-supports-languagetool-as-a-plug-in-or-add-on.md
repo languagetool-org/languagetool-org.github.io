@@ -32,7 +32,7 @@ this software is not supported by the LanguageTool team.**
 * [vim-LanguageTool](https://github.com/dpelle/vim-LanguageTool)
 * [vim-grammarous](https://github.com/rhysd/vim-grammarous)
 * [Eloquent Linux application](https://flathub.org/apps/re.sonny.Eloquent)
-
+* [Zettlr](https://www.zettlr.com/)
 
 ## Archive
 
