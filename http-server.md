@@ -9,7 +9,7 @@ the default settings, which use our cloud servers.
 
 ### Getting the Server
 
-Download a recent [LanguageTool snapshot](https://internal1.languagetool.org/snapshots),
+Download a recent [LanguageTool snapshot](https://languagetool.org/download/snapshots/),
 named `LanguageTool-latest-snapshot.zip` and unzip it.
 
 **Please note:**
