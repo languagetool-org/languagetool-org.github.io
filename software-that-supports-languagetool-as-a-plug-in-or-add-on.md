@@ -13,6 +13,7 @@ this software is not supported by the LanguageTool team.**
 * ~~[LanguageTool for Google Docs](https://gsuite.google.com/marketplace/app/grammatik_und_rechtschreibpr%C3%BCfung_langua/805250893316)~~ - we recommend using [the browser add-on](https://languagetool.org/addon-redirect) instead, which also supports Google Docs
 * [Grazie Lite - Plugin for IntelliJ IDEA](https://plugins.jetbrains.com/plugin/12175-grazie), for checking source code, markdown, XML etc.
 * [WritingTool, a writing assistant for LibreOffice](https://writingtool.org) - LT can also be used [without installing an add-on](https://languagetool.org/insights/post/product-libreoffice/)
+* [LintGrafía](https://einscube.com/en/lintgrafia/) - browser extension for Chrome, Edge, Brave and Opera that lints spelling and grammar on rendered web pages (including localhost and staging), works with the public API or a self-hosted LT server
 * [OnlyOffice](https://www.onlyoffice.com/en/app-directory/languagetool) ([source code](https://github.com/ONLYOFFICE/onlyoffice.github.io/tree/master/sdkjs-plugins/content/languagetool))
 * [Obsidian LanguageTool Plugin](https://github.com/Clemens-E/obsidian-languagetool-plugin)
 * [LanguageTool Linter for VS Code (Visual Studio Code)](https://marketplace.visualstudio.com/items?itemName=davidlday.languagetool-linter)
